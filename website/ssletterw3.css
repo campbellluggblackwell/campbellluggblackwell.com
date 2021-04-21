@@ -1,0 +1,82 @@
+body {
+  font-size: x-large;
+  font-family: Courier, "Courier New", monospace;}
+h3 {
+  text-align: center;
+}
+h4 {
+  text-align: center;
+}
+hr.thik {
+  border-top: 2px solid
+}
+.HUC {font-size:170%}
+.HLC {font-size:110%}
+.FirstP {
+  margin-bottom: 0px;
+}
+.SecndP {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.Message {
+  text-indent: 5%;
+}
+.Closing {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-indent: 235px;
+}
+.Signature {
+  text-indent: 285px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.CloseAddr {
+  text-indent: 305px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.FromAddr {
+  text-align: right; w3-margin-right; p + p {padding: 0px; margin: 0px;
+}
+.Salutation {
+  text-align: left; w3-margin-left;
+}
+.LetterFooter 
+  text-align: center;
+  w3-center;
+}
+.Annotation {
+  font-style: italic;
+  font-family: helvetica, arial;
+  font-size: medium;}
+
+.Footnote {
+   w3-sans-serif; font-size:medium; w3-margin-left; w3-margin-right
+}
+
+#parafoot {
+  font-size: 14pt;
+  font-style: italic;
+}
+.navigation {font-size: large;}
+}
+#RJ {text-align: right;}

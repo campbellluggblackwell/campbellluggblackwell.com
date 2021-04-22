@@ -10,10 +10,7 @@ jobs:
   push:
     runs-on: ubuntu-latest
     steps:
-      - run: |
-          # git config --global user.email "$USER_EMAIL"
-          # git config --global user.name "$DESTINATION_GITHUB_USERNAME"
-          git clone --single-branch --branch "main" "https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+      - run: git clone --single-branch --branch "main" "https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
       - run: git clone --single-branch --branch "main" "https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
       - run: ls
       - run: ls source

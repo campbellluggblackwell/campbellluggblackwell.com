@@ -24,6 +24,7 @@ jobs:
           source-directory: 'website'
           destination-github-username: 'campbellluggblackwell'
           destination-repository-name: 'campbellluggblackwell.github.io'
+          target-branch: main
           user-email: robert.lugg@gmail.com
           commit-message: Cloning website
       - name: Test get variable exported by push-to-another-repository

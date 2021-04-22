@@ -13,5 +13,9 @@ jobs:
       - run: git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
       - run: git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
       - run: ls
-      - run: ls source
+      - run: cp -R source/website/* destination
       - run: ls destination
+      - run: |
+          git add --all
+          git commit -m "Integration on `date` from website directory"
+          git push origin --set-upstream main

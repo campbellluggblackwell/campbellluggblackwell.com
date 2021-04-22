@@ -21,5 +21,6 @@ jobs:
       - run: |
           cd destination
           git add --all
-          git commit -m "Integration on `date` from website directory"
+          # git diff-index : to avoid doing the git commit failing if there are no changes to be commit
+          git diff-index --quiet HEAD || git commit --message "Integration on `date` from website directory"
           git push origin --set-upstream main

@@ -1,0 +1,22 @@
+# On any change to the website here, push it to the campbelllustblackwell.github.io site to confirm.
+
+name: just_ls
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+  
+jobs:
+  ls:
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          pwd
+          pwd
+      - run: ls
+      - run: mkdir foo
+      - run: ls

@@ -22,7 +22,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'website'
-          destination-github-username: 'robertlugg'
+          destination-github-username: 'campbellluggblackwell'
           destination-repository-name: 'campbellluggblackwell.github.io'
           user-email: robert.lugg@gmail.com
           commit-message: Cloning website

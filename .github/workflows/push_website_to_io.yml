@@ -16,6 +16,7 @@ jobs:
       - run: cp -R source/website/* destination
       - run: ls destination
       - run: |
+          cd destination
           git add --all
           git commit -m "Integration on `date` from website directory"
           git push origin --set-upstream main

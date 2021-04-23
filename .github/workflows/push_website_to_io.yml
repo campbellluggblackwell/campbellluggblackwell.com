@@ -8,26 +8,29 @@ on:
   workflow_dispatch:
   
 jobs:
-  push:
+  preview_website:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - name: Setup git user
+        run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
-      - run: |
+      - name: Clone campbellluggblackwell.com which is source in /website
+        run: |
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF` 
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
-      - run: |
+      - name: Clone campbellluggblackwell.github.io. which is destination
+        run: |
              git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
-      - run: |
+      - name: Copy website
+        run: |
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF` 
              echo "BRANCH = $BRANCH"
              rm -Rf destination/$BRANCH
              mkdir destination/$BRANCH
              cp -R source/website/* destination/$BRANCH
-      - run: |
-             ls destination
-      - run: |
+      - name: Push new files to github.io
+        run: |
              cd destination
              git add --all
              # git diff-index : to avoid doing the git commit failing if there are no changes to be commit

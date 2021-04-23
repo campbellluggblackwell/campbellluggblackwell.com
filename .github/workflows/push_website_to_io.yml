@@ -24,7 +24,8 @@ jobs:
              git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
       - name: Copy website
         run: |
-             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF` 
+             echo "GITHUB_REF = $GITHUB_REF"
+             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
              echo "BRANCH = $BRANCH"
              rm -Rf destination/$BRANCH
              mkdir destination/$BRANCH

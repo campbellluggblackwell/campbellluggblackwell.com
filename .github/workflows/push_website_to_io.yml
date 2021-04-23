@@ -29,10 +29,6 @@ jobs:
              ls destination
       - run: |
              cd destination
-             rm -Rf index.html
-             echo "Previews for campbellluggblackwell.com" > index.html
-             echo "Go to child directories to see all branches. For instance, go to this site /main to see the website on the main branch" >> index.html
-             echo "<a href="main">main branch</a>" >> index.html
              git add --all
              # git diff-index : to avoid doing the git commit failing if there are no changes to be commit
              git diff-index --quiet HEAD || git commit --message "Don't edit this file.  Integration on `date` from website directory"

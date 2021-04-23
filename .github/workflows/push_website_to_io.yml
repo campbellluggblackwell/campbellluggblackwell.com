@@ -14,14 +14,23 @@ jobs:
       - run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
-      - run: git clone --single-branch --branch $GITHUB_REF https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
-      - run: git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
-      - run: ls
+             export MY_VAR=12344
       - run: |
-             rm -Rf destination/$GITHUB_REF
-             mkdir destination/$GITHUB_REF
-             cp -R source/website/* destination/$GITHUB_REF
-      - run: ls destination
+             # git clone --single-branch --branch $GITHUB_REF https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+      - run: |
+             # git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
+      - run: |
+             ls
+             echo "HELLO"
+             echo $MY_VAR
+             env
+      - run: |
+             asdfasdfasdfasdf FAIL
+             #rm -Rf destination/$GITHUB_REF
+             #mkdir destination/$GITHUB_REF
+             #cp -R source/website/* destination/$GITHUB_REF
+      - run: |
+             # ls destination
       - run: |
              cd destination
              rm -Rf index.html

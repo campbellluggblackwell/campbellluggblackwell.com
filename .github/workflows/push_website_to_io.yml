@@ -14,23 +14,19 @@ jobs:
       - run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
-             export MY_VAR=12344
+             export BRANCH=`cut -d/ -f3 << $GITHUB_REF  # GITHUB_REF=`refs/heads/main`, for example
+             echo "BRANCH = $BRANCH"
       - run: |
-             # git clone --single-branch --branch $GITHUB_REF https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+             git clone --single-branch --branch $BRANCH https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
       - run: |
-             # git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
+             git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
       - run: |
-             ls
-             echo "HELLO"
-             echo $MY_VAR
-             env
+             echo "BRANCH = $BRANCH"
+             rm -Rf destination/$BRANCH
+             mkdir destination/$BRANCH
+             cp -R source/website/* destination/$BRANCH
       - run: |
-             asdfasdfasdfasdf FAIL
-             #rm -Rf destination/$GITHUB_REF
-             #mkdir destination/$GITHUB_REF
-             #cp -R source/website/* destination/$GITHUB_REF
-      - run: |
-             # ls destination
+             ls destination
       - run: |
              cd destination
              rm -Rf index.html

@@ -14,13 +14,13 @@ jobs:
       - run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
-             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`  # GITHUB_REF=refs/heads/main, for example
-             echo "BRANCH = $BRANCH"
       - run: |
-             git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF` 
+             git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
       - run: |
              git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
       - run: |
+             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF` 
              echo "BRANCH = $BRANCH"
              rm -Rf destination/$BRANCH
              mkdir destination/$BRANCH

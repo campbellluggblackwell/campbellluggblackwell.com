@@ -12,6 +12,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
+      asdfasdfsds
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
       - run: git clone --single-branch --branch $GITHUB_REF https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source

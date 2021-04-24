@@ -1,8 +1,8 @@
 on: 
-  #- push
+  - push
   - workflow_dispatch
 
-name: 🚀 campbellluggblackwell.com on BlueHost
+name: 🚀 push to BlueHost www.campbellluggblackwell.com
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -17,7 +17,7 @@ jobs:
         server: www.CampbellLuggBlackwell.com
         username: ${{ secrets.BLUEHOST_USERNAME }}
         password: ${{ secrets.BLUEHOST_PASSwORD }}
-        dry-run: true
+        dry-run: false
         local-dir: ./website/
-        server-dir: ./public_html/dev/
+        server-dir: ./public_html/main/
         

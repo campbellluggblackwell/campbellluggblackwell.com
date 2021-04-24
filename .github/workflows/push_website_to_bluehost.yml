@@ -2,7 +2,7 @@ on:
   #- push
   - workflow_dispatch
 
-name: 🚀 www.campbellluggblackwell.com on BlueHost
+name: 🚀 campbellluggblackwell.com on BlueHost
 jobs:
   web-deploy:
     name: 🎉 Deploy
@@ -14,7 +14,7 @@ jobs:
     - name: 📂 Sync files
       uses: SamKirkland/FTP-Deploy-Action@4.0.0
       with:
-        server: ftp.samkirkland.cxxxom
+        server: www.CampbellLuggBlackwell.com
         username: ${{ secrets.BLUEHOST_USERNAME }}
         password: ${{ secrets.BLUEHOST_PASSwORD }}
         dry-run: true

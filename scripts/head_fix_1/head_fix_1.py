@@ -133,8 +133,8 @@ def main(input_base_path:str, output_base_path:str) -> None:
         html, errors = tidy_document(
             str(soup),
             options= {
-                "indent": 1,           # Pretty; not too much of a performance hit
-                "tidy-mark": 0,        # No tidy meta tag in output
+                "indent": 1,              # Pretty; not too much of a performance hit
+                "tidy-mark": 0,           # No tidy meta tag in output
                 "doctype": 'html5',
                 "drop-empty-elements": 0,
                 "drop-empty-paras": 0,

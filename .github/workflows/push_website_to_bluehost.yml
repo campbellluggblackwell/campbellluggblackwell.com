@@ -1,5 +1,5 @@
 on: 
-  - push
+  # - push
   - workflow_dispatch
 
 name: 🚀 push to BlueHost www.campbellluggblackwell.com

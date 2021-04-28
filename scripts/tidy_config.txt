@@ -1,0 +1,9 @@
+// Tidy configuration file
+indent: true
+tidy-mark: false
+doctype: html5
+drop-empty-elements: false
+drop-empty-paras: false
+add-meta-charset: true
+logical-emphasis: true
+wrap: 80

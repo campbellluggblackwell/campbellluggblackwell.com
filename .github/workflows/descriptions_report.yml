@@ -1,6 +1,6 @@
 # On any change to the ./website/ folder here, Create a report on campbelllustblackwell.github.io site listing files without descriptions.
 
-name: push_website_to_io
+name: descriptions_report
 
 on:
   push:

@@ -1,0 +1,43 @@
+# On any change to the ./website/ folder here, Create a report on campbelllustblackwell.github.io site listing files without descriptions.
+
+name: push_website_to_io
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+  
+jobs:
+  preview_website:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup git user
+        run: |
+             git config --global user.email robert.lugg@gmail.com
+             git config --global user.name robertlugg
+             env
+      - name: Clone campbellluggblackwell.com which is source in /website
+        run: |
+             echo "GITHUB_REF = $GITHUB_REF"
+             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
+             echo "BRANCH = $BRANCH"
+             git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+      - name: Clone campbellluggblackwell.github.io. which is destination
+        run: |
+             git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.github.io.git destination
+      - name: Check ./website for meta description tags.
+        run: |
+             echo "GITHUB_REF = $GITHUB_REF"
+             echo "REFs in the form of: GITHUB_REF = refs/pull/18/merge will not integrate"
+             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
+             cd source/scripts/empty_description
+             make source_dir=../../website
+             cp missing_descriptions.html ../../../destination
+
+      - name: Push new files to github.io
+        run: |
+             cd destination
+             git add missing_descriptions.html
+             # git diff-index : to avoid doing the git commit failing if there are no changes to be commit
+             git diff-index --quiet HEAD || git commit --message "Don't edit this file.  Integration on `date` from website directory"
+             git push origin --set-upstream main

@@ -62,10 +62,6 @@ def main(input_base_path:str) -> None:
     out.append(f'Report Ran:{time.strftime("%Y-%m-%d %H:%M")}')
     out.append("-------")
     out.append('<table style="text-align:right;">')
-    <tr><td>
-    <a href=CCCV2p038ArthurHorton.html>CCCV2p038ArthurHorton.html</a>
-    </td></tr>
-               
                
     for original_file_as_str in original_files:
 

@@ -82,13 +82,14 @@ def main(input_base_path:str) -> None:
             has_description = True
         if not has_description:
             _fn = Path(original_file_as_str).name
-            out.append(f'<tr><td><a href="{_fn}">_fn</a></td></tr>')
+            # out.append(f'<tr><td><a href="{_fn}">{_fn}</a></td></tr>')
+            out.append(f'<tr><td>{_fn}</td></tr>')
 
     out.append("</table>")
     # Run through tidy
     options = load_tidy_options()
     html, errors = tidy_document(
-        '\n<br/>'.join(out),
+        '\n'.join(out),
         options= options)
 
     # embed()

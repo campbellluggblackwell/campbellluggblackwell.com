@@ -61,6 +61,12 @@ def main(input_base_path:str) -> None:
     out.append("Files that do not have a META description")
     out.append(f'Report Ran:{time.strftime("%Y-%m-%d %H:%M")}')
     out.append("-------")
+    out.append('<table style="text-align:right;">')
+    <tr><td>
+    <a href=CCCV2p038ArthurHorton.html>CCCV2p038ArthurHorton.html</a>
+    </td></tr>
+               
+               
     for original_file_as_str in original_files:
 
         original_file = Path(original_file_as_str)
@@ -80,8 +86,9 @@ def main(input_base_path:str) -> None:
             has_description = True
         if not has_description:
             _fn = Path(original_file_as_str).name
-            out.append(_fn)
+            out.append(f'<tr><td><a href="{_fn}">_fn</a></td></tr>')
 
+    out.append("</table>")
     # Run through tidy
     options = load_tidy_options()
     html, errors = tidy_document(

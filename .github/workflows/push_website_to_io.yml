@@ -27,6 +27,7 @@ jobs:
       - name: Copy website
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
+             echo "REFs in the form of: GITHUB_REF = refs/pull/18/merge will not integrate"
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
              echo "BRANCH = $BRANCH"
              rm -Rf destination/$BRANCH

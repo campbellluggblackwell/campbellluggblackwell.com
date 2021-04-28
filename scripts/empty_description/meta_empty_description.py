@@ -59,8 +59,8 @@ def main(input_base_path:str) -> None:
         print("Warning: No html files found.  Directory may be incorrect.")
     out = list()
     out.append("Files that do not have a META description")
-    out.append(f'Report Ran:{time.strftime("%Y-%m-%d %H:%M")}')
-    out.append("-------")
+    out.append(f'Report Ran:{time.strftime("%Y-%m-%d %H:%M")}<br>')
+    out.append("-------<br>")
     out.append('<table style="text-align:right;">')
                
     for original_file_as_str in original_files:

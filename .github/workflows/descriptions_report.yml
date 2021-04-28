@@ -13,7 +13,7 @@ jobs:
     steps:
       - name: Environment setup
         run: |
-            pip install IPython beautifulsoup4
+            pip install IPython beautifulsoup4 pytidylib
       - name: Setup git user
         run: |
              git config --global user.email robert.lugg@gmail.com

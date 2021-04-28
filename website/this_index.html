@@ -1,231 +1,414 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
-    <meta name="viewport" content="width=device-width, 
-      initial-scale=1.">
-    <title>HomePage v13</title>
-    <meta name="description" content="Homepage for CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA website.">
-    <link href="https://fonts.googleapis.com/css2?family=Simonetta&amp;display=swap"
-      rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <style>
-      
-      * {
-        box-sizing: border-box
-      }
-      body {
-        font-family: Verdana, sans-serif;
-        margin: 0
-      }
-      .CopyRite {font-style:italic; font-size:95%;}
-      /* Slideshow container */
-.slideshow-container {
-  max-width: 1000px;
-  position: relative;
-  margin: auto;
-}
-
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 0;
-  top: 50%;
-  width: auto;
-  margin-top: -22px;
-  padding: 16px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(0,0,0,0.8);
-}
-
-/* Caption text */
-.text {
-  color: #f2f2f2;
-  font-size: 25%;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-.text2 {
-  color: #f2f2f2;
-  font-size: 50%;
-  padding: 8px 12px;
-  position: absolute;
-  bottom: 8px;
-  width: 100%;
-  text-align: center;
-}
-
-/* Number text (1/3 etc) */
-.numbertext {
-  color: #f2f2f2;
-  font-size: 12px;
-  padding: 8px 12px;
-  position: absolute;
-  top: 0;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-  cursor:pointer;
-  height: 13px;
-  width: 13px;
-  margin: 0 2px;
-  background-color: #bbb;
-  border-radius: 50%;
-  display: inline-block;
-  transition: background-color 0.6s ease;
-}
-
-.active, .dot:hover {
-  background-color: #717171;
-}
-
-/* Fading animation */
-.fade {
-  -webkit-animation-name: fade;
-  -webkit-animation-duration: 1.5s;
-  animation-name: fade;
-  animation-duration: 1.5s;
-}
-
-@-webkit-keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
-}
-    </style>
-  </head>
-  <body>
-    <!-- Based on https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html -->
-    <div class="w3-cell-row w3-orange w3-center">
-      <p style="font-family: 'Simonetta', cursive;font-size:150%;">CAMPBELLs,
-        LUGGs, &amp; BLACKWELLs of Nelson, PA</p>
-    </div>
-    <div class="w3-cell-row">
-      <div class="w3-cell w3-mobile w3-blue" style="width:15%">
-        <div>Menu:</div>
-        <div>
-          <p><a href="https://blog.campbellluggblackwell.com/" class="w3-btn w3-black">Blog</a></p>
-        </div>
-        <div>
-          <p><a href="https://www.facebook.com/groups/CambLuggBlkwNelsonPA" class="w3-btn w3-black">FB
-              Group</a></p>
-        </div>
-        <div>
-          <p><a href="FamilyHistMenu.html" class="w3-btn w3-black">Family
-              History</a></p>
-        </div>
-        <div>
-          <p><a href="OurWikiTree.html" class="w3-btn w3-black">WikiTree</a></p>
-        </div>
-        <div>
-          <p><a href="https://www.youtube.com/channel/UC8qACUxzq1uBy8oA_DbHtmQ?view_as=subscriber"
-              class="w3-btn w3-black">YouTube</a></p>
-        </div>
-        <div>
-          <p> </p>
-          <p><a href="AboutUs.html" class="w3-btn w3-black">About Us</a></p>
-        </div>
-        <div>Contact Us</div>
-      </div>
-      <div class="w3-cell w3-mobile" style="margin-left:17%">
-        <div class="slideshow-container">
-          <div style="font-size: 200%;"> Slide Show</div>
-          <div class="mySlides fade"> <img src="BlackwellHotel.jpg" alt="Circa 1880 photo of Blackwell Hotel, Blackwell, PA"
-              style="width:100%; max-height:350px; object-fit:contain;">
-            <div class="w3-display-top w3-container w3-padding-16 w3-sand" style="font-size:120%; font-weight: bold;">Circa
-              1880, Blackwell Hotel, Blackwell, PA</div>
-          </div>
-          <div class="mySlides fade"> <img src="PegFrankRieta.jpg" alt="circa 2010 photo of Peg Owlett Maines, Frank Owlett and Rieta Baker Boyden"
-              style="width:100%; object-fit:contain; max-height:350px;">
-            <div class="w3-display-top w3-container w3-padding-16 w3-sand" style="font-size:120%;font-weight: bold; object-fit:contain;">Circa
-              2010 Peg Owlett Maines, Frank Owlett (1928 - 2020) &amp; Campbell
-              Reunion past president Rieta Baker Boyden (1943 - 2013)</div>
-          </div>
-          <div class="mySlides fade"> <img src="ClanCampbellTartan.jpg" alt="Photo of Clan Campbell tartan"
-              style="width:100%; overflow:hidden; object-fit:cover; max-height:350px;">
-            <div class="w3-display-top w3-container w3-padding-16 w3-sand" style="font-size:120%; font-weight: bold;">Clan
-              Campbell tartan, aka Black Watch plaid</div>
-          </div>
-          <div class="mySlides fade"> <img src="A_W_Lugg_Nelson.jpg" alt="circa 1870 photo of A. W. Lugg Store, Nelson, PA"
-              style="max-height:350px;">
-            <div class="w3-display-top w3-container w3-padding-16 w3-sand" style="
-              font-size:120%;font-weight: bold;">Circa 1870 of A. W. Lugg store
-              (Post Office beside it), Nelson, PA. Became Lugg &amp; Seely
-              before he sold out to Cousin Marcus B. Seely and relocated to
-              Knowville.</div>
-          </div>
-          <div class="mySlides fade"> <img src="John_H_Hazlett.jpg" alt="photo of John H. Hazlett (1891 - 1982)"
-              style="width:100%; max-height:350px; object-fit:contain">
-            <div class="w3-display-top w4-container w3-padding-16 w3-sand" style="font-size:120%;font-weight: bold;">John
-              H. Hazlett (1891 - 1982) for whom the Town of Horsheads office
-              building is named. Former pres. of the Campbell Reunion</div>
-          </div>
-          <div class="mySlides fade"> <img src="ReunionCoveredDishLunch.jpg" alt="photo of reunion covered dish lunch table"
-              style="width:100%; object-fit:contain; max-height:350px;">
-            <div class="w3-display-top w4-container w3-padding-16 w3-sand" style="font-size:120%;font-weight: bold;">
-              Pot luck lunch at 2014 Campbell Reunion</div>
-          </div>
-          <div class="w3-center">
-            <div class="w3-section"> <button class="w3-btn w3-black" onclick="plusDivs(-1)">&lt;
-                Prev</button> <button class="w3-btn w3-black" onclick="plusDivs(1)">Next
-                &gt;</button> </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="w3-cell-row w3-green CopyRite">
-      <p>Copyright © 2021 William B. Thompson </p>
-    </div>
-    <script>
-    var slideIndex = 1;
-showDivs(slideIndex);
-
-function plusDivs(n) {
-  showDivs(slideIndex += n);
-}
-
-function currentDiv(n) {
-  showDivs(slideIndex = n);
-}
-
-function showDivs(n) {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("demo");
-  if (n > x.length) {slideIndex = 1}    
-  if (n < 1) {slideIndex = x.length} ;
-  for (i = 0; i < x.length; i++) {
-     x[i].style.display = "none";  
-  }
-  for (i = 0; i < dots.length; i++) {
-     dots[i].className = dots[i].className.replace(" w3-red", "");
-  }
-  x[slideIndex-1].style.display = "block";  
-  dots[slideIndex-1].className += " w3-red";
-}
-    </script>
-  </body>
-</html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta content="text/html; charset=utf-8" http-equiv="content-type">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <title>
+      HomePage v13
+    </title>
+    <meta name="description" content=
+    "Homepage for CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA website.">
+    <link rel="stylesheet" href=
+    "https://fonts.googleapis.com/css2?family=Simonetta&amp;display=swap">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+
+      
+
+      * {
+
+        box-sizing: border-box
+
+      }
+
+      body {
+
+        font-family: Verdana, sans-serif;
+
+        margin: 0
+
+      }
+
+      .CopyRite {font-style:italic; font-size:95%;}
+
+      /* Slideshow container */
+
+    .slideshow-container {
+
+    max-width: 1000px;
+
+    position: relative;
+
+    margin: auto;
+
+    }
+
+
+
+    /* Next & previous buttons */
+
+    .prev, .next {
+
+    cursor: pointer;
+
+    position: absolute;
+
+    top: 0;
+
+    top: 50%;
+
+    width: auto;
+
+    margin-top: -22px;
+
+    padding: 16px;
+
+    color: white;
+
+    font-weight: bold;
+
+    font-size: 18px;
+
+    transition: 0.6s ease;
+
+    border-radius: 0 3px 3px 0;
+
+    }
+
+
+
+    /* Position the "next button" to the right */
+
+    .next {
+
+    right: 0;
+
+    border-radius: 3px 0 0 3px;
+
+    }
+
+
+
+    /* On hover, add a black background color with a little bit see-through */
+
+    .prev:hover, .next:hover {
+
+    background-color: rgba(0,0,0,0.8);
+
+    }
+
+
+
+    /* Caption text */
+
+    .text {
+
+    color: #f2f2f2;
+
+    font-size: 25%;
+
+    padding: 8px 12px;
+
+    position: absolute;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    text-align: center;
+
+    }
+
+    .text2 {
+
+    color: #f2f2f2;
+
+    font-size: 50%;
+
+    padding: 8px 12px;
+
+    position: absolute;
+
+    bottom: 8px;
+
+    width: 100%;
+
+    text-align: center;
+
+    }
+
+
+
+    /* Number text (1/3 etc) */
+
+    .numbertext {
+
+    color: #f2f2f2;
+
+    font-size: 12px;
+
+    padding: 8px 12px;
+
+    position: absolute;
+
+    top: 0;
+
+    }
+
+
+
+    /* The dots/bullets/indicators */
+
+    .dot {
+
+    cursor:pointer;
+
+    height: 13px;
+
+    width: 13px;
+
+    margin: 0 2px;
+
+    background-color: #bbb;
+
+    border-radius: 50%;
+
+    display: inline-block;
+
+    transition: background-color 0.6s ease;
+
+    }
+
+
+
+    .active, .dot:hover {
+
+    background-color: #717171;
+
+    }
+
+
+
+    /* Fading animation */
+
+    .fade {
+
+    -webkit-animation-name: fade;
+
+    -webkit-animation-duration: 1.5s;
+
+    animation-name: fade;
+
+    animation-duration: 1.5s;
+
+    }
+
+
+
+    @-webkit-keyframes fade {
+
+    from {opacity: .4}
+
+    to {opacity: 1}
+
+    }
+
+
+
+    @keyframes fade {
+
+    from {opacity: .4}
+
+    to {opacity: 1}
+
+    }
+
+    </style>
+  </head>
+  <body>
+    <!-- Based on https://www.w3docs.com/snippets/css/how-to-create-an-image-slider-or-slideshow.html -->
+    <div class="w3-cell-row w3-orange w3-center">
+      <p style="font-family: 'Simonetta', cursive;font-size:150%;">
+        CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA
+      </p>
+    </div>
+    <div class="w3-cell-row">
+      <div class="w3-cell w3-mobile w3-blue" style="width:15%">
+        <div>
+          Menu:
+        </div>
+        <div>
+          <p>
+            <a href="https://blog.campbellluggblackwell.com/" class=
+            "w3-btn w3-black">Blog</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href="https://www.facebook.com/groups/CambLuggBlkwNelsonPA"
+            class="w3-btn w3-black">FB Group</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href="FamilyHistMenu.html" class="w3-btn w3-black">Family
+            History</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href="OurWikiTree.html" class="w3-btn w3-black">WikiTree</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <a href=
+            "https://www.youtube.com/channel/UC8qACUxzq1uBy8oA_DbHtmQ?view_as=subscriber"
+            class="w3-btn w3-black">YouTube</a>
+          </p>
+        </div>
+        <div>
+          <p></p>
+          <p>
+            <a href="AboutUs.html" class="w3-btn w3-black">About Us</a>
+          </p>
+        </div>
+        <div>
+          Contact Us
+        </div>
+      </div>
+      <div class="w3-cell w3-mobile" style="margin-left:17%">
+        <div class="slideshow-container">
+          <div style="font-size: 200%;">
+            Slide Show
+          </div>
+          <div class="mySlides fade">
+            <img alt="Circa 1880 photo of Blackwell Hotel, Blackwell, PA" src=
+            "BlackwellHotel.jpg" style=
+            "width:100%; max-height:350px; object-fit:contain;">
+            <div class="w3-display-top w3-container w3-padding-16 w3-sand"
+            style="font-size:120%; font-weight: bold;">
+              Circa 1880, Blackwell Hotel, Blackwell, PA
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img alt=
+            "circa 2010 photo of Peg Owlett Maines, Frank Owlett and Rieta Baker Boyden"
+            src="PegFrankRieta.jpg" style=
+            "width:100%; object-fit:contain; max-height:350px;">
+            <div class="w3-display-top w3-container w3-padding-16 w3-sand"
+            style="font-size:120%;font-weight: bold; object-fit:contain;">
+              Circa 2010 Peg Owlett Maines, Frank Owlett (1928 - 2020) &amp;
+              Campbell Reunion past president Rieta Baker Boyden (1943 - 2013)
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img alt="Photo of Clan Campbell tartan" src=
+            "ClanCampbellTartan.jpg" style=
+            "width:100%; overflow:hidden; object-fit:cover; max-height:350px;">
+            <div class="w3-display-top w3-container w3-padding-16 w3-sand"
+            style="font-size:120%; font-weight: bold;">
+              Clan Campbell tartan, aka Black Watch plaid
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img alt="circa 1870 photo of A. W. Lugg Store, Nelson, PA" src=
+            "A_W_Lugg_Nelson.jpg" style="max-height:350px;">
+            <div class="w3-display-top w3-container w3-padding-16 w3-sand"
+            style="font-size:120%;font-weight: bold;">
+              Circa 1870 of A. W. Lugg store (Post Office beside it), Nelson,
+              PA. Became Lugg &amp; Seely before he sold out to Cousin Marcus
+              B. Seely and relocated to Knowville.
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img alt="photo of John H. Hazlett (1891 - 1982)" src=
+            "John_H_Hazlett.jpg" style=
+            "width:100%; max-height:350px; object-fit:contain">
+            <div class="w3-display-top w4-container w3-padding-16 w3-sand"
+            style="font-size:120%;font-weight: bold;">
+              John H. Hazlett (1891 - 1982) for whom the Town of Horsheads
+              office building is named. Former pres. of the Campbell Reunion
+            </div>
+          </div>
+          <div class="mySlides fade">
+            <img alt="photo of reunion covered dish lunch table" src=
+            "ReunionCoveredDishLunch.jpg" style=
+            "width:100%; object-fit:contain; max-height:350px;">
+            <div class="w3-display-top w4-container w3-padding-16 w3-sand"
+            style="font-size:120%;font-weight: bold;">
+              Pot luck lunch at 2014 Campbell Reunion
+            </div>
+          </div>
+          <div class="w3-center">
+            <div class="w3-section">
+              <button class="w3-btn w3-black" onclick="plusDivs(-1)">&lt;
+              Prev</button> <button class="w3-btn w3-black" onclick=
+              "plusDivs(1)">Next &gt;</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="w3-cell-row w3-green CopyRite">
+      <p>
+        Copyright Â© 2021 William B. Thompson
+      </p>
+    </div>
+    <script>
+
+    var slideIndex = 1;
+
+    showDivs(slideIndex);
+
+
+
+    function plusDivs(n) {
+
+    showDivs(slideIndex += n);
+
+    }
+
+
+
+    function currentDiv(n) {
+
+    showDivs(slideIndex = n);
+
+    }
+
+
+
+    function showDivs(n) {
+
+    var i;
+
+    var x = document.getElementsByClassName("mySlides");
+
+    var dots = document.getElementsByClassName("demo");
+
+    if (n > x.length) {slideIndex = 1}    
+
+    if (n < 1) {slideIndex = x.length} ;
+
+    for (i = 0; i < x.length; i++) {
+
+     x[i].style.display = "none";  
+
+    }
+
+    for (i = 0; i < dots.length; i++) {
+
+     dots[i].className = dots[i].className.replace(" w3-red", "");
+
+    }
+
+    x[slideIndex-1].style.display = "block";  
+
+    dots[slideIndex-1].className += " w3-red";
+
+    }
+
+    </script>
+  </body>
+</html>

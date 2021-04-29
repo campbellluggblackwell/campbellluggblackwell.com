@@ -1,0 +1,261 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, 
+      initial-scale=1.">
+    <title>Quick Tour of Our Web Presence</title>
+    <link rel="stylesheet" href="ssgeneral.css">
+    <link href="https://fonts.googleapis.com/css?family=Homemade%20Apple" rel="stylesheet">
+    <meta name="description" content="Web version of a presentation on Our Web Presence given at the Campbells 
+       of Nelson, PA's Reunion, 1 Aug, 2020 via Zoom videoconferencing.">
+    <style>
+      hr {border-top:5px dashed; border-color:#4E8975;}
+      h1 {text-align: center;}
+      h2 {font-size:200%:}
+      body {font-size:130%;}
+  .Slide {border-width:7px; border-style:solid; border-radius:20px; border-color:green; margin:auto; width:75%; padding-left:5%;}
+  .SlideNumb {font-weight:bold;font-family:Georgia,serif;}
+  .Script {font-family:"Homemade Apple", cursive;}
+  .PresNote {width:80%; margin:auto;}
+</style> </head>
+  <body>
+    <h1>Campbells of Nelson, PA</h1>
+    <div style="font-style: italic; text-align: center; font-size:80%">
+      <p><b>[A PowerPoint ® type presentation given at the Campbells of Nelson,
+          PA's Reunion on Aug. 1, 2020.</b></p>
+      <b>
+        <p> PowerPoint presentations consist of a series of slides -- which the
+          audience sees. Each slide can be followed by notes which only the
+          presenter sees.]</p>
+      </b></div>
+    <p class="SlideNumb">Slide 1</p>
+    <div class="Slide">
+      <p> <img src="WebTourOverview.jpg" alt="Overview of presentation" style="width: 776px; height: 334px;"></p>
+    </div>
+    <div class="PresNote">
+      <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+        This presentation isn't intended to teach you how to use these websites.
+        It's just a quick tour to show you what's there.</p>
+      <p> Please hold your questions till until the end.</p>
+      <p>I'll show you our 4 web locations: Our family history webpage; Our
+        family tree; Our FB group page; &amp; Our YouTube channel.</p>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 2</p>
+      <div class="Slide">
+        <h2>Family History Homepage Layout</h2>
+        <div>
+          <p> <img src="WebTourHistHomePageLayout.jpg" alt="Layout of Family history site's homepage"
+              style="width: 914px; height: 395px;"></p>
+        </div>
+      </div>
+      <div class="PresNote">
+        <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+          Left panel - Menu.</p>
+        <p>Top of right panel - Newest web page.</p>
+        <p>Middle of right panel - Links to recently updated pages.</p>
+        <p>Bottom of right panel - Family history basics</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 3</p>
+      <div class="Slide">
+        <h2>History Website Menu</h2>
+        <div>
+          <p> <img src="WebTourHistMenu.jpg" alt="Layout of Family history site's menu"
+              style="width: 914px; height: 395px;"></p>
+        </div>
+      </div>
+      <div class="PresNote">
+        <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+          The <b>search box</b>, circled at the top or the menu, offers simple
+          or advanced searches with ANDs, ORs, NOTs, etc. It searches for all or
+          our web pages that have words that match your query.</p>
+        <p>Circled below that is an invitation to sign our <b>guest book</b>.</p>
+        <p>Also circled below that is a link to one of the most important parts
+          of our website, the four volumes of the <i><b>Campbell Cousins
+              Correspondence</b></i>, 1923 - 1926. Each volume contains about
+          100 paged of letters, many with photographs, all with links and
+          footnotes that identify who or what is being discussed.</p>
+        <p>Below that is a link to our <i><b>Miscellaneous Documents</b></i>,
+          more letters, newsclips, reunion minutes, tutorials, presentations,
+          etc. </p>
+        <p>Below that is our <b>Burials</b> link, of great value to those
+          interested in cemeteries</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 4</p>
+      <div class="Slide" style="width=80%">
+        <h2>Searching Our Family History Web Site</h2>
+        <p> <img src="WebTourFHSearch.jpg" alt="Searching Family history site"
+            style="width: 914px; height: 395px;"></p>
+      </div>
+      <div class="PresNote">
+        <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+          Two images are shown here.</p>
+        <p>The smaller one, top right, circled in blue, is the search box on our
+          family history website's home page, filled out for a query</p>
+        <p>The larger image, below that, shows the result after clicking on the
+          "search" button. As with a Google, Yahoo or Duck Duck Go search of the
+          web, it shows a series of "hits" - webpages that match the search
+          criteria. The top line of each is a link to that particular webpage.</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 5</p>
+      <div class="Slide">
+        <h2>From Jane's Memoir</h2>
+        <div class="Script">
+          <div style="padding-left:10%; padding-right:10%"> <img style="width: 200px; height: 200px;"
+              alt="Drawing of a wolf" src="Wolf_clipart.jpg"><span>“In an early
+              time, perhaps 1840. I can remember when my father drove wolves
+              away from the sheepfold with a pole.&nbsp; Soon after this a
+              panther followed my mother along the butter-milk run-road
+              screaming at intervals, scareing <span class="Annotation">[sic]</span>
+              her nearly to death."</span></div>
+        </div>
+      </div>
+      <div class="PresNote">
+        <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+          You are looking at a computer font, not Jane's actual hand writing.
+          Her 19th century style of cursive writing makes it hard to read and
+          the faded ink makes it both hard to read and difficult to scan. </p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 6</p>
+      <div class="Slide">
+        <h2>more Memoir</h2>
+        <div class="Script">
+          <blockquote>“I was the last one born on the old log house on the
+            flat."</blockquote>
+          <blockquote>“<a href="HarperMary1749.html">Grandmother Campbell</a>
+            used to wade the river bare-footed with the children.&nbsp; She was
+            97 when she died."</blockquote>
+        </div>
+      </div>
+    </div>
+    <div class="PresNote">
+      <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+        This was not the log cabin her grandparents bought from the Beecher
+        family, it was one Jane's parents built to live in and raise their
+        family. A large family was very important when you were clearing land
+        [it was heavily forested with very tall white pine trees, which they
+        "girdled" to kill] and turning it into a productive farm,. But the
+        family outgrew the cabin they built (eventually 12 children). In later
+        years there was a demand for lumber and logs were rafted to Harrisburg
+        for sale. But at first, the virgin stands of pine were considered
+        "weeds." After trees died they either were burned in place, or were cut
+        down, stacked and burned in huge bonfires. Stumps were either pulled or
+        burned. When I was a boy, it was still common to see stump fences
+        separating pastures. </p>
+      <p>They lived on the south side of the river, but waded out to the island
+        to gather nuts and berries.</p>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 7</p>
+      <div class="Slide">
+        <h2>What She Did</h2>
+        <div style="padding-right:10%;">
+          <ul>
+            <li>Created our 1st genealogy.</li>
+            <li>Wrote “memoirs” of the lives of her parents that capture what
+              pioneer life was like for her and her siblings as children.</li>
+            <li>Wrote histories of various branches of the family and
+              corresponded with them.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 8</p>
+      <div class="Slide">
+        <h2>What She Did [cont.]</h2>
+        <div style="padding-right:10%;">
+          <ul>
+            <li>Created our 1st genealogy.</li>
+            <li>Gave informative talks at the reunions and urged preserving the
+              original burial ground. [Later moved by the Cowanesque Lake
+              Project.]</li>
+            <li> Inspired generations of children with her love and her stories.</li>
+            <li> Left many descendants --- e.g. our Berry, Deats, Egleston,
+              Griffin, Hall, Hughes, Kelley, Lunger, Sayre, Stratton, Taft,
+              Upham &amp; Van Dusen cousins. And many (but not all) of our
+              Brown, Johnson &amp; Tubbs cousins.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 9</p>
+      <div class="Slide">
+        <h2>An Older Jane</h2>
+        <div style="text-align: center;"><img style="width: 495px; height: 372px;"
+            alt="Photo of Jane and her daughters" src="PhotoJane_Ann_MinnieTubbs.jpeg"><br>
+        </div>
+        <div style="width:90%; margin:auto">
+          <p>Jane with daughters <a href="TubbsMinnie1864.html">Minnie TUBBS</a>
+            Clark (1864 – 1944)</p>
+          <p> <span style="font-style: italic;">[on left]</span> &amp; <a href="TubbsAnn1855.html">Ann
+              TUBBS</a> Van Dusen (1855 - 1930)</p>
+        </div>
+      </div>
+      <div class="PresNote">
+        <p><span style="text-decoration: underline;">Presenter's Notes:</span><br>
+          In addition to Minnie and Ann, Jane had a son, <a href="http://wc.rootsweb.com/cgi-bin/igm.cgi?op=GET&amp;db=capane&amp;id=I1296">Frank
+            Tubbs</a>.</p>
+        <p>Minnie's children died young.</p>
+        <p>Frank had 7 children: Nettie Kelley, Omer, Leah Deats, Dianthe Deats,
+          Bennie, George &amp; Frank.</p>
+        <p>Ann had 4 children: Emma Brown, Harold, Burr, &amp; Ross Van Dusen.</p>
+        <p>Jane also adopted her orphan niece, <a href="SelphJennie1873.html">
+            Jennie Selph</a> (later Cady) and provided a home for several years
+          to Jennie's brother, <a href="SelphWilliam1871.html">Will Selph</a>.
+          Will continued Jane's legacy by creating the <a href="CCCVolumes.html">Campbell
+            Cousins Correspondence</a> Club. In 1926 his wife, <a href="http://wc.rootsweb.com/cgi-bin/igm.cgi?op=GET&amp;db=capane&amp;id=I1604">Edith</a>,
+          wrote a <a href="CCCV4p085_1_2EdithSelph.html">poem</a> in honor of
+          Jane's memory.</p>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p class="SlideNumb">Slide 10</p>
+      <div class="Slide">
+        <h2>Jane's Legacy</h2>
+        <div>
+          <blockquote style="font-style:italic;">"A people without the knowledge
+            of their past history, origin and culture is like a tree without
+            roots." </blockquote>
+        </div>
+        <p style="text-align:center"> - Marcus Garvey</p>
+        <div style="width:90%; margin:auto">
+          <p>That was Jane's gift to us:</p>
+          <ul>
+            <li>Knowledge of our roots.</li>
+            <li>A vision of our responsibilities to the future.</li>
+            <li>Awareness of our extended family.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <hr>
+    <div>
+      <p id="ParaFoot"> Copyright © 2020 William B. Thompson. Commercial use
+        prohibited. </p>
+    </div>
+    <div>
+      <p> <a href="index.html">Return Home </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        <a href="documents.html">Documents Table of Contents</a></p>
+    </div>
+  </body>
+</html>

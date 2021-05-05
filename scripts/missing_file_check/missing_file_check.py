@@ -72,10 +72,12 @@ def main(old_website_path:str, new_website_path:str) -> None:
     out.append('<table style="text-align:right;">')
 
     any_bad = False
+    print("Missing files")
     for original_file in original_files:
         if original_file not in new_files:
             any_bad = True
             out.append(f'<tr><td>{original_file}</td></tr>')
+            print(original_file)
     out.append("</table>")
     if not any_bad:
         out.append("(No missing files found)")
@@ -97,4 +99,6 @@ if __name__ == "__main__":
     print("Finished.")
 
 
+
+#  for fil in $(git ls-files -d); do ls $fil;done
 

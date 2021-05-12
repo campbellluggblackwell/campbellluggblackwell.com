@@ -11,7 +11,7 @@ mistake).
 There is some automatic transfers that happen.  Every time /website/ is changed, a "preview" website is updated automatically.
 This site is:
 
-    CampbellLuggBlackwell.github.io/main
+https://CampbellLuggBlackwell.github.io/main
    
 There will also be similarly named preview websites for any branch that you make too!  For the curious, this is done using github "actions".
 

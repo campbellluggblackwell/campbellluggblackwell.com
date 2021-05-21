@@ -100,6 +100,8 @@ def main(input_base_path:str, output_base_path:str) -> None:
 
         file_modified = False
 
+        # if original_file.name == 'CampbellCemListAA_AZ.html':
+        #     embed()
         # Remove any <big></big> that is identical to its parent
         for tag in soup.find_all('big'):
             if tag_is_identical_to_parent(tag):
@@ -115,11 +117,16 @@ def main(input_base_path:str, output_base_path:str) -> None:
                 file_modified = True
 
         # Now remove some remaining empty tags
-        to_check = ['p', 'caption', 'big']
-        for tag in soup.find_all(to_check):
-            if tag_is_essentially_empty(tag):
-                tag.decompose()
-                file_modified = True
+        # Loop to remove <p><font></font></p> - like tags
+        keep_looping = True
+        while keep_looping:
+            keep_looping = False
+            to_check = ['p', 'caption', 'big']
+            for tag in soup.find_all(to_check):
+                if tag_is_essentially_empty(tag):
+                    tag.decompose()
+                    file_modified = True
+                    keep_looping = True
 
         # Remove spaces in text
         to_check = ['p', 'title', 'td']
@@ -140,13 +147,19 @@ def main(input_base_path:str, output_base_path:str) -> None:
 
         if not file_modified:
             continue  # Don't write it to 'cleaned' if unchanged.
+
         
         # Run through tidy
         html, errors = tidy_document(
             str(soup),
             options= tidy_options )
 
-        # embed()
+        # Double check something was actually changed
+        # (since tidy may restore things like extra spaces)
+
+        original_html = load_html_file(original_full_filename)
+        if html == original_html:
+            continue
 
         output_file = Path(os.path.join(output_directory, original_file.name))
         with open(output_file, 'w') as fp:

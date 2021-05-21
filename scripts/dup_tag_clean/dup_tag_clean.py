@@ -1,5 +1,7 @@
 """
-Program to clean metas and some tops of files
+Fix bad tags
+ - Redundant <big> and <font> tags
+ - tags with no content (or all whitespace) (except <p> which turns into <br>)
 
 """
 
@@ -16,14 +18,13 @@ from urllib.parse import urlparse
 
 import tidylib
 from tidylib import tidy_document
-
+from tqdm import tqdm
 
 def load_html_file(filename):
     """
         Load in .html file
         Some files are utf-8 and others are cp1252.  Need to load them differently.
     """
-    print(f"{filename}")
     try:
         with open(filename, 'r', encoding='utf8') as fp:
             html = fp.read()
@@ -44,12 +45,34 @@ def load_soup_file(filename):
     soup = BeautifulSoup(html, features="html.parser")
     return soup
 
+
 def load_tidy_options():
     with open('../tidy_config.txt', 'r') as fp:
         _c = fp.read()
     _c2 = [line for line in _c.split('\n') if not line.startswith('//')]
     _c3 = {s.split(':')[0].strip():s.split(':')[1].strip() for s in _c2}
     return _c3
+
+
+def tag_is_essentially_empty(tag):
+    if len(tag.contents) > 1:
+        return False
+    if len(tag.contents) == 0:
+        return True
+    if tag.string is None:
+        return False
+    if len(tag.string.strip()) == 0:
+        return True
+    return False
+
+
+def tag_is_identical_to_parent(tag):
+    if tag.parent.name == tag.name: # name matches
+        if tag.parent.attrs.keys() == tag.attrs.keys(): # keys match
+            for k in tag.attrs:
+                if tag.parent.attrs[k] != tag.attrs[k]:
+                    return False
+            return True
 
 
 def html_text_spaces_clean(in_string):
@@ -69,63 +92,51 @@ def main(input_base_path:str, output_base_path:str) -> None:
     except:
         pass
 
-    for _original_file_as_str in original_files:
+    for _original_file_as_str in tqdm(original_files):
 
         original_file = Path(_original_file_as_str)
         original_full_filename = input_base_path + original_file.name
-
         soup = load_soup_file(original_full_filename)
 
         file_modified = False
+
         # Remove any <big></big> that is identical to its parent
         for tag in soup.find_all('big'):
-            if tag.parent.name == tag.name: # name matches
-                if tag.parent.attrs.keys() == tag.attrs.keys(): # keys match
-                    for k in tag.attrs:
-                        if tag.parent.attrs[k] != tag.attrs[k]:
-                            continue
-                    tag.parent.unwrap()
-                    file_modified = True
-
-        # Now remove any empty <big></big>
-        for tag in soup.find_all('big'):
-            if len(tag.contents) > 1:
-                continue
-            if len(tag.contents) == 0:
-                tag.decompose()
-                continue
-            if tag.string is None:
-                continue # No cleaning possible
-            if len(tag.string.strip()) == 0:
-                tag.decompose() # If stripped string is empty, delete
+            if tag_is_identical_to_parent(tag):
+                tag.parent.unwrap()
                 file_modified = True
 
+        # Convert any empty <p> tags into <br>
+        for tag in soup.find_all('p'):
+            if tag_is_essentially_empty(tag):
+                br = soup.new_tag('br')
+                tag.insert_before(br)
+                tag.decompose()
+                file_modified = True
 
-        #        tag.string = html_text_spaces_clean(tag.string)
+        # Now remove some remaining empty tags
+        to_check = ['p', 'caption', 'big']
+        for tag in soup.find_all(to_check):
+            if tag_is_essentially_empty(tag):
+                tag.decompose()
+                file_modified = True
 
-        # # Delete: <meta content="OpenOffice.org 3.3 (Win32)" name="GENERATOR"/>
-        # open_office = soup.find_all('meta', {
-        #     'content':"OpenOffice.org 3.3 (Win32)",
-        #     'name': "GENERATOR"
-        # })
-        # for tag in open_office:
-        #     tag.decompose()
-        # # Add lang="en" to <html>
-        # for tag in soup.find_all('html'):
-        #     tag['lang'] = 'en'
+        # Remove spaces in text
+        to_check = ['p', 'title', 'td']
+        for tag in soup.find_all(to_check):
+            if tag.string is None:
+                continue
+            despaced = html_text_spaces_clean(tag.string)
+            if despaced != tag.string:
+                tag.string = despaced
+                file_modified = True
 
-        # # Remove: <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-        # for item in soup.contents:
-        #     if isinstance(item, Doctype):
-        #         item.extract()
-
-        # # Add <!DOCTYPE html> to top of file
-        # tag = Doctype('html')
-        # soup.insert(0, tag)
-        # # Remove any added space just below doctype html
-        # if soup.contents[1].string == '\n':
-        #     soup.contents[1].extract()
-
+        # Remove sdval and sdnum from <td> tags
+        for tag in soup.find_all(['td']):
+            for att in ['sdval', 'sdnum']:
+                if att in tag.attrs:
+                    del tag[att]
+                    file_modified = True
 
         if not file_modified:
             continue  # Don't write it to 'cleaned' if unchanged.
@@ -151,3 +162,10 @@ if __name__ == "__main__":
     main(sys.argv[1], sys.argv[2])
     # main('./test_cases')
     print("Finished.")
+
+'''
+Note:
+if len(tag.get_text(strip=True)) == 0:
+is a bit too loose.  If there are <br/> inside the tag, then it considers it empty.
+Generally, don't use the .get_text(strip=True) to check if tags are empty.
+'''

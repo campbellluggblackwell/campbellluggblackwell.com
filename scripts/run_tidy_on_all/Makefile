@@ -8,4 +8,4 @@ export destination_dir?=./cleaned
 
 all:
 	export LD_LIBRARY_PATH=../tidy/;  \
-	python dup_tag_clean.py $(source_dir) $(destination_dir); \
+	python run_tidy_on_all.py $(source_dir) $(destination_dir); \

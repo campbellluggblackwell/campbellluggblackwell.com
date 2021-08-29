@@ -1,6 +1,8 @@
 on: 
-  # - push
-  - workflow_dispatch
+  push:
+    branches:
+      - main
+  workflow_dispatch:
 
 name: 🚀 push to BlueHost www.campbellluggblackwell.com
 jobs:
@@ -19,5 +21,5 @@ jobs:
         password: ${{ secrets.BLUEHOST_PASSwORD }}
         dry-run: false
         local-dir: ./website/
-        server-dir: ./public_html/main/
+        server-dir: ./public_html/
         

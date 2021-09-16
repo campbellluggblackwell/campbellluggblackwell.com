@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="Explaining the Differenc between Nelson, PA's Campbell Reunions and their 'Cousins Dinners'"
+      name="description">
+    <title>The Difference Between the "Campbell Cousins Dinners" and Nelson.
+      PA's Campbell Reunions</title>
+    <link href="ssgeneral.css" rel="stylesheet">
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
+      rel="stylesheet">
+    <style type="text/css">
+
+      body {font-size: x-large; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+
+    h1, h2 {text-align: center; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+
+      .FromAddr p + p {padding: 0px; margin: 0px;}
+
+      .Medium {font-size: medium;}
+
+      .Red {color:red;}
+
+      .strikethru {text-decoration: line-through;}
+
+      .body {font-size: x-large;}
+
+      .List {font-size: 90%;}
+
+      .ListHead {font-weight:bold; font-size: x-large;}
+
+      .Navigation {font-size: x-large;}
+
+      .NavHoriz {list-style-type: none; margin: 0; padding: 0;}
+
+      .hli {display: inline; padding: 8px;}
+
+    </style>
+  </head>
+  <body>
+    <div class="w3-container w3-serif w3-mobile">
+      <div class="w3-cell-row w3-center" style="font-family:Montserrat; font-size:130%; font-weight:600;">
+        <h1>Campbells of Nelson, PA</h1>
+        <h2> Campbell Cousins Dinners vs Campbell Reunions</h2>
+      </div>
+    </div>
+    <div class="w3-container" style="font-family:Lato; font-size:110%">
+      <p><b>THE REUNIONS.</b> <a href="https://en.wikipedia.org/wiki/Nelson_Township,_Tioga_County,_Pennsylvania">Nelson,
+          PA</a>'s Campbell Reunions ran from 1893 to 1942, and were open to the
+        public, but were for the descendants of <a href="CampbellJoseph1748.html">Joseph</a>
+        &amp; <a href="HarperMary1749.html">Mary Harper</a> Campbell,
+        associated Lugg and Blackwell families, and friends. Attendance was
+        sometimes several hundred. They resumed in 2001.</p>
+      <p><b>THE DINNERS.</b> The Cousins Dinners started in 1909 and ran at
+        least until 1923. Joseph and Mary Harper Campbell had eight children.
+        But the dinners were only for the grandchildren of one of their
+        children, <a href="CampbellJoseph1793.html">Joseph Campbell</a>, and
+        his wife, <a href="ClinchAnn1804.html">Ann Clinch</a> Campbell. They
+        were by invitation only and were primarily for the 35 grandchildren of
+        Joseph and Ann Clinch Campbell, the grandchildren's spouses and whomever
+        a particular dinner's hostess chose to invite. Those 35 first cousins
+        all were born in, or near, Nelson and had contact with each other before
+        dispersing around the country. Attendance at the dinners seldom was more
+        than 50. They often used the term <i>own cousins</i> rather than its
+        synonym, <i>first cousins</i>. The dinners started those "own cousins"
+        felt a bond and wanted to keep in touch -- and because they wanted a
+        more intimate gathering than the hundreds that attended Campbell
+        Reunions in the early 1900s.</p>
+    </div>
+    <div class="w3-cell-row">
+      <p> [wbt - 08/13/2002; last rev. 9/15/2021]</p>
+    </div>
+    <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2002, 2007,
+      2017, 2020, 2021 by William B. Thompson. Commercial use prohibited. </div>
+    <div class="w3-bar" style="font-weight: bold;">
+      <p> <a class="w3-bar-item w3-border" href="index.html">Return Home</a> <a
+          class="w3-bar-item w3-border" href="http://www.campbellluggblackwell.com/ReunionsCampbellPast.html">
+          Past Reunions</a> <a class="w3-bar-item w3-border" href="CCousDinTOC.html">Cousins
+          Dinners Index</a></p>
+    </div>
+  </body>
+</html>

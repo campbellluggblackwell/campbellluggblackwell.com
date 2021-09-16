@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="EN">
+  <head>
+  </head>
+  <body>+
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <meta name="description" content="Bla bla ba">
+    <title>1804 Passenger List for Brig "Cornelia"</title>
+    <link rel="stylesheet" href="ssgeneral.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
+      rel="stylesheet">
+    <style type="text/css">
+      body {font-size: large;}
+      h1 {font-family:Montserrat; font-size:130%; font-weight:600; text-align:center;}
+      h2 {font-size: 115%;}
+      h3 {font-size: 90%; text-align:left; font-style: italic;}
+      a.link {color:hot-pink;}
+      a.visited {color:brown;}
+      td.bordered {border-bottom: 3px solid #000;}
+      .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+  </style>
+    <div class="w3-container">
+      <div class="w3-cell-row">
+        <h1>CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA</h1>
+        <figure> <img src="BrigRigging.jpg" alt="Drawing of typical rigging of the sails of a brig"
+            class="center" height="200px;"> <figcaption style="text-align: center;">
+            (Typical rigging of a brig)</figcaption> </figure>
+        <h2> The Ship Captain's Records of Joshua Blackwell; Joshua's Nephew,
+          William Perrin Blackwell, age 10; the Rev. John Hey and Family -- and
+          their Baggage on the Brig <i>Cornelia</i>'s 1804 Voyage from Bristol,
+          England to Philadelphia. </h2>
+        <h3>We are very lucky these records survived. There were no immigration
+          laws in 1804, the country truly had "open borders." A ship tied up to
+          a wharf, its passengers disembarked and that was it. Captains were not
+          required to report who landed or even to make lists of passengers. But
+          why did Joshua bring his young nephew? To help with tasks like
+          polishing his shoes? To start the boy's education on how to conduct
+          business? Or perhaps as a favor to an impatient child, anxious to see
+          the country they were moving to and not wanting to wait till the next
+          year when the rest of his family was coming. I find it interesting to
+          look at what baggage the passengers brought with them. Note also that
+          in the handwriting of that time, A "double s" (as in 'passenger') is
+          written 'fs".</h3>
+        <h3> The Hey family could afford a cabin, but the Blackwells traveled
+          "steerage." That was the large, "open" area between decks. "Passengers
+          slept, ate, and socialized in the same spaces. They brought their own
+          bedding. Although food was provided, passengers had to cook it
+          themselves. On rough crossings, steerage passengers often had little
+          time in the fresh air on the upper deck. If passengers didn’t fill
+          steerage, the space often held cargo." From a NY Times article in 1851
+          "Each passenger receives weekly 5 lbs. of oatmeal, 2 1/2 lbs. biscuit,
+          1 lb. flour, 2 lbs. rice, 1/2 lb. sugar, 1/2 lb. molasses, and 2
+          ounces of tea. [No meat, cheese, vegetables or fruit.] He is obliged
+          to cook it the best way he can in a cook shop 12 feet by 6! This is
+          the cause of so many quarrels and...many a poor woman with her
+          children can get but one meal done, and sometimes they get nothing
+          warm for days and nights when a gale of wind is blowing and the sea is
+          mountains high and breaking over the ship in all directions." {Of
+          course, when the seas were that rough, most of the passengers were
+          seasick and didn't want to eat.]</h3>
+        <h3> [The <i>Cornelia</i>, built in 1799, sank 8/8/1804 in mid-Alantic
+          while returning to Bristol.] </h3>
+        <img src="PassengerListCornelia1804.jpg" alt="Photo of passenger list of the brig Cornelia"
+          class="center" height="1000px;"> </div>
+      <div class="w3-mobile w3-responsive">
+        <hr>
+        <table class="w3-table" summary="Campbell, Lugg, Blackwell burials in McKean County, PA">
+          <caption style="font-size:140%; font-weight:600;"> The captain's list
+            of passengers and their baggage on the brig <i>Cornelia</i> on her
+            1804 voyage from Bristol, England to Philadelphia </caption>
+          <tbody class="w3-cursive">
+            <tr>
+              <td>Passengers</td>
+              <td>Baggage</td>
+              <td><i>[passengers' servants]</i> </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Richard Rundle, Esq.</td>
+              <td>Thirty three boxes &amp;</td>
+              <td>Richard Bayley</td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Mrs. Mary Rundle</td>
+              <td>Trunks and four bags &amp; c [for <i>et cetera</i>]</td>
+              <td> William Bowdich</td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;"> John R. Coates</td>
+              <td>Three Trunks, 1 box, 1 bed &amp; c</td>
+              <td>Servants for Mrs. Rundle</td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">The Rev. <a href="https://www.wikitree.com/wiki/Hey-333">John
+                  Hey </a></td>
+              <td><br>
+              </td>
+              <td> <br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Mrs. Ann Hey</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Miss <a href="https://www.wikitree.com/wiki/Hey-182">Amelia
+                  Hey</a></td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%">Miss Maria Hey</td>
+              <td>Eight Boxes </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td>Steerage Passengers </td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">George Hay</td>
+              <td>Two Trunks</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Jabez Hay</td>
+              <td>Five Packages Beds &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Aug's Hay</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">John Hay</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;"><a href="https://www.wikitree.com/wiki/Blackwell-2952">Joshua
+                  Blackwell</a></td>
+              <td>Four Boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;"><a href="https://www.wikitree.com/wiki/Blackwell-2566">William
+                  Blackwell</a> &nbsp;&nbsp; &nbsp; </td>
+              <td> One Hamper - One Bed &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style=" text-indent:20%;">Jane Angel</td>
+              <td>Four Boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">Richard Angel</td>
+              <td> One Box - One Bed &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style=" text-indent:20%;">Joseph Courtney</td>
+              <td>Four Boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-indent:20%;">Mrs. Mary Courtney</td>
+              <td> One Sack - Two Beds &amp; c ??? 5 boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">Tiffany Courtney,
+                child</td>
+              <td><br>
+              </td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td style=" text-indent:20%;">Thomas Trindell</td>
+              <td>Eight Boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">Ann Trindell</td>
+              <td> &amp; Trunks - one Bed &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">Jacob Hanney</td>
+              <td> One Box</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">Robert Collings</td>
+              <td> Two Boxes</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%">Robert Nicholes</td>
+              <td>One Box, one Bed &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+            <tr>
+              <td class="bordered" style="text-indent:20%;">William Rees</td>
+              <td> One Box, one Hamper - one Bed &amp; c</td>
+              <td><br>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2021 by
+          William B. Thompson. Commercial use prohibited. </div>
+        <div class="w3-bar" style="font-weight: bold;">
+          <p><a href="index.html" class="w3-bar-item w3-border">Return Home</a>
+            <a href="documents.html" class="w3-bar-item w3-border">Documents
+              Index</a></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

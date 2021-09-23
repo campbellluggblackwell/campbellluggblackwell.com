@@ -51,7 +51,12 @@
         </li>
         <li>1915 - <a href="CCousDinClip1915.html">News clip</a></li>
         <li>1916 - <a href="CCousDinClip1916.html">News clip</a></li>
-        <li>1917</li>
+        <li>
+          <ul class="LstHoriz">
+            <li class="hli">1917 - <a href="CCousDin1917.html">Minutes</a></li>
+            <li class="hli"><a href="CCousDin1917Attendance.html">Attendees</a></li>
+          </ul>
+        </li>
         <li>1918</li>
         <li>1919</li>
         <li>1920</li>
@@ -64,26 +69,6 @@
           </ul>
         </li>
       </ul>
-    </div>
-    <hr>
-    <div class="Footnote">
-      <p>1. The Campbell Cousins Reunions were open to anyone, but were for the
-        descendant of <a href="CampbellJoseph1748.html">Joseph</a> and <a href="HarperMary1749.html">Mary
-          Harper</a> Campbell and their Lugg and Blackwell relatives. At their
-        peak had 200 - 300 attendees. They ran from 1893 to 1942, resumed in
-        2001, and moved to videoconferencing in 2020. <br>
-        The Campbell Cousins Dinners were by invitation only. They began in 1909
-        and were intended for the 30 first cousins (grandchildren of <a href="CampbellJoseph1793.html">Joseph</a>
-        and <a href="ClinchAnn1804.html">Ann Clinch</a> Campbell) and for
-        others invited by the hosting couple of that year. All 30 were born in
-        or near Nelson, Tioga Co., PA and had all at least laid eyes on each
-        other before some moved to other parts of the country. Most stayed in
-        touch and those in Tioga Co. and adjacent Steuben and Chemung Counties
-        were close emotionally, as well as geographically. In their later years,
-        as death thinned their ranks, they included the next generation in the
-        dinners, but by then the families had scattered all over the country,
-        the second cousins didn't know each other well, and the Cousins Dinners
-        came to an end.</p>
     </div>
     <div>
       <p id="ParaFoot">Copyright © 2017, 2020, 2021 William B. Thompson.

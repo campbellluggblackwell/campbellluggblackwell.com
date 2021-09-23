@@ -57,7 +57,12 @@
             <li class="hli"><a href="CCousDin1917Attendance.html">Attendees</a></li>
           </ul>
         </li>
-        <li>1918</li>
+        <li>
+          <ul class="LstHoriz">
+            <li class="hli">1918 - <a href="CCousDin1918.html">Minutes</a></li>
+            <li class="hli"><a href="CCousDin1918Attendance.html">Attendees</a></li>
+          </ul>
+        </li>
         <li>1919</li>
         <li>1920</li>
         <li>1921</li>

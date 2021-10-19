@@ -24,6 +24,7 @@
           hr.thik {
     border-top: 4px solid
     }
+      h3 {font-size:90%; font-style:italic;}
     </style>
   </head>
   <body>

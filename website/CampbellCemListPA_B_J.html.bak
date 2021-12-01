@@ -46,7 +46,7 @@ only screen and (max-width: 760px),
 	}
     </style>
   </head>
-  <body style="                                                                                                                                                                                                                           color: black;">
+  <body style="                                                                                                                                                                                                                          color: black;">
     <h1>Burials List for Campbells, Luggs &amp; Blackwells of Nelson, PA</h1>
     <h2>For Pennsylvania Counties B- J<br>
     </h2>
@@ -335,28 +335,13 @@ only screen and (max-width: 760px),
           </td>
           <td>Balmer</td>
           <td>Gary Lee Balmer</td>
-          <td>1952</td>
+          <td>1953ca</td>
           <td align="CENTER">D</td>
           <td align="CENTER"><br>
           </td>
           <td align="CENTER"><br>
           </td>
-          <td>13329</td>
-        </tr>
-        <tr>
-          <td>Bradford, Burlington Twp.</td>
-          <td>Bradford Co. Mem. Park</td>
-          <td><br>
-          </td>
-          <td>Balmer</td>
-          <td>Wallace Lemuel Balmer</td>
-          <td>1925</td>
-          <td align="CENTER">S</td>
-          <td align="CENTER"><br>
-          </td>
-          <td align="CENTER"><br>
-          </td>
-          <td>13326</td>
+          <td>13346</td>
         </tr>
         <tr>
           <td>Bradford,Burlington Twp.</td>
@@ -379,7 +364,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Hewitt</td>
-          <td>Grace Hewitt Balmer</td>
+          <td>Grace Hewitt Ballard</td>
           <td>1924</td>
           <td align="CENTER">D<br>
           </td>
@@ -458,12 +443,12 @@ only screen and (max-width: 760px),
           </td>
           <td>Swackhammer</td>
           <td>Billie Sue Swackhammer Blackwell Stranger</td>
-          <td align="RIGHT">1978</td>
+          <td align="RIGHT">1987</td>
           <td align="CENTER"><br>
           </td>
           <td align="CENTER"><br>
           </td>
-          <td align="CENTER">S</td>
+          <td align="CENTER">S??</td>
           <td>9762</td>
         </tr>
         <tr>

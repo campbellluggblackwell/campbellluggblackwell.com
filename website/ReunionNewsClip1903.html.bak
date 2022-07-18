@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="News Clip of Campbells of Nelson, PA's 1903 Reunion" name="description">
+    <title> Campbell Reunion News Clip - 1902 </title>
+    <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
+      rel="stylesheet">
+    <link href="ssgeneral.css" rel="stylesheet">
+    <link href="ssletterw3.css" rel="stylesheet">
+    <style type="text/css">
+      body {font-size: x-large; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+            h1, h2 {text-align: center; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
+       h1 {font-family:Montserrat; font-size:130%; font-weight:600; text-align: center;}
+       hr {border-top:8px solid;}
+      .FromAddr p + p {padding: 0px; margin: 0px;}
+      .Medium {font-size: medium;}
+      .Red {color:red;}
+      .strikethru {text-decoration: line-through;}
+    </style>
+  </head>
+  <body>
+    <div class="w3-container">
+      <header>
+        <div class="w3-container">
+          <h1> CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA </h1>
+          <h2> Campbell-Hazlett<sup>1</sup> Reunion </h2>
+          <h3 style="text-align: center;">[From <span style="font-style: italic;">Elkland
+              Journal</span>, Wed. Aug 16, 1902] </h3>
+        </div>
+      </header>
+      <main>
+        <div class="w3-container w3-serif">
+          <p>The annual reunion of the Campbell and Hazlett families was held in
+            Nelson, Aug. 14th. The day was a perfect one. About 1 o'clock the
+            people were seated. Rev. John Davies returned thanks and the dinner
+            was served. There was an abundance of good things to eat, good
+            music, good speaking and good will every where. Although the
+            attendance was not as great as last year, every one agreed that it
+            was a most enjoyable day. There were some new faces among them, and
+            five of those who were with us last year have joined the great
+            reunion on the other side. They are <a href="https://www.wikitree.com/wiki/Knapp-4325">Mrs.
+              Kate Hazlett</a>, <a href="https://www.wikitree.com/wiki/Dunham-434">Mrs.
+              Lucy Hazlett</a> (who last year read such an interesting paper), <a
+              href="https://www.wikitree.com/wiki/Hughey-1563">Mrs. E. B.
+              Campbell</a>, <a href="https://www.wikitree.com/wiki/Taft-957">Henry
+              Taft</a> and Mrs. Dr. A. M. Loop. Those who took part in the
+            exercises of the day were Rev. Hallock Armstrong, prayer; <a href="https://www.wikitree.com/wiki/Selph-143">F.
+              D. Selph</a>, Address of welcome; <a href="https://www.wikitree.com/wiki/Campbell-27071">E.
+              B. Campbell</a> and <a href="CampbellJane1834.html">Mrs. Jane
+              Tubbs</a>, Dr. Layfayett Roundsville and <a href="https://www.wikitree.com/wiki/Allen-37308">William
+              A. Allen</a>, Reminiscences. The Misses <a href="https://www.wikitree.com/wiki/Shipman-1425">Helen
+              Shipman</a> and <a href="https://www.wikitree.com/wiki/Ellison-2734">Edna
+              Ellison</a> sang a duet and Prof. <a href="CongdonCharles1856.html">C.
+              G.<span class="Annotation">[sic]</span> Congdon</a> sang two
+            numbers which were heartily applauded. "Blest be the tie that binds"
+            was sung for the opening hymn and "The Campbell Reunion" composed<sup>2</sup>
+            by Mrs. <a href="ShipmanMabel1875.html">Mabel Shipman</a> Shaw the
+            closing number. Much credit is due the retiring officers, M. B.
+            Seely, T. C. Campbell and E. C. Blackwell. The Officers for next
+            year are: E. B. Campbell, President; J. D. Campbell, Secretary; M.
+            B. Seely, Treasurer. It is sincerely hoped that many of those who
+            were absent will meet with us next year. Layfayette Roundsville of
+            West Bay City, Mich., an old friend of the Campbell family, is
+            visiting friends in this vicinity. He made and received a hearty
+            welcome from all. C. H. Congdon made a pleasant addition to our
+            number this year. The venerable Dr. A. M. Loop<sup>3</sup> made a
+            few remarks that touched the hearts of all who heard him.</p>
+        </div>
+        <hr>
+        <h3> FOOTNOTES: </h3>
+        <div class="w3-container w3-cursive">
+          <p> 1. C. H. Congdon (Charles Harris Congdon), not "C. G." </p>
+          <p> 2. Mabel SHIPMAN Shaw wrote the words. But the tune was that of a
+            popular Civil War song, "Marching Through Georgia."</p>
+          <p> 3. Dr. Albert Mortimer Loop (born 1818 in Elmira, NY; died 1904 in
+            Nelson, PA) was Nelson's well liked doctor before his retirement. He
+            also was an amateur historian who wrote the article on the history
+            of Nelson Township in Munsell's "1894 History of Tioga county, PA."
+            His nephew, James William Loop, married Maria CAMPBELL Loop.</p>
+        </div>
+      </main>
+    </div>
+    <footer>
+      <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
+        William B. Thompson. Commercial use prohibited. </div>
+      <nav class="w3-cell-row" style="font-style:italic;">
+        <p> <a class="w3-bar-item w3-border" href="index.html">Return Home</a>
+          <a class="w3-bar-item w3-border" href="ReunionsCampbellPast.html">Reunions
+            Table of Contents</a> <a class="w3-bar-item w3-border" href="ReunionProgram1901.html">1901
+            Reunion Program</a> <a class="w3-bar-item w3-border" href="ReunionAttendance1901.html">1901
+            Sign-In</a> <a class="w3-bar-item w3-border" href="ReunionMinutes1901.html">1901
+            Minutes</a></p>
+      </nav>
+    </footer>
+  </body>
+</html>

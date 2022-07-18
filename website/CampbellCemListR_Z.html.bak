@@ -1,7 +1,12 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 3.2//EN">
+<!DOCTYPE html>
 <html>
   <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <!-- Google Tag Manager (noscript) --> <noscript></noscript>
+ 
+  <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8" style="display:none;visibility:hidden"
+      height="0" width="0"></iframe>
+    <!-- End Google Tag Manager (noscript) -->
     <meta content="width=device-width, 
       initial-scale=0.86, maximum-scale=3.0, minimum-scale=0.99" name="viewport">
     <meta content="Campbells of Nelson, PA's burials in states RI - WY." name="description">
@@ -46,15 +51,18 @@ only screen and (max-width: 760px),
 		white-space: nowrap;
 	}
     </style>
-  </head>
-  <body>
+    </head>
+    <body>
+    <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <h1>Burials List for Campbells, Luggs &amp; Blackwells of Nelson, PA</h1>
     <h2>For States R - W &amp; State unknown</h2>
     <h2>From our Campbell-Lugg-Blackwell <span wc_id="unknown"> Family Tree</span></h2>
     <h3>Legend: D=Descendant; S=Spouse; I=Father-In-law or Mother-In-Law; A=Key
       ancestor; LNU=Last Name Unknown; FNU=First Name Unknown</h3>
-    <h3>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021 by
-      William B. Thompson, Commercial Use Prohibited</h3>
+    <h3>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2021, 2022
+      by William B. Thompson, Commercial Use Prohibited</h3>
     <h4> Rhode Island </h4>
     <table>
       <tbody>
@@ -104,6 +112,22 @@ only screen and (max-width: 760px),
           <th align="CENTER">Luggs</th>
           <th align="CENTER">Blackwells</th>
           <th align="LEFT">Individual ID#</th>
+        </tr>
+        <tr>
+          <td>Aiken, Langley</td>
+          <td>Langley Cem.</td>
+          <td><br>
+          </td>
+          <td>Greatsinger</td>
+          <td>Stephen Harold Greasinger, Jr.</td>
+          <td>1933</td>
+          <td align="CENTER">I<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">24810</td>
         </tr>
         <tr>
           <td>Aiken, Mount Beulah</td>
@@ -992,6 +1016,23 @@ only screen and (max-width: 760px),
           <td align="CENTER"><br>
           </td>
           <td align="LEFT">2054</td>
+        </tr>
+        <tr>
+          <td>Brazoria, Clute</td>
+          <td>Restwood Memorial Park<br>
+          </td>
+          <td><br>
+          </td>
+          <td>Short</td>
+          <td>Diane Short Hazlett</td>
+          <td align="RIGHT">1939</td>
+          <td align="CENTER">S<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">2055</td>
         </tr>
         <tr>
         </tr>
@@ -1936,6 +1977,38 @@ only screen and (max-width: 760px),
         <tr>
           <td>Weber, Ogden</td>
           <td>Ogden City Cem.</td>
+          <td><br>
+          </td>
+          <td>Keeter</td>
+          <td>Malcom Earl Keeter</td>
+          <td align="RIGHT">1892</td>
+          <td align="CENTER">I<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">25255</td>
+        </tr>
+        <tr>
+          <td>Weber, Ogden</td>
+          <td>Ogden City Cem.</td>
+          <td><br>
+          </td>
+          <td>Newey</td>
+          <td>Lois Newey Keeter</td>
+          <td align="RIGHT">1892</td>
+          <td align="CENTER">I<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">25256</td>
+        </tr>
+        <tr>
+          <td>Weber, Ogden</td>
+          <td>Ogden City Cem.</td>
           <td>2A-13-4-2W</td>
           <td>Platt</td>
           <td>Irene Platt Geilmann</td>
@@ -2109,6 +2182,21 @@ only screen and (max-width: 760px),
           <td align="LEFT">19442</td>
         </tr>
         <tr>
+        </tr>
+        <tr>
+          <td>Weber, S. Ogden</td>
+          <td>Lindquists Memorial Garden of the Wasatch</td>
+          <td>The Christus</td>
+          <td>Peck</td>
+          <td>Earl Grant Peck</td>
+          <td align="RIGHT">1910</td>
+          <td align="CENTER">D<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">11387</td>
         </tr>
         <tr>
           <td>Weber, Warren</td>
@@ -2911,8 +2999,9 @@ only screen and (max-width: 760px),
           <td>creamated<br>
           </td>
           <td>Rice</td>
-          <td>Irma E. Rice Beach</td>
-          <td sdnum="1033;" sdval="1909" align="RIGHT">1884</td>
+          <td><a href="https://www.wikitree.com/wiki/Rice-20399">Irma E. Rice</a>
+            Beach</td>
+          <td>1884</td>
           <td align="CENTER">D</td>
           <td align="CENTER"><br>
           </td>
@@ -3264,6 +3353,22 @@ only screen and (max-width: 760px),
           <td align="CENTER">I</td>
           <td align="LEFT">8891</td>
         </tr>
+        <tr>
+          <td>Thurston, Tumwater</td>
+          <td>Odd Fellows Memorial Park</td>
+          <td><br>
+          </td>
+          <td>Green</td>
+          <td>Virginia Green Swartsel Dunham Carter McNeal Fiore</td>
+          <td align="RIGHT">1881</td>
+          <td align="CENTER">S<br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="CENTER"><br>
+          </td>
+          <td align="LEFT">383</td>
+        </tr>
       </tbody>
     </table>
     <h4>West Virginia</h4>
@@ -3610,6 +3715,8 @@ only screen and (max-width: 760px),
         <tr>
         </tr>
         <tr>
+        </tr>
+        <tr>
           <td>Kenosha, Salem</td>
           <td>Liberty Cem</td>
           <td>ON-15</td>
@@ -3627,17 +3734,35 @@ only screen and (max-width: 760px),
         <tr>
         </tr>
         <tr>
-          <td>Marinette, Marinette</td>
-          <td>Forest Home Cem</td>
-          <td>Z-15-4-8</td>
-          <td>Campbell</td>
-          <td>Henry Sizer Campbell, Jr.</td>
-          <td>1927</td>
-          <td>D</td>
+          <td>Lincoln, Merrill</td>
+          <td>Merrill Memoraial Park</td>
+          <td><br>
+          </td>
+          <td>Andrews</td>
+          <td><a href="https://www.wikitree.com/wiki/Andrews-20041">Lulu Andrews</a></td>
+          <td>1875ca</td>
           <td>D</td>
           <td><br>
           </td>
-          <td>910</td>
+          <td><br>
+          </td>
+          <td>25451</td>
+        </tr>
+        <tr>
+          <td>Lincoln, Merrill</td>
+          <td>Merrill Memorial Park</td>
+          <td><br>
+          </td>
+          <td>Beeman</td>
+          <td><a href="https://www.wikitree.com/wiki/Beeman-1020">Theresa Beeman</a>
+            Andrews</td>
+          <td>1847</td>
+          <td>S</td>
+          <td><br>
+          </td>
+          <td><br>
+          </td>
+          <td>9638</td>
         </tr>
         <tr>
           <td>Marinette, Marinette<br>
@@ -3730,7 +3855,7 @@ only screen and (max-width: 760px),
         <tr>
           <td>Marinette, Marinette<br>
           </td>
-          <td>Forest Home Cem<br>
+          <td>Forest Home Cem.<br>
           </td>
           <td>Z-15-4-6<br>
           </td>
@@ -3750,11 +3875,55 @@ only screen and (max-width: 760px),
           </td>
         </tr>
         <tr>
+          <td>Marinette, Pembine<br>
+          </td>
+          <td>Pembine Cem.<br>
+          </td>
+          <td><br>
+          </td>
+          <td>Drake<br>
+          </td>
+          <td>Richard Philip Drake<br>
+          </td>
+          <td>1932<br>
+          </td>
+          <td>D<br>
+          </td>
+          <td>D<br>
+          </td>
+          <td><br>
+          </td>
+          <td>13655<br>
+          </td>
+        </tr>
+        <tr>
+          <td>Marinette, Pembine<br>
+          </td>
+          <td>Pembine Cem.<br>
+          </td>
+          <td><br>
+          </td>
+          <td>North<br>
+          </td>
+          <td>Ruth Ann North Drake<br>
+          </td>
+          <td>1942<br>
+          </td>
+          <td>S<br>
+          </td>
+          <td>S<br>
+          </td>
+          <td><br>
+          </td>
+          <td>14535<br>
+          </td>
+        </tr>
+        <tr>
         </tr>
         <tr>
           <td>Milwaukee<br>
           </td>
-          <td>Wood National Cem<br>
+          <td>Wood National Cem.<br>
           </td>
           <td>sec E, site 19<br>
           </td>
@@ -4013,8 +4182,8 @@ only screen and (max-width: 760px),
       </tbody>
     </table>
     <div id="parafoot">
-      <p>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018. 2019. 2021 by
-        William B. Thompson. Commercial use prohibited.</p>
+      <p>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018. 2019. 2021, 2022
+        by William B. Thompson. Commercial use prohibited.</p>
     </div>
     <div class="Navigation"><a href="index.html">Home </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a
         href="CemeteriesByState.html">Burials Index</a> </div>

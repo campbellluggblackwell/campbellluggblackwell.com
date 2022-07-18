@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title>Test Toggle</title>
+    <style>
+      .button-container {text-align:center;}
+       #myDIV {
+    display: none;
+}
+    </style>
+  </head>
+  <body>
+    <div class="button-container"> <button onclick="myFunction()">Click Me</button></div>
+    <div id="myDIV"> This is my DIV element. </div>
+    <script>function myFunction() { var x = document.getElementById("myDIV"); if
+    (x.style.display === "none") { x.style.display = "block"; } else {
+    x.style.display = "none"; } }</script>
+  </body>
+</html>

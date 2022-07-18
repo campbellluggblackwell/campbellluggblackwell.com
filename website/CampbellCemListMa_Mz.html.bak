@@ -2,6 +2,13 @@
   <head>
     <meta http-equiv="content-type" content="text/html; charset=windows-1252">
     <meta content="charset=UTF-8">
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TK7PFP8');</script>
+    <!-- End Google Tag Manager -->
     <link rel="stylesheet" type="text/css" href="ssgeneral.css">
     <link rel="stylesheet" type="text/css" href="sscemlist.css">
     <meta name="description" content="Campbells of Nelson, PA's burials in states MA, MD, ME, MI, MN, MO, MS AND MT.">
@@ -45,13 +52,16 @@ only screen and (max-width: 760px),
 	}
     </style>
   </head>
-  <body>
+  <body> <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+
+style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <h1>Burials List for Campbells, Luggs &amp; Blackwells of Nelson, PA</h1>
     <h2>For States Ma - Mz</h2>
     <h2> From <a href="http://wc.rootsweb.ancestry.com/cgi-bin/igm.cgi?db=capane&amp;I11.x=27&amp;I11.y=7">Campbells-Luggs-Blackwells
         of Nelson, PA Family Tree</a></h2>
-    <h2>Copyright &copy; 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021
-      William B. Thompson. Commercial use prohibited.</h2>
+    <h2>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020, 2021,
+      2022 William B. Thompson. Commercial use prohibited.</h2>
     <h3> Legend: Desc=Descendant; Sp=Spouse; I-L=In-law (Father or Mother);
       A=Key ancestor; LNU=Last Name Unknown; FNU=First Name Unknown<br>
     </h3>
@@ -82,7 +92,7 @@ only screen and (max-width: 760px),
           <td>Seely<br>
           </td>
           <td><span wc-id="I981"><a href="https://www.wikitree.com/wiki/Seely-661">Emily
-              A. Seely</a></span> Blanchard</td>
+                A. Seely</a></span> Blanchard</td>
           <td>1880</td>
           <td>
             <p id="parac">Desc</p>
@@ -128,7 +138,7 @@ only screen and (max-width: 760px),
           <td>Blanchard<br>
           </td>
           <td><span wc-id="I992"><a href="https://www.wikitree.com/wiki/Blanchard-4808">Marcus
-              Seely Blanchard</a></span></td>
+                Seely Blanchard</a></span></td>
           <td>1915</td>
           <td>
             <p id="parac">Desc</p>
@@ -146,8 +156,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Platt<br>
           </td>
-          <td><span wd-id="I17540">Dorris
-              Platt</span> Renne</td>
+          <td><span wd-id="I17540">Dorris Platt</span> Renne</td>
           <td>1892</td>
           <td>
             <p id="parac">I-L</p>
@@ -164,8 +173,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Rash</td>
-          <td><span wc-id="I17565">Doris
-              Rash</span> Wigglesworth</td>
+          <td><span wc-id="I17565">Doris Rash</span> Wigglesworth</td>
           <td>1923</td>
           <td>
             <p id="parac">I-L</p>
@@ -182,8 +190,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Wigglesworth</td>
-          <td><span wc-id="I17566">Russell
-              Wigglesworth</span></td>
+          <td><span wc-id="I17566">Russell Wigglesworth</span></td>
           <td>1924</td>
           <td>
             <p id="parac">I-L</p>
@@ -247,7 +254,6 @@ only screen and (max-width: 760px),
           </td>
           <td>Davidson<br>
           </td>
-          
           <td><span wc-id="7171">Charlotte Davidson</span> Blackwell</td>
           <td>1901</td>
           <td>
@@ -272,8 +278,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Cashman<br>
           </td>
-          <td><span wc-id="I8352">Mary
-              Ellen Cashman</span> Murphy</td>
+          <td><span wc-id="I8352">Mary Ellen Cashman</span> Murphy</td>
           <td>1896</td>
           <td> <br>
           </td>
@@ -292,8 +297,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Garnett<br>
           </td>
-          <td><span wc-id="I8360">George
-              Howard Garnett</span></td>
+          <td><span wc-id="I8360">George Howard Garnett</span></td>
           <td>1917</td>
           <td> <br>
           </td>
@@ -307,12 +311,11 @@ only screen and (max-width: 760px),
           <td>Nantucket, Nantucket</td>
           <td>Prospect Hill Cem.<br>
           </td>
-          <td>Hummock Pond& Sec., #732<br>
+          <td>Hummock Pond&amp; Sec., #732<br>
           </td>
           <td>Murphy<br>
           </td>
-          <td><span wc-id="I8353">Bernard
-              Leon Murphy</span></td>
+          <td><span wc-id="I8353">Bernard Leon Murphy</span></td>
           <td>1893</td>
           <td> <br>
           </td>
@@ -330,8 +333,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Reed<br>
           </td>
-          <td><span wc-id="I8361">Ethel
-              M. Reed</span> Garnett</td>
+          <td><span wc-id="I8361">Ethel M. Reed</span> Garnett</td>
           <td>1925</td>
           <td> <br>
           </td>
@@ -352,8 +354,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Pratt<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Pratt-8446">Kathrine
-              Pratt</a> Young</td>
+          <td><a href="https://www.wikitree.com/wiki/Pratt-8446">Kathrine Pratt</a>
+            Young</td>
           <td>1893ca</td>
           <td>
             <p id="parac">Sp</p>
@@ -373,8 +375,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Young<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Young-32984">Roswell
-              P. Young</a> </td>
+          <td><a href="https://www.wikitree.com/wiki/Young-32984">Roswell P.
+              Young</a> </td>
           <td>1892</td>
           <td>
             <p id="parac">Desc</p>
@@ -394,14 +396,33 @@ only screen and (max-width: 760px),
           </td>
           <td>Young<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Young-32992">Janet
-              Young</a> Bannatyne Richardson</td>
+          <td><a href="https://www.wikitree.com/wiki/Young-32992">Janet Young</a>
+            Bannatyne Richardson</td>
           <td>1929</td>
           <td>
             <p id="parac">Desc</p>
           </td>
           <td>
             <p id="parac">Desc</p>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
+        <tr>
+          <td><a href="http://en.wikipedia.org/wiki/Spencer,_Massachusetts">Worcester,
+              Spencer</a></td>
+          <td><a href="https://www.findagrave.com/cemetery/91444/pine-grove-cemetery">Pine
+              Grove Cem.</a> </td>
+          <td><br>
+          </td>
+          <td>Glass<br>
+          </td>
+          <td><span wc-id="I23424">David W. Glass</span></td>
+          <td>1937</td>
+          <td>
+            <p id="parac">Sp</p>
+          </td>
+          <td> <br>
           </td>
           <td> <br>
           </td>
@@ -490,8 +511,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Hostrander<br>
           </td>
-          <td><span wc-id="I3905">Thomas
-              E. Hostrander</span></td>
+          <td><span wc-id="I3905">Thomas E. Hostrander</span></td>
           <td>1921</td>
           <td> <br>
           </td>
@@ -508,8 +528,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Francis<br>
           </td>
-          <td><span wc-id="I3911">Richard
-              Eugene Francis</span></td>
+          <td><span wc-id="I3911">Richard Eugene Francis</span></td>
           <td>1908</td>
           <td> <br>
           </td>
@@ -528,8 +547,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Thompson<br>
           </td>
-          <td><span wc-id="I8066">Diane
-              Michelle Thompson</span></td>
+          <td><span wc-id="I8066">Diane Michelle Thompson</span></td>
           <td>1975</td>
           <td>
             <p id="parac">Desc</p>
@@ -550,8 +568,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Blackwell<br>
           </td>
-          <td><span wc-id="I4147">Amelia Hannah
-              Blackwell</span> Warner </td>
+          <td><span wc-id="I4147">Amelia Hannah Blackwell</span> Warner </td>
           <td>1838<br>
           </td>
           <td><br>
@@ -569,8 +586,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Brinton<br>
           </td>
-          <td><span wc-id="I4144">Sarah
-              Brinton</span> Warner </td>
+          <td><span wc-id="I4144">Sarah Brinton</span> Warner </td>
           <td>1791<br>
           </td>
           <td><br>
@@ -588,8 +604,7 @@ only screen and (max-width: 760px),
           </td>
           <td>LNU<br>
           </td>
-          <td><span wc-id="I15460">Helen
-              LNU</span> Warner</td>
+          <td><span wc-id="I15460">Helen LNU</span> Warner</td>
           <td>1909<br>
           </td>
           <td><br>
@@ -608,8 +623,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Warner<br>
           </td>
-          <td><span wc-id="I4145">Jonathon
-              Warner</span></td>
+          <td><span wc-id="I4145">Jonathon Warner</span></td>
           <td>1789<br>
           </td>
           <td><br>
@@ -627,8 +641,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Warner<br>
           </td>
-          <td><span wc-id="I4139">William
-              Willard Warner</span></td>
+          <td><span wc-id="I4139">William Willard Warner</span></td>
           <td>1906<br>
           </td>
           <td><br>
@@ -672,7 +685,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Whitehead<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Whitehead-4277">Mortimore Leyden Whitehead</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Whitehead-4277">Mortimore
+              Leyden Whitehead</a></td>
           <td>1914<br>
           </td>
           <td><br>
@@ -726,8 +740,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Alexander</td>
-          <td><span wc-id="I10542">Eugene
-              Franklin Alexander</span></td>
+          <td><span wc-id="I10542">Eugene Franklin Alexander</span></td>
           <td>1926</td>
           <td>
             <p id="parac">Sp</p>
@@ -746,8 +759,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Bosard<br>
           </td>
-          <td><a href="BosardFlorence1887.html">Florence
-              H. Bosard</a> Neal</td>
+          <td><a href="BosardFlorence1887.html">Florence H. Bosard</a> Neal</td>
           <td>1887<br>
           </td>
           <td>
@@ -768,7 +780,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Bosard<br>
           </td>
-          <td><span wc-id="I1050"><a href="https://www.wikitree.com/wiki/Bosard-8">Mary E. Bosard</a></span> Snavely</td>
+          <td><span wc-id="I1050"><a href="https://www.wikitree.com/wiki/Bosard-8">Mary
+                E. Bosard</a></span> Snavely</td>
           <td>1873<br>
           </td>
           <td>
@@ -811,7 +824,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Snavely<br>
           </td>
-          <td><span wc-id="I1051"><a href="https://www.wikitree.com/wiki/Snavely-422">Albert Snavely</a></span></td>
+          <td><span wc-id="I1051"><a href="https://www.wikitree.com/wiki/Snavely-422">Albert
+                Snavely</a></span></td>
           <td>1872<br>
           </td>
           <td>
@@ -852,16 +866,34 @@ only screen and (max-width: 760px),
               Cem.</a></td>
           <td><br>
           </td>
-          <td>Whitman
-          </td>
+          <td>Whitman </td>
           <td><span wc-id="I25001">Minnie Whitman</span> Jackman</td>
           <td>1858</td>
-          <td></td>
+          <td><br>
           </td>
           <td><br>
           </td>
           <td> <br>
           </td>
+        </tr>
+        <tr>
+          <td><a href="http://en.wikipedia.org/wiki/Buchanan,_Michigan">Berrien,
+              Buchanan</a></td>
+          <td><a href="https://www.findagrave.com/cemetery/1271/oak-ridge-cemetery">Oak
+              Ridge Cem.</a></td>
+          <td><br>
+          </td>
+          <td>Kean</td>
+          <td><a href="https://www.wikitree.com/wiki/Kean-873">Ralph David Kean</a></td>
+          <td>1880</td>
+          <td>
+            <p id="parac">Sp</p>
+          </td>
+          <td><br>
+          </td>
+          <td> <br>
+          </td>
+        </tr>
         <tr>
           <td><a href="http://en.wikipedia.org/wiki/Escanaba,_Michigan">Delta,
               Escanaba</a></td>
@@ -871,7 +903,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Horton<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Horton-6761">Frank G. Horton</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Horton-6761">Frank G.
+              Horton</a></td>
           <td>1872</td>
           <td>
             <p id="parac">Desc</p>
@@ -887,8 +920,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Moran</td>
-          <td><a href="https://www.wikitree.com/wiki/Moran-3765">James
-              E. Moran</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Moran-3765">James E. Moran</a></td>
           <td>1899</td>
           <td>
             <p id="parac">Sp</p>
@@ -924,8 +956,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Blake<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Blake-6319">Frances
-              M. Blake</a> Horton Ellsworth</td>
+          <td><a href="https://www.wikitree.com/wiki/Blake-6319">Frances M.
+              Blake</a> Horton Ellsworth</td>
           <td>1877</td>
           <td>
             <p id="parac">Sp</p>
@@ -959,7 +991,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Ellsworth<br>
           </td>
-          <td><span wc-id="I5012"><a href="https://www.wikitree.com/wiki/Ellsworth-1638">Albert Ellsworth, Jr.</a></span></td>
+          <td><span wc-id="I5012"><a href="https://www.wikitree.com/wiki/Ellsworth-1638">Albert
+                Ellsworth, Jr.</a></span></td>
           <td>1865</td>
           <td>
             <p id="parac"><br>
@@ -977,8 +1010,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Horton<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Horton-6762">Kathryn
-              I. Horton</a> Moran Mitchell</td>
+          <td><a href="https://www.wikitree.com/wiki/Horton-6762">Kathryn I.
+              Horton</a> Moran Mitchell</td>
           <td>1901</td>
           <td>
             <p id="parac">Desc</p>
@@ -995,8 +1028,8 @@ only screen and (max-width: 760px),
           </td>
           <td>Mitchell<br>
           </td>
-          <td><a href="https://www.wikitree.com/wiki/Mitchell-23690">John
-              J. Mitchell</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Mitchell-23690">John J.
+              Mitchell</a></td>
           <td>1902</td>
           <td>
             <p id="parac">Sp</p>
@@ -1032,8 +1065,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Rogers</td>
-          <td><span wc-id="I19384">Walter
-              George Rogers</span></td>
+          <td><span wc-id="I19384">Walter George Rogers</span></td>
           <td>1870</td>
           <td>
             <p id="parac"><br>
@@ -1073,7 +1105,8 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Newton</td>
-          <td><a href="https://www.wikitree.com/wiki/Newton-10203">Frank A. Newton</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Newton-10203">Frank A.
+              Newton</a></td>
           <td>1884</td>
           <td>
             <p id="parac">Sp</p>
@@ -1089,8 +1122,8 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Newton</td>
-          <td><a href="https://www.wikitree.com/wiki/Newton-10215">Robert
-              H. Newton</a></td>
+          <td><a href="https://www.wikitree.com/wiki/Newton-10215">Robert H.
+              Newton</a></td>
           <td>1914</td>
           <td>
             <p id="parac">Desc</p>
@@ -1144,8 +1177,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Potter<br>
           </td>
-          <td><span wc-id=I5416">Edith
-              L. Potter</span> Bliss</td>
+          <td><span wc-id="I5416&quot;">Edith L. Potter</span> Bliss</td>
           <td>1869</td>
           <td> <br>
           </td>
@@ -1165,8 +1197,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Lowe</td>
-          <td><span wc-id="I18509">John
-              R. Lowe</span>, Jr.</td>
+          <td><span wc-id="I18509">John R. Lowe</span>, Jr.</td>
           <td>1922<br>
           </td>
           <td><br>
@@ -1204,8 +1235,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Howe</td>
-          <td><span wc-id="I9398">Malcom
-              J. Howe Sr.</span></td>
+          <td><span wc-id="I9398">Malcom J. Howe Sr.</span></td>
           <td>1900</td>
           <td><br>
           </td>
@@ -1222,8 +1252,7 @@ only screen and (max-width: 760px),
               Mount Park Cem</a>.</td>
           <td>sec. 1</td>
           <td>Todd</td>
-          <td><span wc-id="I11939">R.
-              Mark Todd</span></td>
+          <td><span wc-id="I11939">R. Mark Todd</span></td>
           <td>1919</td>
           <td><br>
           </td>
@@ -1241,8 +1270,7 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Downey</td>
-          <td><span wc-id="I4852">Ethel
-              E. Downey</span> Putman </td>
+          <td><span wc-id="I4852">Ethel E. Downey</span> Putman </td>
           <td>1908</td>
           <td><br>
           </td>
@@ -1296,8 +1324,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Putman<br>
           </td>
-          <td><span wc-id="I7825">Kenneth
-              Putman</span></td>
+          <td><span wc-id="I7825">Kenneth Putman</span></td>
           <td>1906<br>
           </td>
           <td><br>
@@ -1317,8 +1344,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Putman<br>
           </td>
-          <td><span wc-id="I3231">Norman
-              George Putman</span></td>
+          <td><span wc-id="I3231">Norman George Putman</span></td>
           <td>1883<br>
           </td>
           <td><br>
@@ -1341,8 +1367,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Brooks<br>
           </td>
-          <td><span wc-id="I12825">Bret
-              Harte Brook</span></td>
+          <td><span wc-id="I12825">Bret Harte Brook</span></td>
           <td>1870<br>
           </td>
           <td>
@@ -1362,8 +1387,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Brooks<br>
           </td>
-          <td><span wc-id="I12824">Llewllyn
-              Benson Brooks</span></td>
+          <td><span wc-id="I12824">Llewllyn Benson Brooks</span></td>
           <td>1866<br>
           </td>
           <td>
@@ -1383,8 +1407,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Brooks<br>
           </td>
-          <td><span wc-id="I354">Marcus
-              H. Brooks</span> </td>
+          <td><span wc-id="I354">Marcus H. Brooks</span> </td>
           <td>1837<br>
           </td>
           <td>
@@ -1424,8 +1447,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Brooks<br>
           </td>
-          <td><span wc-id="I12822">Mary
-              Lavange Brooks</span></td>
+          <td><span wc-id="I12822">Mary Lavange Brooks</span></td>
           <td>1860<br>
           </td>
           <td>
@@ -1446,7 +1468,8 @@ only screen and (max-width: 760px),
           <td>Brooks<br>
           </td>
           <td><span wc-id="I12823">Thomas R. Brook</span></td>
-          <td></td>
+          <td><br>
+          </td>
           <td>
             <p id="parac">Desc<br>
             </p>
@@ -1504,7 +1527,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Richardson<br>
           </td>
-       <td><span wc-id="I353">Anna Richardson</span> Brooks</td>
+          <td><span wc-id="I353">Anna Richardson</span> Brooks</td>
           <td>1838<br>
           </td>
           <td>
@@ -1529,7 +1552,7 @@ only screen and (max-width: 760px),
           <td>Campbell<br>
           </td>
           <td><span wc-id="I1889"><a href="https://www.wikitree.com/wiki/Campbell-33060">Nina
-              May Campbell</a></span> Knuttel </td>
+                May Campbell</a></span> Knuttel </td>
           <td>1875<br>
           </td>
           <td>
@@ -1550,7 +1573,7 @@ only screen and (max-width: 760px),
           <td>Knuttel<br>
           </td>
           <td><span wc-id="I13000"><a href="https://www.wikitree.com/wiki/Knuttel-5">Jane
-              Knuttel</a></span> </td>
+                Knuttel</a></span> </td>
           <td>1916<br>
           </td>
           <td>
@@ -1570,7 +1593,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Knuttel</td>
           <td><span wc-id="I1890"><a href="https://www.wikitree.com/wiki/Knuttel-3">William
-              C. Knuttel</a></span> </td>
+                C. Knuttel</a></span> </td>
           <td>1871<br>
           </td>
           <td>
@@ -1590,7 +1613,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Knuttel</td>
           <td><span wc-id="I13001"><a href="https://www.wikitree.com/wiki/Knuttel-4">William
-              Knuttel</a></span> </td>
+                Knuttel</a></span> </td>
           <td>1914<br>
           </td>
           <td>
@@ -1614,8 +1637,8 @@ only screen and (max-width: 760px),
           <td><br>
           </td>
           <td>Campbell</td>
-          <td><span wc-id=I92"><a href="CampbellJulia1845.html">Julia
-              P. Campbell</a></span> Selph </td>
+          <td><span wc-id="I92&quot;"><a href="CampbellJulia1845.html">Julia P.
+                Campbell</a></span> Selph </td>
           <td>1845<br>
           </td>
           <td>
@@ -1638,7 +1661,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Selph</td>
           <td><span wc-id="I16000"><a href="https://www.wikitree.com/wiki/Selph-136">William
-              Edward Selph</a></span>, Sr. </td>
+                Edward Selph</a></span>, Sr. </td>
           <td>1843<br>
           </td>
           <td>
@@ -1661,7 +1684,7 @@ only screen and (max-width: 760px),
           </td>
           <td>Selph</td>
           <td><span wc-id="I1601"><a href="https://www.wikitree.com/wiki/Selph-138">Rena
-              May Selph</a></span> </td>
+                May Selph</a></span> </td>
           <td>1869<br>
           </td>
           <td>
@@ -1756,8 +1779,7 @@ only screen and (max-width: 760px),
               Cem</a></td>
           <td>Block A Lot 28 Grave 3</td>
           <td>Taylor</td>
-          <td><span wc-id="I1926">Algernon
-              B. Taylor</span></td>
+          <td><span wc-id="I1926">Algernon B. Taylor</span></td>
           <td>1877</td>
           <td>
             <p id="parac"><br>
@@ -1779,8 +1801,7 @@ only screen and (max-width: 760px),
               Cem</a></td>
           <td>Block 34 Lot 21 SEC N 1/2</td>
           <td>Anderson</td>
-          <td><span wc-id="I1209">Alfred
-              A. Anderson</span></td>
+          <td><span wc-id="I1209">Alfred A. Anderson</span></td>
           <td>1877</td>
           <td>
             <p id="parac">I-L</p>
@@ -1797,8 +1818,7 @@ only screen and (max-width: 760px),
           <td>Block 34 Lot 21 SEC N 1/2 </td>
           <td>Anderson<br>
           </td>
-          <td><span wc-id="I1210">Anna
-              Anderson</span> Anderson</td>
+          <td><span wc-id="I1210">Anna Anderson</span> Anderson</td>
           <td>1874</td>
           <td>
             <p id="parac">I-L</p>
@@ -1815,8 +1835,7 @@ only screen and (max-width: 760px),
           <td> Block 7, Lot 108, NWC </td>
           <td>Bixby<br>
           </td>
-          <td><span wc-id="I1202">Judson
-              Amasa Bixby</span></td>
+          <td><span wc-id="I1202">Judson Amasa Bixby</span></td>
           <td>1836</td>
           <td>
             <p id="parac">I-L</p>
@@ -1833,8 +1852,8 @@ only screen and (max-width: 760px),
           <td>Block 6, Lot 36, NWC S 1/2</td>
           <td>Bixby<br>
           </td>
-          <td><span wc-id="I1201"><a href="BixbyHannah1863.html">Hannah
-Jennie Bixby</a></span> Hughey</td>
+          <td><span wc-id="I1201"><a href="BixbyHannah1863.html">Hannah Jennie
+                Bixby</a></span> Hughey</td>
           <td>1863</td>
           <td>
             <p id="parac">Sp<br>
@@ -1854,7 +1873,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>Campbell<br>
           </td>
           <td><span wc-id="I85"><a href="CampbellElizabeth1830.html">Elizabeth
-              Campbell</a></span> Hughey</td>
+                Campbell</a></span> Hughey</td>
           <td>1830</td>
           <td>
             <p id="parac">Desc</p>
@@ -1872,7 +1891,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>Hughey<br>
           </td>
           <td><span wc-id="I1196"><a href="https://www.wikitree.com/wiki/Hughey-1562">
-              Daniel Hughey</a></span></td>
+                Daniel Hughey</a></span></td>
           <td>1826<br>
           </td>
           <td>
@@ -1891,7 +1910,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>Hughey<br>
           </td>
           <td><span wc-id="I1200"><a href="HugheyHerbert1857.html">Herbert
-              Clinch Hughey</a></span> </td>
+                Clinch Hughey</a></span> </td>
           <td>1857</td>
           <td>
             <p id="parac">Desc</p>
@@ -1902,13 +1921,12 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
         </tr>
-     
         <tr>
           <td>Crow Wing, Brainerd</td>
           <td>Evergreen Cem</td>
           <td> Block 7, Lot 108, NWC </td>
           <td>Miller</td>
-          <td><pan wc-id="I1203">Emner Millers</span> Bixby</td>
+          <td><pan wc-id="I1203">Emner Miller Bixby</pan></td>
           <td>1832</td>
           <td>
             <p id="parac">I-L</p>
@@ -1957,8 +1975,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>lBlock 6 Lot 19 Plot 6]</td>
           <td>Taylor<br>
           </td>
-          <td><span wc-id="I1925">George
-              Kenneth Taylor</span></td>
+          <td><span wc-id="I1925">George Kenneth Taylor</span></td>
           <td>1895</td>
           <td><br>
           </td>
@@ -1974,7 +1991,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Taylor</td>
           <td><span wc-id="I1211"><a href="https://www.wikitree.com/wiki/Taylor-55967">William
-              Taylor</a></span> </td>
+                Taylor</a></span> </td>
           <td>1855</td>
           <td>
             <p id="parac">Sp</p>
@@ -1991,8 +2008,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
           <td>Taylor</td>
-          <td><span wc-id="I15463">William
-              Wesley Taylor</span></td>
+          <td><span wc-id="I15463">William Wesley Taylor</span></td>
           <td>1941</td>
           <td>
             <p id="parac"><br>
@@ -2012,8 +2028,7 @@ Jennie Bixby</a></span> Hughey</td>
               Snelling National Cem</a></td>
           <td>T, 0, 2266</td>
           <td>Jurek</td>
-          <td><span wc-id="I19645"></span>Louis
-              G. Jurek</td>
+          <td><span wc-id="I19645"></span>Louis G. Jurek</td>
           <td>1921</td>
           <td>
             <p id="parac">I-L</p>
@@ -2047,7 +2062,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>Sec 4 Site 1410</td>
           <td>Anderson</td>
           <td><span wc-id="I1208"></span><a href="https://www.wikitree.com/wiki/Anderson-42914">Alfred
-              Hilding Anderson</a></span></td>
+              Hilding Anderson</a></td>
           <td>1905</td>
           <td>
             <p id="parac">Sp</p>
@@ -2067,7 +2082,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td>Peterson/Taylor<br>
           </td>
           <td><span wc-id="I1207"><a href="https://www.wikitree.com/wiki/Peterson-6107">Irma
-              Peterson/Taylor</a></span> Anderson</td>
+                Peterson/Taylor</a></span> Anderson</td>
           <td>1909<br>
           </td>
           <td>
@@ -2089,8 +2104,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Brace<br>
           </td>
-          <td><span wc-id="I1208">Wanda
-              Brace</span> Carberry</td>
+          <td><span wc-id="I1208">Wanda Brace</span> Carberry</td>
           <td>1918<br>
           </td>
           <td>
@@ -2130,8 +2144,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
           <td>Oden</td>
-          <td><span wc-id="I16615">Wilson
-              Oden, Jr.</span></td>
+          <td><span wc-id="I16615">Wilson Oden, Jr.</span></td>
           <td>1872</td>
           <td>
             <p id="parac"> I-L</p>
@@ -2148,8 +2161,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
           <td>North</td>
-          <td><span wc-id="I17570">Jerry
-              Paul North</span></td>
+          <td><span wc-id="I17570">Jerry Paul North</span></td>
           <td>1941</td>
           <td>
             <p id="parac">Sp</p>
@@ -2168,8 +2180,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
           <td>Staver</td>
-          <td><span wc-id="I9889">Fredrick
-              Clayton Staver</span></td>
+          <td><span wc-id="I9889">Fredrick Clayton Staver</span></td>
           <td>1889</td>
           <td> <br>
           </td>
@@ -2188,7 +2199,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Smith</td>
           <td><spam wc-id="I1723"><a href="https://www.wikitree.com/wiki/Smith-181704">Arthur
-              P. Smith</a></span></td>
+                P. Smith</a></spam></td>
           <td>1903</td>
           <td>
             <p id="parac">Desc</p>
@@ -2207,7 +2218,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Wilson</td>
           <td><span wc-id="I20455"><a href="https://www.wikitree.com/wiki/Wilson-61163">Myrtle
-              Wilson</a></span> Smith</td>
+                Wilson</a></span> Smith</td>
           <td>1913</td>
           <td>
             <p id="parac">Sp</p>
@@ -2227,8 +2238,7 @@ Jennie Bixby</a></span> Hughey</td>
           <td><br>
           </td>
           <td>Whorton</td>
-          <td><span wc-id="I11363">Opal
-              Irene Whorton</span> Michel</td>
+          <td><span wc-id="I11363">Opal Irene Whorton</span> Michel</td>
           <td>1921</td>
           <td> <br>
           </td>
@@ -2266,7 +2276,8 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Beach<br>
           </td>
-          <td>Elizabeth Beach Sharp</td>
+          <td><a href="https://www.wikitree.com/wiki/Beach-7129">Elizabeth Beach</a>
+            Sharp</td>
           <td>1913</td>
           <td>
             <p id="parac">D</p>
@@ -2283,7 +2294,8 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Sharp<br>
           </td>
-          <td>Waldron J. Sharp, Jr.</td>
+          <td><a href="https://www.wikitree.com/wiki/Sharp-13637">Waldron J.
+              Sharp, Jr.</a></td>
           <td>1937</td>
           <td>
             <p id="parac">D</p>
@@ -2300,7 +2312,8 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Sharp<br>
           </td>
-          <td>Waldron J. Sharp, Sr.</td>
+          <td><a href="https://www.wikitree.com/wiki/Sharp-13636">Waldron J.
+              Sharp, Sr.</a></td>
           <td>1910</td>
           <td>
             <p id="parac">S</p>
@@ -2319,8 +2332,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Henderson<br>
           </td>
-          <td><span wc-id="I8347">Robert
-              Blake Henderson</span>, II </td>
+          <td><span wc-id="I8347">Robert Blake Henderson</span>, II </td>
           <td>1869</td>
           <td> <br>
           </td>
@@ -2337,8 +2349,7 @@ Jennie Bixby</a></span> Hughey</td>
           </td>
           <td>Kendrick<br>
           </td>
-          <td><span wc-id="I8348">Sarah
-              Harriet Kendrick</span> Henderson</td>
+          <td><span wc-id="I8348">Sarah Harriet Kendrick</span> Henderson</td>
           <td>1872<br>
           </td>
           <td> <br>
@@ -2434,8 +2445,8 @@ Jennie Bixby</a></span> Hughey</td>
     </table>
     <br>
     <div>
-      <address>Copyright &copy; 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
-        2021 by William B. Thompson. Commercial use prohibited.</address>
+      <address>Copyright © 2012, 2013, 2014, 2015, 2016, 2017, 2018, 2019, 2020,
+        2021, 2022 by William B. Thompson. Commercial use prohibited.</address>
     </div>
     <br>
     <div class="Navigation"><a href="index.html">Home </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a

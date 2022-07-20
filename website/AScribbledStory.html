@@ -13,6 +13,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta content="A memoir of Mary HUGHEY Prescott (b. 1899 in Crow Wing Co., MN - d. 1997 in Seatle, WA). Farmer's daughter, teacher, missionary."
       name="description">
     <title>A Memoir of Mary Estella HUGHEY Prescott (1899 - 1997) </title>
+    <!-- The techniques used herin for automatic numbering of footnotes, are based on an article, "Accesible Footnotes with CSS, 
+by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
@@ -35,9 +37,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
       .Medium {font-size: medium;}
       .Red {color:red;}
       .strikethru {text-decoration: line-through;}
+/* Initialiazing a `footnotes` counter on the wrapper */
       article {
   counter-reset: Endnotes;
 }
+/**
+ * Inline footnotes references
+ * 1. Increment the counter at each new reference
+ * 2. Reset link styles to make it appear like regular text
+ */
       a[aria-describedby="Endnote-label"] {
   counter-increment: Endnotes; /* 1 */
   text-decoration: none; /* 2 */
@@ -45,6 +53,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   cursor: default; /* 2 */
   outline: none; /* 2 */
 }
+ /**
+ * Actual numbered references
+ * 1. Display the current state of the counter (e.g. `[1]`)
+ * 2. Align text as superscript
+ * 3. Make the number smaller (since it's superscript)
+ * 4. Slightly offset the number from the text
+ * 5. Reset link styles on the number to show it's usable
+ */
 a[aria-describedby="Endnote-label"]::after {
   content: '[' counter(Endnotes) ']'; /* 1 */
   vertical-align: super; /* 2 */
@@ -55,6 +71,9 @@ a[aria-describedby="Endnote-label"]::after {
   text-decoration: underline; /* 5 */
   cursor: pointer; /* 5 */
 }
+ /**
+ * Resetting the default focused styles on the number
+ */
       a[aria-describedby="Endnote-label"]:focus::after {
   outline: thin dotted;
   outline-offset: 2px;
@@ -353,12 +372,12 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             Purdy's Livery Stable. I believe it was Purdy's. At least I know it
             was Mr. Purdy who admired our matched team of grays and would
             willingly have bought them for his livery.</p>
-          <p>My earliest memory is of the time when <a aria-describedby="Endnote-label"
-              href="#UncleGeorge">Aunt Minnie and Uncle George Hepperly</a> came
-            to visit us. I remember the day. Aunt Minnie took my picture with
-            her big <a aria-describedby="Endnote-label" href="#PlateCamera">plate
-              camera</a>. Water lilies and other wildflowers made a background
-            and I was posed in various ways.</p>
+          <p>My earliest memory is of the time when <a href="https://www.wikitree.com/wiki/Bixby-1158">Aunt
+              Minnie</a> and <a href="https://www.wikitree.com/wiki/Hepperly-1">Uncle
+              George Hepperly</a> came to visit us. I remember the day. Aunt
+            Minnie took my picture with her big <a aria-describedby="Endnote-label"
+              href="#PlateCamera">plate camera</a>. Water lilies and other
+            wildflowers made a background and I was posed in various ways.</p>
           <p>I took smallpox while they were there, as did Uncle George, and,
             when convalescing days might have dragged tediously, they were
             shortened and made more pleasant for me by Uncle George cuddling me
@@ -389,15 +408,15 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             day and stood too close to the big round heater. The pungent smell
             of scorched wool made someone whirl me around, but not soon enough
             to save my dress which was burned all across the back of the skirt.
-            That dress is the one I wore when our family group picture was made.<a
-              aria-describedby="Endnote-label" href="#HugheyGroupPhoto"></a> How
-            I delayed things that day by not keeping my hand on father's knee,
-            as was posed! The photographer would no sooner get under his black
-            cape than down would come my hand. <a href="https://www.wikitree.com/wiki/Hughey-1587">Harry</a>
+            That dress is the one I wore when our family group picture was made.
+            How I delayed things that day by not keeping my hand on father's
+            knee, as was posed! The photographer would no sooner get under his
+            black cape than down would come my hand. <a href="https://www.wikitree.com/wiki/Hughey-1587">Harry</a>
             had to stand on a box to be seen properly, but he stood very
             straight and obedient, with his shiny celluloid collar and knee
             pants. The photographer finally gave up and let me rest my hand on
-            Mamma's knee, where it was more at home anyway. </p>
+            Mamma's knee, where it was more at home anyway.<a aria-describedby="Endnote-label"
+              href="#HugheyGroupPhoto"></a> </p>
           <p>Father was always kind to me, but I never felt at ease with him
             when I was a little child. He liked to tease and was unpredictable.
             He thought it was good fun to rub his scratchy chin whiskers against
@@ -453,24 +472,23 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
           <h3 id="Endnote-label" style="font-size:180%;">Endnotes</h3>
           <div class="w3-container w3-cursive">
             <ol>
-              <li id="Gafflecarb">A made-up word to illustrate how
-                footnotes/endnote links work.</li>
-              <li id="RogerSergel"> Novelist, playwright, president of a
-                publishing company for plays and friend of playwright Sherwood
-                Anderson.</li>
-              <li id="UncleGeorge"> Aunt Minnie &amp; Uncle George Hepperly.
-                Minnie was the sister of Hanna BIXBY Hughey.</li>
-              <li id="PlateCamera"> Roll film had been invented, but many
+              <li id="Gafflecarb">'Gafflecarb' - a made-up word to illustrate
+                how footnote/endnote links work.</li>
+              <li id="RogerSergel"> Roger Sergel - novelist, playwright,
+                president of a publishing company for plays and friend of
+                playwright Sherwood Anderson.</li>
+              <li id="PlateCamera"> Roll film. It had been invented, but many
                 photographers still used glass plates in large cameras with
                 bellows. The cameras were mounted on tripods. A large black hood
                 covered photographer and camera. The plates would have either
                 been 4" x 5" or 8" x 10", depending on the size of the camera.
-                It may have looked something like this: <img src="OldCamera.jpg"
-                  alt="photo of old
-                camera and hood on tripod" style="height:300"></li>
+                Minnie's camera may have looked something like this:
+                <p> <img src="OldCamera.jpg" alt="photo of old
+                camera and hood on tripod" style="height:300"> </p>
+              </li>
               <li id="TeacherRoomBoard">It was customary for country school
                 teachers of that era to receive room and board as part of their
-                meager compensation. Mary's father, Herbert Hughey was an avid
+                meager compensation. Mary's father, Herbert Hughey, was an avid
                 supporter of education and donated the land on which the school
                 was built. So it would have been convenient for the teacher to
                 be housed there. And fortunate from what Mary says about her
@@ -480,11 +498,28 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 teacher, it would have housed Mary, her older brother and
                 sister, plus her parents. It's easy to see why they added a
                 "west bedroom."</li>
-              <li id="HugheyGroupPhoto"> [tell about group photo]</li>
+              <li id="HugheyGroupPhoto">The family photo she wrote about. L-R: <a
+                  href="https://www.wikitree.com/wiki/Hughey-1582">Carrie</a>, <a
+                  href="https://www.wikitree.com/wiki/Hughey-1566">Herb</a>, <a
+                  href="https://www.wikitree.com/wiki/Hughey-1587">Harry</a>, <a
+                  href="https://www.wikitree.com/wiki/Hughey-1589">Mary</a><a>,
+                </a><a href="https://www.wikitree.com/wiki/Bixby-739">Hannah</a>
+                &amp; <a href="https://www.wikitree.com/wiki/Hughey-1584">Edd</a>.
+                Note that you can't see the box Harry is standing on. Nor his
+                short pants. But we do see the celluloid collars Mary spoke
+                of.&nbsp; (Photo courtesy of Mary's nephew, Roger R.
+                Hughey.)&nbsp;
+                <p> <img src="HCHugheyFamily1903ca.jpg" alt="photo of H. C. Hughey family circa 1903"
+                    style="width: 246px; height: 346px;"></p>
+              </li>
               <li id="KeroseneLamp"> Almost all lamps were fueled by kerosene in
                 that era.</li>
-              <li id="Floradora"> [show bisque headed dolls. Flordora dolls were
-                made in Germany] </li>
+              <li id="Floradora">Picture of a couple of Floradora dolls. They
+                were made in Germany and had heads made of bisque. Note that
+                they resemble Mary in the photo above.
+                <p> <img src="FloradoraDolls.jpg" alt="photo of some Floradora dolls"
+                    style="width: 227px; height: 318px;"> </p>
+              </li>
               <li id="MaryJuliaWilson"> If you're curious about the real Julia,
                 Mary Julia Wilson (1895 - 1970) was a daughter of James
                 Superintendent Alexander Wilson (1844 - 1927). This "city girl"

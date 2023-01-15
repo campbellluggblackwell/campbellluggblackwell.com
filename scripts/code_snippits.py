@@ -22,6 +22,7 @@ def load_html_file(filename):
             raise Exception(f"Can't process file: {filename}\n{e}\n")
     return html
 
+import BeautifulSoup
 
 def load_soup_file(filename):
     """
@@ -32,6 +33,11 @@ def load_soup_file(filename):
     return soup
 
 
+import glob
+import pathlib.Path as Path
+import sys
+import tidylib
+import tqdm.tqdm as tqdm ; # I think this is the import???
 ### Example main function
 def main(input_base_path:str, output_base_path:str) -> None:
 

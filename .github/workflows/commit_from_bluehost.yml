@@ -3,3 +3,12 @@ name: commit_from_bluehost
 on:
   workflow_dispatch:
   
+jobs:
+  get_website:
+    runs-on: ubuntu-latest
+    
+      - name: Setup git user
+        run: |
+             git config --global user.email robert.lugg@gmail.com
+             git config --global user.name robertlugg
+             

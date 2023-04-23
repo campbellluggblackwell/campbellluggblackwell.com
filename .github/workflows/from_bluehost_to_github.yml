@@ -1,0 +1,18 @@
+name: from_bluehost_to_github
+
+on:
+  #schedule:
+    # * is a special character in YAML so you have to quote this string
+    #- cron:  '*/30 * * * *'
+  workflow_dispatch:
+
+jobs:
+  from_bluehost_to_github:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Setup git user
+        run: |
+             git config --global user.email robert.lugg@gmail.com
+             git config --global user.name robertlugg
+      - name: eles
+        run: echo "I did it!"

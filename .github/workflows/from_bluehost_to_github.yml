@@ -20,18 +20,21 @@ jobs:
         run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
+
       - name: eles
         run: |
               echo "I did it!"
               ls
-              echo ${{ secrets.BLUEHOST_USERNAME }}
-      - name: Setup tmate session (for debugging)
-        uses: mxschmitt/action-tmate@v3
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+              echo "${{ secrets.BLUEHOST_USERNAME }}" > foo.txt
+
       - name: Clone campbellluggblackwell.com which is source in /website
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
              echo "BRANCH = $BRANCH"
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+
+      - name: Setup tmate session (for debugging)
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
       

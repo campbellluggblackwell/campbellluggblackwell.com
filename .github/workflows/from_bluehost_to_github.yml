@@ -24,8 +24,23 @@ jobs:
       - name: eles
         run: |
               echo "I did it!"
-              ls
               echo "${{ secrets.BLUEHOST_USERNAME }}" > foo.txt
+              cat << EOF > ftp_download
+              #!/usr/bin/expect
+              spawn ftp ftp.campbellluggblackwell.com
+              expect "Name (ftp.campbellluggblackwell.com:runner):"
+              send "rmlugg@campbellluggblackwell.com\r"
+              expect "Password:"
+              send "Joyous*123\r"
+              expect "ftp>"
+              send "cd public_html\r"
+              expect "ftp>"
+              send "mget * .\r"
+              expect "ftp>"
+              send "bye\r"
+              EOF
+              chmod +x ftp_download
+              
 
       - name: Clone campbellluggblackwell.com which is source in /website
         run: |

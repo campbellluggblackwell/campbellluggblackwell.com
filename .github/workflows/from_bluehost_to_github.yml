@@ -29,9 +29,9 @@ jobs:
               #!/usr/bin/expect
               spawn ftp ftp.campbellluggblackwell.com
               expect "Name (ftp.campbellluggblackwell.com:runner):"
-              send "rmlugg@campbellluggblackwell.com\r"
+              send "${{ secrets.BLUEHOST_USERNAME }}@campbellluggblackwell.com\r"
               expect "Password:"
-              send "3\r"
+              send "${{ secrets.BLUEHOST_PASSWORD }}\r"
               expect "ftp>"
               send "cd public_html\r"
               expect "ftp>"

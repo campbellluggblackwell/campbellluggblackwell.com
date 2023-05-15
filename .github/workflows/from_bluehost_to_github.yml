@@ -31,7 +31,7 @@ jobs:
               expect "Name (ftp.campbellluggblackwell.com:runner):"
               send "rmlugg@campbellluggblackwell.com\r"
               expect "Password:"
-              send "Joyous*123\r"
+              send "3\r"
               expect "ftp>"
               send "cd public_html\r"
               expect "ftp>"

@@ -24,11 +24,6 @@ jobs:
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
 
-      - name: eles
-        run: |
-              echo "I did it!"
-              echo "${{ secrets.BLUEHOST_USERNAME }}" > foo.txt
-
               
 
       - name: Clone campbellluggblackwell.com which is source in /website

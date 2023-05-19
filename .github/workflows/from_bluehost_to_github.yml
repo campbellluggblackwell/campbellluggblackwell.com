@@ -33,6 +33,7 @@ jobs:
 
       - name: Get Bluehost files
         run: |
+            sudo apt install -y expect
             cd ./source/website/
             chmod +x ../.github/workflows/ftp_expect_script
             ../.github/workflows/ftp_expect_script

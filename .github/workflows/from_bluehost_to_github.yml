@@ -36,6 +36,7 @@ jobs:
             sudo apt install -y expect
             cd ./source/website/
             chmod +x ../.github/workflows/ftp_expect_script
+            env
             ../.github/workflows/ftp_expect_script
             git commit
             

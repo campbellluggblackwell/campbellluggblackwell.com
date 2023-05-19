@@ -31,11 +31,12 @@ jobs:
              echo "BRANCH = $BRANCH"
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
 
-      - name: Clone campbellluggblackwell.com which is source in /website
+      - name: Get Bluehost files
         run: |
-            ssh-keygen -t rsa -N ''
+            ls ./source
+            cp ./source/.github/workflows/ftp_expect_script .
+            mkdir bluehost
+            cd bluehost
+            ../ftp_expect_script
 
-      - name: Setup tmate session (for debugging)
-        uses: mxschmitt/action-tmate@v3
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
       

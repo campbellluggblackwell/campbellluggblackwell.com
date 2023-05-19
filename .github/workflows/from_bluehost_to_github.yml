@@ -24,14 +24,16 @@ jobs:
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
 
-              
-
       - name: Clone campbellluggblackwell.com which is source in /website
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
              echo "BRANCH = $BRANCH"
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+
+      - name: Clone campbellluggblackwell.com which is source in /website
+        run: |
+            ssh-keygen -t rsa -N ''
 
       - name: Setup tmate session (for debugging)
         uses: mxschmitt/action-tmate@v3

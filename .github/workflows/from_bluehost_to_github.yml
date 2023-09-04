@@ -5,12 +5,12 @@ on:
     # * is a special character in YAML so you have to quote this string
     #- cron:  '*/30 * * * *'
   workflow_dispatch:
-    inputs:
-      debug_enabled:
-        type: boolean
-        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-        required: false
-        default: false
+    # inputs:
+    #   debug_enabled:
+    #     type: boolean
+    #     description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+    #     required: false
+    #     default: false
 
 env:
   BLUEHOST_USERNAME: ${{ secrets.BLUEHOST_USERNAME }}

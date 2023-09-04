@@ -17,7 +17,6 @@ jobs:
   from_bluehost_to_github:
     runs-on: ubuntu-latest
     env:
-      ABCDEG: YYuuuppppers
       BLUEHOST_USERNAME: ${{ secrets.BLUEHOST_USERNAME }}
       BLUEHOST_PASSWORD: ${{ secrets.BLUEHOST_PASSWORD }}
     steps:
@@ -42,6 +41,7 @@ jobs:
             ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
       - name: Commit and push bluehost files to github
         run: |
+            cd ./source/incoming/
             git add --all
             git commit -am "Automatic upload from action from_bluehost_to_github.yml"
             git push

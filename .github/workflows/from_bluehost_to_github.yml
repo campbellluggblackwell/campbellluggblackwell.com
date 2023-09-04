@@ -39,7 +39,7 @@ jobs:
             cd ./source/incoming/
             chmod +x ../.github/workflows/ftp_expect_script
             env
-            ../.github/workflows/ftp_expect_script
+            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
             git commit
             
       # Enable tmate debugging of manually-triggered workflows if the input option was provided

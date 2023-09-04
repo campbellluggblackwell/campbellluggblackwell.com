@@ -25,7 +25,7 @@ jobs:
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
              
-             sudo apt install -y expect        
+             # sudo apt install -y expect        
 
       - name: Clone campbellluggblackwell.com from github to ./source
         run: |
@@ -33,13 +33,13 @@ jobs:
              # export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
              export BRANCH=incoming
              echo "BRANCH = $BRANCH"
-             git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+             # git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
 
       - name: Get Bluehost files
         timeout-minutes: 10
         run: |
-            cd ./source/website/
-            chmod +x ../.github/workflows/ftp_expect_script
+            # cd ./source/website/
+            # chmod +x ../.github/workflows/ftp_expect_script
             rsync -ahvz -e 'ssh' --dry-run --delete campbff1@www.CampbellLuggBlackwell.com/:/home4/campbff1/public_html/ .
             # set -f
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png

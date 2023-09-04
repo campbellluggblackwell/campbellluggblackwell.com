@@ -1,5 +1,5 @@
 #!/usr/bin/expect
-spawn ftp ftp.campbellluggblackwell.com
+spawn sftp ftp.campbellluggblackwell.com
 expect "Name (ftp.campbellluggblackwell.com:runner):"
 send "${BLUEHOST_USERNAME}@campbellluggblackwell.com\r"
 expect "Password:"

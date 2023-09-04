@@ -38,7 +38,10 @@ jobs:
       - name: Get Bluehost files
         timeout-minutes: 10
         run: |
+            echo "pwd=`pwd`"
             cd ./source
+            echo "pwd=`pwd`"
+            ls
             chmod +x .github/workflows/rsync_expect_script
             # rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  "campbff1@CampbellLuggBlackwell.com:./public_html/" "./"
             .github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD

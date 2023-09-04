@@ -1,5 +1,6 @@
 #!/usr/bin/expect
 spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  "[lindex $argv 0]@CampbellLuggBlackwell.com:./public_html/" "./incoming/website"
+'
 expect { 
     "Are you sure" { 
         send "yes\r"

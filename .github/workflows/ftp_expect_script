@@ -1,5 +1,7 @@
 #!/usr/bin/expect
 spawn sftp -oHostKeyAlgorithms=+ssh-dss ftp.campbellluggblackwell.com
+expect "Are you sure"
+send "yes\r"
 expect "Name (ftp.campbellluggblackwell.com:runner):"
 send "${BLUEHOST_USERNAME}@campbellluggblackwell.com\r"
 expect "Password:"

@@ -1,7 +1,7 @@
 name: from_bluehost_to_github
 
 on:
-  schedule:
+  #schedule:
     # * is a special character in YAML so you have to quote this string
     #- cron:  '*/30 * * * *'
   workflow_dispatch:

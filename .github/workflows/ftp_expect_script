@@ -1,10 +1,10 @@
 #!/usr/bin/expect
-spawn sftp -oHostKeyAlgorithms=+ssh-dss ftp.campbellluggblackwell.com
+spawn sftp -oHostKeyAlgorithms=+ssh-dss [lindex $argv 0]@ftp.campbellluggblackwell.com
 expect "Are you sure"
 send "yes\r"
-expect "Name (ftp.campbellluggblackwell.com:runner):"
-send "[lindex $argv 0]@campbellluggblackwell.com\r"
-expect "Password:"
+#expect "Name (ftp.campbellluggblackwell.com:runner):"
+#send "[lindex $argv 0]@campbellluggblackwell.com\r"
+expect "ssword:"
 send "[lindex $argv 1]\r"
 expect "ftp>"
 send "cd public_html\r"

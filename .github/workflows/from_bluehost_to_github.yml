@@ -34,11 +34,11 @@ jobs:
       - name: Get Bluehost files
         run: |
             sudo apt install -y expect
-            cd ./source/website/
+            cd ./source/incoming/
             chmod +x ../.github/workflows/ftp_expect_script
             env
-            # ../.github/workflows/ftp_expect_script
-            # git commit
+            ../.github/workflows/ftp_expect_script
+            git commit
             
       # Enable tmate debugging of manually-triggered workflows if the input option was provided
       - name: Setup tmate session (if debug was enabled)

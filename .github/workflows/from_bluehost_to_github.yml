@@ -38,7 +38,7 @@ jobs:
       - name: Get Bluehost files
         timeout-minutes: 10
         run: |
-            cd ./source/incoming/
+            cd ./source/website/
             chmod +x ../.github/workflows/ftp_expect_script
             set -f
             ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
@@ -49,7 +49,7 @@ jobs:
             ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.html
       - name: Commit and push bluehost files to github
         run: |
-            cd ./source/incoming/
+            cd ./source/website/
             git add --all
             git commit -am "Automatic upload from action from_bluehost_to_github.yml"
             git push || true

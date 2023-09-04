@@ -1,0 +1,21 @@
+/* style sheet for general pages */ 
+body {font-size:12pt}
+h1 {font-size:34pt;text-align:center;}
+h2 {font-size:20pt;text-align:center;}
+h3 {font-size:18pt;text-align:center;}
+h4 {font-size:16pt;}
+a {cursor:pointer;}
+.stack, .panel { display: inline-block; vertical-align: top; width: 100%; }
+.stack { font-size: 0; text-align: justify; }
+.stack:after { content: ""; display: inline-block; width: 100%; }
+.panel { font-size: 16px; font-size: 1rem; text-align: left; }
+.Annotation {
+  font-style: italic;
+  font-family: helvetica, arial;
+  font-size: medium;
+}
+#parac {text-align:center;}
+#parar {text-align:right;}
+#parath {font-size:16pt;}
+#parafoot {font-size:14pt; font-style:italic;}
+table,th,td {border:1px solid black;font-size:12pt;}

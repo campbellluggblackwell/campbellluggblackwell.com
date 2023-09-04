@@ -1,0 +1,13 @@
+/* style sheet for Cemetery List pages */ 
+h1 {font-size:34pt;text-align:center;}
+h2 {font-size:20pt;text-align:center;}
+h3 {font-size:18pt;text-align:center;}
+h4 {font-size:16pt;}
+#parac {text-align:center;}
+#parar {text-align:right;}
+#parath {font-size:16pt;}
+#parafoot {font-size:14pt; font-style:italic;}
+
+.navigation {font-size: large;}
+table,th,td {border:1px solid black;font-size:12pt;}
+

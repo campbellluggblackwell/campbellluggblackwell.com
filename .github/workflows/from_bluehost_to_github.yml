@@ -30,23 +30,15 @@ jobs:
       - name: Clone campbellluggblackwell.com from github to ./source
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
-             # export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
-             export BRANCH=incoming
-             echo "BRANCH = $BRANCH"
-             git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
+             git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git main
+             git clone --single-branch --branch incoming https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git incoming
 
       - name: Get Bluehost files
         timeout-minutes: 10
         run: |
-            echo "pwd=`pwd`"
-            cd ./source
-            echo "pwd=`pwd`"
             ls
-            chmod +x .github/workflows/rsync_expect_script
-            # rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  "campbff1@CampbellLuggBlackwell.com:./public_html/" "./"
+            chmod +x main/.github/workflows/rsync_expect_script
             .github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
-
-            # rsync -ahvz -e 'ssh' --dry-run --delete "CampbellLuggBlackwell.com/:./public_html/" "./"
             # set -f
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg

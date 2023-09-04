@@ -26,7 +26,7 @@ jobs:
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
 
-      - name: Clone campbellluggblackwell.com which is source in /website
+      - name: Clone campbellluggblackwell.com from github to ./source
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
              export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
@@ -40,7 +40,11 @@ jobs:
             chmod +x ../.github/workflows/ftp_expect_script
             env
             ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
-            git commit
+      - name: Commit and push bluehost files to github
+        run: |
+            git add --all
+            git commit -am "Automatic upload from action from_bluehost_to_github.yml"
+            git push
             
       # Enable tmate debugging of manually-triggered workflows if the input option was provided
       - name: Setup tmate session (if debug was enabled)

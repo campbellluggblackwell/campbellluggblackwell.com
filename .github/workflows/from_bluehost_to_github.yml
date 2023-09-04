@@ -3,7 +3,7 @@ name: from_bluehost_to_github
 on:
   schedule:
     # * is a special character in YAML so you have to quote this string
-    - cron:  '*/30 * * * *'
+    #- cron:  '*/30 * * * *'
   workflow_dispatch:
     # inputs:
     #   debug_enabled:
@@ -30,7 +30,8 @@ jobs:
       - name: Clone campbellluggblackwell.com from github to ./source
         run: |
              echo "GITHUB_REF = $GITHUB_REF"
-             export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
+             # export BRANCH=`cut -d/ -f3 <<< $GITHUB_REF`
+             export BRANCH=incoming
              echo "BRANCH = $BRANCH"
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
 

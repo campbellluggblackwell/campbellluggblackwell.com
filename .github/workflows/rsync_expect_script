@@ -1,0 +1,15 @@
+#!/usr/bin/expect
+spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  "[lindex $argv 0]@CampbellLuggBlackwell.com:./public_html/" "./website"
+expect { 
+    "Are you sure" { 
+        send "yes\r"
+        expect "ssword:"
+        send "[lindex $argv 1]\r"
+    }
+    "ssword:" {
+        send "[lindex $argv 1]\r"
+    }
+}
+expect "speedup is"
+sleep 5
+send "bye\r"

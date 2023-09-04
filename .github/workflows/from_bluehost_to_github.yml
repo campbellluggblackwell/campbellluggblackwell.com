@@ -38,7 +38,7 @@ jobs:
         run: |
             ls
             chmod +x main/.github/workflows/rsync_expect_script
-            .github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
+            main/.github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
             # set -f
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg

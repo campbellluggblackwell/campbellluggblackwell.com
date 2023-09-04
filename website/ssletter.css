@@ -1,89 +1,176 @@
-body {
-  font-size: x-large;
-  <!-- font-family: Courier, serif; -->
-  font-family: Courier, "Courier New", monospace;
-}
-h1 {}
-h2 {
-  font-size: x-large;
-  font-family: Courier, "Courier New", monospace;
-  font-weight: normal;
-  text-align: center;
-}
-h3 {
-  
-  tfont-size: x-large;
-  font-family: Courier, "Courier New", monospace;
-  font-weight: normal
-  text-align: center;
-}
-h4 {
-  font-size: x-large;
-  font-family: Courier, "Courier New", monospace;
-  font-weight: normal;
-  text-align: center;
-}
-.FirstP {
-  margin-bottom: 0px;
-}
-.SecndP {
-  margin-top: 0px;
-  margin-right: 0px;
-  margin-bottom: 0px;
-  margin-left: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-}
-.Message {
-  text-indent: 80px;
-}
-.Closing {
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  margin-top: 0px;
-  margin-bottom: 0px;
-  text-indent: 235px;
-}
-.Signature {
-  text-indent: 285px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  margin-top: 0px;
-}
-.CloseAddr {
-  text-indent: 305px;
-  margin-top: 0px;
-  padding-top: 0px;
-  padding-right: 0px;
-  padding-bottom: 0px;
-  padding-left: 0px;
-  margin-bottom: 0px;
-}
-.FromAddr {
-  text-align: right;
-}
-.Salutaton {
-  text-align: left;
-}
-.LetterFooter {
-  text-align: center;
-}
-.Annotation {
-  font-style: italic;
-  font-family: helvetica, arial;
-  font-size: medium;
-}
- .Footnote {font-family:"Times New Roman", Serif; font-size:medium;}
-#parafoot {
-  font-size: 14pt;
-  font-style: italic;
-}
-.navigation {font-size: large;}
-}
-#RJ {text-align: right;}
+body {
+
+  font-size: x-large;
+
+  /* font-family: Courier, serif; */
+
+  font-family: Courier, "Courier New", monospace;
+
+}
+
+h1 {}
+
+h2 {
+
+  font-size: x-large;
+
+  font-family: Courier, "Courier New", monospace;
+
+  font-weight: normal;
+
+  text-align: center;
+
+}
+
+h3 {
+
+  
+
+  tfont-size: x-large;
+
+  font-family: Courier, "Courier New", monospace;
+
+  font-weight: normal
+
+  text-align: center;
+
+}
+
+h4 {
+
+  font-size: x-large;
+
+  font-family: Courier, "Courier New", monospace;
+
+  font-weight: normal;
+
+  text-align: center;
+
+}
+
+.FirstP {
+
+  margin-bottom: 0px;
+
+}
+
+.SecndP {
+
+  margin-top: 0px;
+
+  margin-right: 0px;
+
+  margin-bottom: 0px;
+
+  margin-left: 0px;
+
+  padding-top: 0px;
+
+  padding-right: 0px;
+
+  padding-bottom: 0px;
+
+  padding-left: 0px;
+
+}
+
+.Message {
+
+  text-indent: 80px;
+
+}
+
+.Closing {
+
+  padding-top: 0px;
+
+  padding-right: 0px;
+
+  padding-bottom: 0px;
+
+  padding-left: 0px;
+
+  margin-top: 0px;
+
+  margin-bottom: 0px;
+
+  text-indent: 235px;
+
+}
+
+.Signature {
+
+  text-indent: 285px;
+
+  padding-top: 0px;
+
+  padding-right: 0px;
+
+  padding-bottom: 0px;
+
+  padding-left: 0px;
+
+  margin-top: 0px;
+
+}
+
+.CloseAddr {
+
+  text-indent: 305px;
+
+  margin-top: 0px;
+
+  padding-top: 0px;
+
+  padding-right: 0px;
+
+  padding-bottom: 0px;
+
+  padding-left: 0px;
+
+  margin-bottom: 0px;
+
+}
+
+.FromAddr {
+
+  text-align: right;
+
+}
+
+.Salutaton {
+
+  text-align: left;
+
+}
+
+.LetterFooter {
+
+  text-align: center;
+
+}
+
+.Annotation {
+
+  font-style: italic;
+
+  font-family: helvetica, arial;
+
+  font-size: medium;
+
+}
+
+ .Footnote {font-family:"Times New Roman", Serif; font-size:medium;}
+
+#parafoot {
+
+  font-size: 14pt;
+
+  font-style: italic;
+
+}
+
+.navigation {font-size: large;}
+
+#RJ {text-align: right;}
+

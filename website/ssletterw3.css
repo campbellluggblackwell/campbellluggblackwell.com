@@ -63,21 +63,17 @@ a {text-decoration-color: blue;}
 }
 .LetterFooter 
   text-align: center;
-  w3-center;
 }
 .Annotation {
   font-style: italic;
   font-family: helvetica, arial;
   font-size: medium;}
 
-.Footnote {
-   w3-sans-serif; font-size:medium; w3-margin-left; w3-margin-right
-}
+.Footnote {font-family:"Times New Roman", Serif; font-size:medium;}
 
 #parafoot {
   font-size: 14pt;
   font-style: italic;
 }
 .navigation {font-size: large;}
-}
 #RJ {text-align: right;}

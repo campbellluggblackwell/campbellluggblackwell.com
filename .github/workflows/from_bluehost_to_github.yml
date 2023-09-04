@@ -40,19 +40,20 @@ jobs:
         run: |
             cd ./source/website/
             chmod +x ../.github/workflows/ftp_expect_script
-            set -f
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpeg
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.css
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.js
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.html
+            rsync -ahvz -e 'ssh' --dry-run --delete campbff1@www.CampbellLuggBlackwell.com/:/home4/campbff1/public_html/ .
+            # set -f
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpeg
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.css
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.js
+            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.html
       - name: Commit and push bluehost files to github
         run: |
             cd ./source/website/
-            git add --all
-            git commit -am "Automatic upload from action from_bluehost_to_github.yml"
-            git push || true
+            # git add --all
+            # git commit -am "Automatic upload from action from_bluehost_to_github.yml"
+            # git push || true
             
       # Enable tmate debugging of manually-triggered workflows if the input option was provided
       - name: Setup tmate session (if debug was enabled)

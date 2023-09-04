@@ -12,12 +12,14 @@ on:
     #     required: false
     #     default: false
 
-env:
-  BLUEHOST_USERNAME: ${{ secrets.BLUEHOST_USERNAME }}
-  BLUEHOST_PASSWORD: ${{ secrets.BLUEHOST_PASSWORD }}
+
 jobs:
   from_bluehost_to_github:
     runs-on: ubuntu-latest
+    env:
+      ABCDEG: YYuuuppppers
+      BLUEHOST_USERNAME: ${{ secrets.BLUEHOST_USERNAME }}
+      BLUEHOST_PASSWORD: ${{ secrets.BLUEHOST_PASSWORD }}
     steps:
       - name: Setup git user
         run: |

@@ -20,10 +20,12 @@ jobs:
       BLUEHOST_USERNAME: ${{ secrets.BLUEHOST_USERNAME }}
       BLUEHOST_PASSWORD: ${{ secrets.BLUEHOST_PASSWORD }}
     steps:
-      - name: Setup git user
+      - name: Set up environment
         run: |
              git config --global user.email robert.lugg@gmail.com
              git config --global user.name robertlugg
+             
+             sudo apt install -y expect        
 
       - name: Clone campbellluggblackwell.com from github to ./source
         run: |
@@ -33,11 +35,10 @@ jobs:
              git clone --single-branch --branch ${BRANCH} https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git source
 
       - name: Get Bluehost files
+        timeout-minutes: 10
         run: |
-            sudo apt install -y expect
             cd ./source/incoming/
             chmod +x ../.github/workflows/ftp_expect_script
-            env
             ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
       - name: Commit and push bluehost files to github
         run: |

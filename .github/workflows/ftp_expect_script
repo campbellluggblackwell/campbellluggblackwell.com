@@ -9,31 +9,7 @@ send "[lindex $argv 1]\r"
 expect "ftp>"
 send "cd public_html\r"
 expect "ftp>"
-send "mget *.svg .\r"
-expect "ftp>"
-sleep 2
-send "mget *.png .\r"
-expect "ftp>"
-sleep 2
-send "mget *.jpg .\r"
-expect "ftp>"
-sleep 2
-send "mget *.jpeg .\r"
-expect "ftp>"
-sleep 2
-send "mget *.xcf .\r"
-expect "ftp>"
-sleep 2
-send "mget *.html .\r"
-expect "ftp>"
-sleep 2
-send "mget *.js .\r"
-expect "ftp>"
-sleep 2
-send "mget *.css .\r"
-expect "ftp>"
-sleep 2
-send "mget *.htaccess .\r"
+send "mget -l 1 * .\r"
 expect "ftp>"
 sleep 2
 send "bye\r"

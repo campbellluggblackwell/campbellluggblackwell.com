@@ -9,7 +9,7 @@ send "[lindex $argv 1]\r"
 expect "ftp>"
 send "cd public_html\r"
 expect "ftp>"
-send "mget -l 1 * .\r"
+send "get -fp .\r"
 expect "ftp>"
 sleep 2
 send "bye\r"

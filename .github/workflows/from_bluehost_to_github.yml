@@ -39,7 +39,8 @@ jobs:
         run: |
             cd ./source/incoming/
             chmod +x ../.github/workflows/ftp_expect_script
-            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
+            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg
+            ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpeg
       - name: Commit and push bluehost files to github
         run: |
             cd ./source/incoming/

@@ -1,0 +1,20 @@
+#!/usr/bin/expect
+spawn sftp -oHostKeyAlgorithms=+ssh-dss [lindex $argv 0]@ftp.campbellluggblackwell.com
+# The first call, need to confirm its ok to connect
+expect { 
+    "Are you sure" { 
+        send "yes\r"
+        expect "ssword:"
+        send "[lindex $argv 1]\r"
+    }
+    "ssword:" {
+        send "[lindex $argv 1]\r"
+    }
+}
+expect "ftp>"
+send "cd public_html\r"
+expect "ftp>"
+send "mget [lindex $argv 2] .\r"
+expect "ftp>"
+sleep 2
+send "bye\r"

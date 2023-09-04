@@ -40,5 +40,10 @@ jobs:
             # ../.github/workflows/ftp_expect_script
             # git commit
             
+      # Enable tmate debugging of manually-triggered workflows if the input option was provided
+      - name: Setup tmate session (if debug was enabled)
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+            
 
       

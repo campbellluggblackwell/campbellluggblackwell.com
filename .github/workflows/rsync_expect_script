@@ -2,12 +2,9 @@
 puts "hello: [pwd]"
 set src "[lindex $argv 0]@CampbellLuggBlackwell.com:/home4/[lindex $argv 0]/public_html"
 puts "src: ${src}"
-puts "dst: ${dst}"
 set dst "/home/runner/work/campbellluggblackwell.com/campbellluggblackwell.com/incoming/website"
+puts "dst: ${dst}"
 spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  ${src} ${dst}
-puts "hello"
-# spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html/ ./incoming/website/ || true
-#spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html ./incoming/website || true
 
 expect { 
     "Are you sure" { 

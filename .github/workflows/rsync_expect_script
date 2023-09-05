@@ -1,7 +1,7 @@
 #!/usr/bin/expect
-puts "hello"
+puts "hello: [pwd]"
 # spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html . || true
-spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html/ ./incoming/website || true
+spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html/ ./incoming/website/ || true
 puts "hello"
 # spawn rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/campbff1/public_html/ ./incoming/website/ || true
 puts "hello"

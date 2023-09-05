@@ -48,14 +48,16 @@ jobs:
             cd ./incoming/website/
             rm -Rf *.bak
             rm -Rf .htaccess
+            rm -Rf .ftp*
+            
 
       - name: Commit and push bluehost files to github
         run: |
             cd ./incoming/website/
             git status
-            # git add --all
-            # git commit -am "Automatic upload from action from_bluehost_to_github.yml"
-            # git push || true
+            git add --all
+            git commit -am "Automatic upload from action from_bluehost_to_github.yml"
+            git push || true
             
 
             

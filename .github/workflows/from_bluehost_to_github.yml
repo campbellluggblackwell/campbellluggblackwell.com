@@ -43,6 +43,11 @@ jobs:
             ls
             chmod +x main/.github/workflows/rsync_expect_script
             main/.github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
+            # Cleanup
+            rm -Rf ./main
+            cd ./incoming/website/
+            rm -Rf *.bak
+            rm -Rf .htaccess
 
       - name: Commit and push bluehost files to github
         run: |

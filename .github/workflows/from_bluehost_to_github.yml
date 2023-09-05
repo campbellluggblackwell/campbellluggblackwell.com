@@ -32,18 +32,7 @@ jobs:
              echo "GITHUB_REF = $GITHUB_REF"
              git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git main
              git clone --single-branch --branch incoming https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git incoming
-
-      - name: foo
-        run: |
-           ls
-           ls -halt main
-           echo "main/.github"
-           ls -halt main/.github
-           echo "workflows..."
-           ls -halt main/.github/workflows
-           echo "scr"
-           ls main/.github/workflows/rsync_expect_script
-           
+          
       - name: Setup tmate session (if debug was enabled)
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -54,16 +43,11 @@ jobs:
             ls
             chmod +x main/.github/workflows/rsync_expect_script
             main/.github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
-            # set -f
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpeg
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.css
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.js
-            # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.html
+
       - name: Commit and push bluehost files to github
         run: |
-            cd ./source/website/
+            cd ./incoming/website/
+            git status
             # git add --all
             # git commit -am "Automatic upload from action from_bluehost_to_github.yml"
             # git push || true

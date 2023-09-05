@@ -5,12 +5,12 @@ on:
     # * is a special character in YAML so you have to quote this string
     #- cron:  '*/30 * * * *'
   workflow_dispatch:
-    inputs:
-      debug_enabled:
-        type: boolean
-        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-        required: false
-        default: false
+    # inputs:
+    #   debug_enabled:
+    #     type: boolean
+    #     description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+    #     required: false
+    #     default: false
 
 
 jobs:
@@ -37,7 +37,11 @@ jobs:
         run: |
            ls
            ls -halt main
-           ls -halt incoming
+           echo "main/.github"
+           ls -halt mail/.github
+           echo "workflows..."
+           ls -halt main/.github/workflows
+           
       - name: Setup tmate session (if debug was enabled)
         uses: mxschmitt/action-tmate@v3
         if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
@@ -47,7 +51,7 @@ jobs:
         run: |
             ls
             chmod +x main/.github/workflows/rsync_expect_script
-            main/.github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
+            . main/.github/workflows/rsync_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD
             # set -f
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.png
             # ../.github/workflows/ftp_expect_script $BLUEHOST_USERNAME $BLUEHOST_PASSWORD *.jpg

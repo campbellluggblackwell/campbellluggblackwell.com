@@ -5,12 +5,12 @@ on:
     # * is a special character in YAML so you have to quote this string
     #- cron:  '*/30 * * * *'
   workflow_dispatch:
-    # inputs:
-    #   debug_enabled:
-    #     type: boolean
-    #     description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
-    #     required: false
-    #     default: false
+    inputs:
+      debug_enabled:
+        type: boolean
+        description: 'Run the build with tmate debugging enabled (https://github.com/marketplace/actions/debugging-with-tmate)'
+        required: false
+        default: false
 
 
 jobs:
@@ -33,6 +33,15 @@ jobs:
              git clone --single-branch --branch main https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git main
              git clone --single-branch --branch incoming https://${{ secrets.API_TOKEN_GITHUB }}@github.com/campbellluggblackwell/campbellluggblackwell.com.git incoming
 
+      - name: foo
+        run: |
+           ls
+           ls -halt main
+           ls -halt incoming
+      - name: Setup tmate session (if debug was enabled)
+        uses: mxschmitt/action-tmate@v3
+        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+        
       - name: Get Bluehost files
         timeout-minutes: 10
         run: |
@@ -53,10 +62,7 @@ jobs:
             # git commit -am "Automatic upload from action from_bluehost_to_github.yml"
             # git push || true
             
-      # Enable tmate debugging of manually-triggered workflows if the input option was provided
-      - name: Setup tmate session (if debug was enabled)
-        uses: mxschmitt/action-tmate@v3
-        if: ${{ github.event_name == 'workflow_dispatch' && inputs.debug_enabled }}
+
             
 
       

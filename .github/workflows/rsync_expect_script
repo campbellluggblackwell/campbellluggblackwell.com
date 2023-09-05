@@ -9,6 +9,7 @@ spawn rsync \
     -e "ssh -oHostKeyAlgorithms=+ssh-dss" \
     --dry-run \
     --delete \
+    --exclude '*.bak' \
     --exclude blog/ \
     --exclude main/ \
     --exclude ssl/ \

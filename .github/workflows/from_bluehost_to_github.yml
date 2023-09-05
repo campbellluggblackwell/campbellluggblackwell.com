@@ -38,9 +38,11 @@ jobs:
            ls
            ls -halt main
            echo "main/.github"
-           ls -halt mail/.github
+           ls -halt main/.github
            echo "workflows..."
            ls -halt main/.github/workflows
+           echo "scr"
+           ls main/.github/workflows/rsync_expect_script
            
       - name: Setup tmate session (if debug was enabled)
         uses: mxschmitt/action-tmate@v3

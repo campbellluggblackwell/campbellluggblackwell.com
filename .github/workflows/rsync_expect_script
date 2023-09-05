@@ -1,5 +1,13 @@
 #!/usr/bin/expect
-spawn "rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:./public_html/ ./incoming/website"
+puts "hello"
+
+spawn "rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/\campbff1/public_html/ ./incoming/website" || true
+puts "hello"
+spawn "rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/\campbff1/public_html/ ./incoming/website/" || true
+puts "hello"
+spawn "rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/\campbff1/public_html ./incoming/website" || true
+spawn "rsync -ahvz -e 'ssh -oHostKeyAlgorithms=+ssh-dss' --dry-run --delete --exclude='*/'  [lindex $argv 0]@CampbellLuggBlackwell.com:/home4/\campbff1/public_html ." || true
+
 puts "hello"
 expect { 
     "Are you sure" { 

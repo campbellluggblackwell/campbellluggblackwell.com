@@ -28,86 +28,14 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
     <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
 
       rel="stylesheet">
-    <link href="ssletterw3.css" rel="stylesheet">
+    <link href="ssRespWeb.css" rel="stylesheet">
     <style type="text/css">
-   body {font-size: 200%; font-family: 'Merriweather', serif;}
-       h1 {text-align: center; font-family: 'Lora', serif;}
-           h2 {text-align: center; font-family: 'Oswald', sans-serif;}
-       h2 {font-family: 'Lora'; font-size:120%;}
-       h3 {font-size: 115%; font-family: 'Cabin', san-serif;}
-       h4 {font-family: 'Lora', serif; text-align: left; text-decoration:underline; 
-         font-weight: 500; font-size:105%; font-style: oblique;}
-       hr {border-top:3px solid;}
-       table, th, td {border:none;}
-       table {border-collapse: collapse;}
-       td {font-size:140%;}
-      blockquote {font-family: 'Chelsea Market', cursive;}
-       img {
-        float: left;
-         margin: 5px;}
-      figure {font-style: oblique;}
-      .cards {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));}
-      .FromAddr p + p {padding: 0px; margin: 0px;}
-      .Medium {font-size: medium;}
-      .Red {color:red;}
-      .strikethru {text-decoration: line-through;}
-/* Initialiazing a `footnotes` counter on the wrapper */
-      article {
-  counter-reset: Endnotes;
-}
-/**
- * Inline footnotes references
- * 1. Increment the counter at each new reference
- * 2. Reset link styles to make it appear like regular text
- */
-      a[aria-describedby="Endnote-label"] {
-  counter-increment: Endnotes; /* 1 */
-  text-decoration: none; /* 2 */
-  color: inherit; /* 2 */
-  cursor: default; /* 2 */
-  outline: none; /* 2 */
-}
- /**
- * Actual numbered references
- * 1. Display the current state of the counter (e.g. `[1]`)
- * 2. Align text as superscript
- * 3. Make the number smaller (since it's superscript)
- * 4. Slightly offset the number from the text
- * 5. Reset link styles on the number to show it's usable
- */
-a[aria-describedby="Endnote-label"]::after {
-  content: '[' counter(Endnotes) ']'; /* 1 */
-  vertical-align: super; /* 2 */
-  font-size: 0.9em; /* 3 */
-  font-weight:500;
-  margin-left: 2px; /* 4 */
-  color: blue; /* 5 */
-  text-decoration: underline; /* 5 */
-  cursor: pointer; /* 5 */
-}
- /**
- * Resetting the default focused styles on the number
- */
-      a[aria-describedby="Endnote-label"]:focus::after {
-  outline: thin dotted;
-  outline-offset: 2px;
-}
-      footer :target {
-  background: yellow;
-}
-      .alert {
-  padding: 20px;
-  background-color: #90EE90; /* Sad */
-  color: black;
-  margin-bottom: 15px;
-}
     </style>
     <!-- Google Tag Manager (noscript) --> <noscript></noscript>
   </head>
-  <body><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8" style="display:none;visibility:hidden"
+  <body><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
 
-      height="0" width="0"></iframe>
+      style="display:none;visibility:hidden" height="0" width="0"></iframe>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container w3-mobile">
       <header>
@@ -360,7 +288,7 @@ a[aria-describedby="Endnote-label"]::after {
               fertilizer. I never minded the smell. It was just one of the
               “signs of spring.” </p>
             <p>My mother taught K through 3rd grade in one room. It wasn’t a 1
-              room country school, it had two floors and 3 rooms. K - 3 had the
+              room country school; it had two floors and 3 rooms. K - 3 had the
               entire first floor and the 2nd floor had a room for the combined
               4th and 5th grades, while the sixth graders had a room all their
               own -- taught by the principal. Having multiple grades in the same
@@ -380,8 +308,8 @@ a[aria-describedby="Endnote-label"]::after {
               “sound out words,” but I was reading pretty well. (BTW, most
               people I encounter in the Allentown, PA area, don’t know how to
               sound out words. When people see my address, “Pericles Place” they
-              have no idea how to pronounce it. Or spell it if they hear it, how
-              to spell it. Which shows they either didn’t ever study Athenian
+              have no idea how to pronounce it. Or, if they hear it, how to
+              spell it. Which shows they either didn’t ever study Athenian
               history or if they did, didn’t pay attention. We studied it in
               Binghamton in my day. Moreover, many pharmacy staff and medical
               office personnel processing a list of what medications you take or
@@ -404,9 +332,9 @@ a[aria-describedby="Endnote-label"]::after {
         </div>
       </main>
       <footer>
-        <div class="w3-cell-row" style="font-style:italic;"> Copyright © 1993,
+        <div class="w3-cell-row" style="font-style:oblique;"> Copyright © 1993,
           2022 William B. Thompson. Commercial use prohibited. </div>
-        <nav class="w3-cell-row w3-sans">
+        <nav class="w3-cell-row w3-serif w3-mobile">
           <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
             <a class="w3-bar-item w3-border" href="documents.html">Documents
               Table of Contents</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This

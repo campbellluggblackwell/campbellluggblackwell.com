@@ -13,14 +13,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     <meta content="William B. Thompson's memoir -- My Family." name="description">
     <title>Bill Thompson's Memoir - Family</title>
     <!-- The techniques used herin for automatic numbering of footnotes, are based on an article, "Accesible Footnotes with CSS, 
-by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
+by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/as amended by PaulOB in https://www.sitepoint.com/community/t/having-trouble-with-multiple-slideshows-on-one-page/293076-->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
     <link href="ssletterw3.css" rel="stylesheet">
@@ -47,17 +50,13 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
 	box-sizing: border-box
 }
       figure {font-style: oblique;}
-      img {max-height:800px; object-fit:contain; vertical-align:middle;}
+ <!--     img {max-height:800px; object-fit:contain; vertical-align:middle;} -->
+            img {object-fit:contain; vertical-align:middle;}
       .FromAddr p + p {padding: 0px; margin: 0px;}
       .Medium {font-size: medium;}
       .Red {color:red;}
       .strikethru {text-decoration: line-through;}
-      .mySlides1 {display:none;}
-      .mySlides2 {display:none;}
-      .mySlides3 {display:none;}
-      .mySlides4 {display:none;}
-      .mySlides5 {display:none;}
-      .mySlides6 {display:none;}
+    .mySlides1, .mySlides2, .mySlides3, .mySlides4, .mySlides5, .mySlides6 {display:none;}
    .slideshow-container {
 	max-width: 100%;
 	position: relative;
@@ -73,14 +72,13 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
 	color: white;
 	font-weight: bold;
 	font-size: 18px;
-	transition: 0.6s ease;
+	
 	border-radius: 0 3px 3px 0;
-	user-select: none;
+
 }
  .next {
 	right: 0;
-	border-radius: 3px 0 0 3px;
-}
+   border-radius: 3px 0 0 3px;}
 /* On hover, add a grey background color */
 .prev:hover, .next:hover {
 	background-color: #f1f1f1;
@@ -94,7 +92,6 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
 }
       .image {
 	max-height:100px;
-	background:red;
 }
 .img1 {
 	background:red
@@ -106,13 +103,16 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
 	background:green
 }
       .img4 {
-	background:blue
+	background:LightBlue
 }
             .img5 {
 	background:brown
 }
             .img6 {
 	background:pink
+}
+                  .img7 {
+	background:sand
 }
 /* Initialiazing a `footnotes` counter on the wrapper */
       article {
@@ -167,7 +167,8 @@ a[aria-describedby="Endnote-label"]::after {
     </style>
     <!-- Google Tag Manager (noscript) --> <noscript></noscript>
   </head>
-  <body><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8" style="display:none;visibility:hidden"
+  <body><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8" style="display:none;visibility:hidden"
+
       height="0" width="0"></iframe>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container">
@@ -183,46 +184,72 @@ a[aria-describedby="Endnote-label"]::after {
       <hr>
       <main class="w3-container">
         <div class="w3-container w3-serif">
-          <p> [<u><b>KNOWN BUG</b></u>. THERE'S A PROBLEM MANY WEBMASTERS HAVE
-            ENCOUNTERED GETTING MORE THAN TWO SLIDE-SHOWS TO WORK ON A SINGLE
-            WEBPAGE. I SHOULD HAVE A SOLUTION SHORTLY AND WILL THEN RESUME
-            ADDING MORE PHOTOS. </p>
+          <p> [Some living family members have privacy concerns, which I want to
+            respect. So, I have not written sections for my children,
+            grandchildren, nephews, nieces, and their descendants. But if any of
+            them wish to write something about themselves to share, I will
+            gladly include it.&nbsp; <u><b><br>
+              </b></u></p>
+          <p><u><b>KNOWN BUG</b></u>. ONLY DAD's SLIDE-SHOW WORKS AT PRESENT. I
+            SHOULD HAVE THE OTHER SLIDESHOWS ( FOR MOM, TOM, ANNE, HANK &amp;
+            ME) SHORTLY AND WILL THEN RESUME ADDING MORE PHOTOS. </p>
           <p>The target audience for this chapter, is descendants of my parents.
             Anyone is welcome to read it, but it may not interest the general
-            public.</p>
+            public.]</p>
           <p> <b>[Note: If you go to a footnote, at the end of the footnote
               there will be a "back-link" character, '↵,' as a return link.
               Click on that and it will return you to where you came from -- no
               need to scroll back thru countless paragraphs. The back-link
               should work with screen readers too.</b>] </p>
-          <figure class="w3-center"><img src="PhotoThompsonSiblings_ca1991.png"
-              alt="photo of siblings Hank, Bill, Anne and Tom Thompson, ca 1991"
+          <figure class="w3-center"><img src="PhotoThompsonSiblings_ca1991.png"
+
+              alt="photo of siblings Hank, Bill, Anne and Tom Thompson, ca 1991"
+
               width="90%;"><figcaption>Hank, Bill, Anne &amp; "Tom" Thompson, ca
               1991</figcaption></figure>
           <h3> MY FAMILY'S STORY: Dad's; Mom's; Tom's (aka Walter, Jr.); Anne's;
             Hank's &amp; Mine </h3>
           <p> </p>
-          <h4>"Pater Familias.” Most of the idustrialized world is a still
-            patriarchical, so I'll start with my father </h4>
+          <h4 id="Dad">"Pater Familias.” Most of the idustrialized world is a
+            still patriarchical, so I'll start with my father </h4>
           <!---      <div class="w3-content w3-display-container w3-center">
-            <div class="mySlides1">              <figure><img src="WalterThompson1864_1895.png" style="width:100%"                  alt="Walter Thompson the 1st"><figcaption>"Walter Thompson, I                  (1864 - 1895)</figcaption></figure>            </div>           <div class="mySlides1">              <figure> <img src="PhotoWalterThompsonSrJr_ca1919.png" style="width:100%"                  alt="Photo of Walter F. Thompson Sr. and Jr. ca 1919"><figcaption></figcaption></figure>            </div>            
-<div class="mySlides1">              <figure> <img src="Walt_Jess_ca1945.png" style="width:70%" alt="Photo of Walter F. Thompson Sr. and Jessica Hoyt Thompson circa 1945"><figcaption>Walter                  and Jessica Hoyt Thompson ca19Walter                  Thompson Sr. and Jr. ca 1945</figcaption></figure>            </div>            <div class="mySlides1">              <figure> <img src="WalterThompsonSr_BillThompson_WmBoller.png" style="width:100%"                  alt="Photo of Walter F. Thompson Sr., Bill Thompson and William Boller"><figcaption>Walter                  Thompson Sr., Wm. Boller Thompson and Wm. Boller ca1946</figcaption></figure>            </div>            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">❮</button>            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">❯</button> -->
-          <div class="slideshow-container">
-            <div class="mySlides1"> <img src="WalterThompson1864_1895.png" style="width:100%"
+            <div class="mySlides1">              <figure><img src="WalterThompson1864_1895.png" style="width:100%" alt="Walter Thompson the 1st"><figcaption>"Walter Thompson, I (1864 - 1895)</figcaption></figure>            </div>           <div class="mySlides1"> <figure> <img src="PhotoWalterThompsonSrJr_ca1919.png" style="width:100%" 
+alt="Photo of Walter F. Thompson Sr. and Jr. ca 1919"><figcaption></figcaption></figure>            </div>            <div class="mySlides1"><figure> <img src="Walt_Jess_ca1945.png" style="width:70%" alt="Photo of Walter F. Thompson Sr. and Jessica Hoyt Thompson circa 1945"><figcaption>Walter and Jessica Hoyt Thompson ca1945
+<div class=mySlides1"> <figure><img src="TomDadFishing.jpg" alt="Photo of Tom and Dad on fishing trip"><figcaptioin>Tom and dad fishing ca 1950</figcaption></figure>            </div>               <div class="mySlides1">              <figure> <img src="WalterThompsonSr_BillThompson_WmBoller.png" style="width:100%"alt="Photo of Walter F. Thompson Sr., Bill Thompson and William Boller">
+<figcaption>Walter Thompson Sr., Wm. Boller Thompson and Wm. Boller ca1946</figcaption></figure>            </div>            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">❮</button>            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">❯</button> -->
+          <div class="slideshow-container w3-center">
+            <div class="mySlides1"> <img src="WalterThompson1864_1895.png" style="width:100%"
+
                 alt="Walter Thompson the 1st">
-              <div class="image img1">Walter Thompson, I (1864 - 1895) Image 1-1</div>
+              <div class="image">Dad's father, Walter Thompson, I (1864 -
+                1895)</div>
             </div>
-            <div class="mySlides1"> <img src="PhotoWalterThompsonSrJr_ca1919.png"
+            <div class="mySlides1"> <img src="PhotoWalterThompsonSrJr_ca1919.png"
+
                 style="width:100%" alt="Photo of Walter F. Thompson Sr. and Jr. ca 1919"><!--Image here-->
-              <div class="image img2">Walter Thompson Sr. and Jr. ca 1919 Image
-                1-2</div>
+              <div class="image">Walter Thompson Sr. and Jr. ca 1919</div>
             </div>
-            <div class="mySlides1"> <img src="Walt_Jess_ca1945.png" style="width:70%"
-                alt="Photo of Walter F. Thompson Sr. and Jessica Hoyt Thompson circa 1945">
-              <div class="image img3">Walter and Jessica Hoyt Thompson ca1945
-                Image 1-3</div>
+            <div class="mySlides1"> <img src="FrancesWalterBillJessica_ca1946.png"
+
+                style="width:70%" alt="Photo of Frances GOODRICH Hoyt Walter Thompson Sr., Bill Thompson and Jessica HOYT Thompson circa 1946">
+              <div class="image">Frances GOODRICH Hoyt, Walter Thompson
+                Sr., Bill Thompson and Jessica HOYT Thompson circa 1946</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 0)">❮</a> <a class="next" onclick="plusSlides(1, 0)">❯</a>
+            <div class="mySlides1"> <img src="TomDadFishing.jpg" style="width:70%"
+
+                alt="Photo of Walter F. Thompson Jr. &amp; Sr. fishing ca1950">
+              <div class="image">Walter Thompson Jr. &amp; Sr. on a
+                Canadian fishing trip ca 1950 Image 1-4</div>
+            </div>
+            <div class="mySlides1"> <img src="WalterThompsonSr_BillThompson_WmBoller.png"
+
+                style="width:70%" alt="Photo of Walter F. Thompson Sr., Bill Thompson and William Boller">
+              <div class="image">Walter Thompson Sr., Wm. Boller Thompson
+                and Wm. Boller ca1946</div>
+            </div>
+            
+            <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
           </div>
           <div class="w3-container">
             <p><a name="WalterFThompson1893"></a> I see my father as
@@ -234,13 +261,14 @@ a[aria-describedby="Endnote-label"]::after {
               rather rigid, distinctions. People were either "good" or "bad."
               One transgression by a friend of decades was unforgivable -- they
               were crossed off his list. </p>
-            <p>A neighbor from Dublin used to say "He hangs his fiddle outside
+            <p>A neighbor from Ireland used to say "He hangs his fiddle outside
               the door." I thin k meaning that he was convivial with his
               coworkers and fishing buddies, but distant from his family.</p>
             <p><a href="https://www.wikitree.com/wiki/Thompson-1681">Walter
                 Frederick Thompson</a>, Sr.,was born in 1893, in Plattsburgh, NY
               to a tubercular, immigrant <a href="https://www.wikitree.com/wiki/Thompson-47214">father</a>,
-              who died when dad was two and had no memories of; and a nurse <a
+              who died when dad was two and had no memories of; and a nurse <a
+
                 href="https://www.wikitree.com/wiki/Bulley-101">mother</a>, whom
               he didn't know well. When she was widowed with two young children,
               she left them in the capable hands of her <a href="https://www.wikitree.com/wiki/LaPlante-601">mother</a>,
@@ -290,7 +318,8 @@ a[aria-describedby="Endnote-label"]::after {
             <p> When he was old enough, he joined the navy, and became a
               machinist on board a primitive submarine of the day. The US Navy's
               experimental designs of the K-series </p>
-            <figure><img src="K1Sub.png" alt="Photo of US Navy K-series, pre WW1 subs"
+            <figure><img src="K1Sub.png" alt="Photo of US Navy K-series, pre WW1 subs"
+
                 style="width:25%;">Pre-WW1 US Navy K-series sub.</figure>
             of subs were more dangerous to their crews than to enemy ships. The
             K-subs didn't see combat, but were used for patrolling coasts.
@@ -360,20 +389,22 @@ a[aria-describedby="Endnote-label"]::after {
               especially table manners. Some what incongruously, in order to
               teach us not to put our elbows on the table, offending elbows were
               subject to being jabbed with his fork. </p>
-            <p> <img src="LaFayetteSedan.png" alt="Photo of Nash LaFayette sedan, ca. 1937"
-                style="width:20%; float:right;">He was industrious. An excellent
-              vegetable gardener, diligent pruner of grapevines, berry bushes,
-              shrubs, etc. Replaced a long, laid field-stone front walk with one
-              where the field-stones were set in concrete, carefully prepared
-              gravel underneath. Built a large, stone fireplace in the back yard
-              for grilling for picnics -- it even a range top. He did home
-              repairs of all sorts and was especially proud of his painting
-              skills; - mowing the meadow with a scythe; spending hours on his
-              hands and knees, hunting errant dandelions with an old table knife
-              to remove their roots (a custom I continued). And of course, tools
-              were cleaned and put away. "Take care of your tools and they'll
-              take care of you." During WW2, when Detroit wasn't making cars,
-              did a great job of keeping our family <a href="https://en.wikipedia.org/wiki/LaFayette_Motors">Nash
+            <p> <img src="LaFayetteSedan.png" alt="Photo of Nash LaFayette sedan, ca. 1937"
+
+                style="width: 271px; float: right; height: 167px;">He was
+              industrious. An excellent vegetable gardener, diligent pruner of
+              grapevines, berry bushes, shrubs, etc. Replaced a long, laid
+              field-stone front walk with one where the field-stones were set in
+              concrete, carefully prepared gravel underneath. Built a large,
+              stone fireplace in the back yard for grilling for picnics -- it
+              even a range top. He did home repairs of all sorts and was
+              especially proud of his painting skills; - mowing the meadow with
+              a scythe; spending hours on his hands and knees, hunting errant
+              dandelions with an old table knife to remove their roots (a custom
+              I continued). And of course, tools were cleaned and put away.
+              "Take care of your tools and they'll take care of you." During
+              WW2, when Detroit wasn't making cars, did a great job of keeping
+              our family <a href="https://en.wikipedia.org/wiki/LaFayette_Motors">Nash
                 LaFayette</a> running.</p>
             <p>He appreciated nature, but seemed to need a fishing pole or a gun
               in hand as an excuse to go for a walk. He would often take the
@@ -383,7 +414,8 @@ a[aria-describedby="Endnote-label"]::after {
             <p>In politics, like all family members of Civil War veterans, he
               was a Republican. He had no use for Harry Truman, whom he
               considered "vulgar." He was comfortable with Republican
-              "liberals," such as <a href="">Nelson Rockefeller</a> and <a href="https://en.wikipedia.org/wiki/Jacob_Javits">Jacob
+              "liberals," such as <a href="https://en.wikipedia.org/wiki/Nelson_Rockefeller">Nelson
+                Rockefeller</a> and <a href="https://en.wikipedia.org/wiki/Jacob_Javits">Jacob
                 Javits</a>. But he did finally bring himself to vote for a
               Democrat for mayor -- who happened to be the brother of a family
               friend. </p>
@@ -471,16 +503,17 @@ a[aria-describedby="Endnote-label"]::after {
               anything he did-unto-her would be done-unto-him -- with interest.
               No one considered those warnings as empty threats. He never
               begrudged those "refugee" visits. My parents had opposed the
-              marriage. One night my parents, sister and I (the whole household
-              at the time except for my grandmother, who I think had gone to
-              bed, discussed her choice. My sister was 30, and I was an almost
-              grown-up (I thought) 14. I defended my sister as being old enough
-              to make her own decision on such an important issue. My father
-              said, "Shut up and sit down or I'll knock you down." So I did. I
-              don't know what else was said, but obviously she did marry him.</p>
-            <p>Which brings me to his grand-parenting. I'm confident that I was
-              a better father than he was, but he may have been a better
-              grandfather than me. He didn't like his son-in-law (for cause),
+              marriage. One night, prior to the marriage, my parents, sister and
+              I (the whole household at the time except for my grandmother, who
+              I think had gone to bed, discussed her choice. My sister was 30,
+              and I was an almost grown-up (I thought) 14. I defended my sister
+              as being old enough to make her own decision on such an important
+              issue. My father said, "Shut up and sit down or I'll knock you
+              down." So I did. I don't recall what else was said, but obviously
+              she did marry George.</p>
+            <p>Which brings me to dad's grand-parenting. I'm confident that I
+              was a better father than he was, but he may have been a better
+              grandfather than I was. He didn't like his son-in-law (for cause),
               but didn't take that out on his grandson. However, he intensely
               disliked one daughter-in-law (also for cause) and took it out on
               his granddaughter (mostly by ignoring her). My mother took him to
@@ -515,33 +548,39 @@ a[aria-describedby="Endnote-label"]::after {
           </div>
           <hr>
           <div class="w3-container">
-            <h4>My mother: From "Good stock.”</h4>
+            <h4 id="Mom">My mother: From "Good stock.”</h4>
             <!---  <div class="w3-content w3-display-container w3-center">
               <div class="mySlides2">                <figure><img src="Jessie_Lizzie.png" alt="Photo of Jessica HOYT Thompson and Elizabeth HOYT Walker circa 1896"                    style="width:100%"> <figcaption> Jessica HOYT Thompson &amp;                    Elizabeth HOYT Walker ca1896</figcaption></figure>              </div>              <div class="mySlides2">                <figure> <img src="YoungJess_nInez.png" style="width:100%" alt="Photo of Jessica Hoyt Thompson and her aunt, Inez Hoyt Boller circa 1900">                  <figcaption> Jessica HOYT Thompson &amp; Aunt Inez Hoyt Boller                    ca 1900</figcaption> </figure>              </div>              <div class="mySlides2">                <figure>                   <img src="JessicaHoytThompson_AuntInezHoytBoller_0001.jpg"                    style="width:100%" alt="Photo of Jessica Hoyt Thompson and her aunt, Inez Hoyt Boller circa 1914">           <figcaption> Jessica HOYT Thompson &amp; Aunt Inez Hoyt Boller                    ca 1914</figcaption> </figure>              </div>              <div class="mySlides2">                <figure> <img src="PhotoFrancesGHoyt_nDaughters_ca1900.jpg" alt="Circa 1900 Photo of Frances Goodrich Hoyt and daughters"                    style="width:100%;"> <figcaption> Elizabeth HOYT Walker,                    Isabelle HOYT Field, Frances GOODRICH Hoyt &amp; Jessica                    HOYT Thompson ca 1900</figcaption> </figure>              </div>              <div class="mySlides2">                <figure> <img src="Picn_wWalkers_nBollers.png" alt="Circa 1920 group photo of Hoyts &amp; Goodriches"                    style="width:100%;"> <figcaption>Seated: Frances GOODRICH                    Hoyt, ?, child1, child2, Isabelle HOYT Field, Elizabeth HOYT                    Walker, child3, Wm. Boller, child4, Inez HOYT Boller &amp;                    Jessica HOYT Thompson. Standing: Henry D. Goodrich, L. Roy                    Walker ? ca 1920</figcaption> </figure>              </div>              <div class="mySlides2">                <figure> <img src="HoytSisters1920s.png" alt="1920s Photo of Frances Goodrich Hoyt and daughters"                    style="width:70%;"> <figcaption> Frances GOODRICH Hoyt,                    Elizabeth HOYT Walker, Isabelle HOYT Field &amp; Jessica                    HOYT Thompson 1920s</figcaption> </figure>              </div>              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">❮</button>              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">❯</button> -->
             <div class="slideshow-container w3-center">
-              <div class="mySlides2"> <img src="Jessie_Lizzie.png" alt="Photo of Jessica HOYT Thompson and Elizabeth HOYT Walker circa 1896"
+              <div class="mySlides2"> <img src="PhotoJessie_nLizzie.jpg" alt="Photo of Jessica HOYT Thompson and Elizabeth HOYT Walker circa 1896"
+
                   style="width:100%">
                 <div class="image img1">Jessica HOYT Thompson &amp; Elizabeth
                   HOYT Walker ca1896 Image 2-1 </div>
               </div>
-              <div class="mySlides2"> <img src="YoungJess_nInez.png" style="width:100%"
+              <div class="mySlides2"> <img src="YoungJess_nInez.png" style="width:100%"
+
                   alt="Photo of Jessica Hoyt Thompson and her aunt, Inez Hoyt Boller circa 1900">
                 <div class="image img2">Jessica HOYT Thompson &amp; Aunt Inez
                   Hoyt Boller ca 1900 Image 2-2</div>
               </div>
-              <div class="mySlides2"> <img src="JessicaHoytThompson_AuntInezHoytBoller_0001.jpg"
+              <div class="mySlides2"> <img src="JessicaHoytThompson_AuntInezHoytBoller_0001.jpg"
+
                   style="width:100%" alt="Photo of Jessica Hoyt Thompson and her aunt, Inez Hoyt Boller circa 1914">
                 <div class="image img3">Jessica HOYT Thompson &amp; Aunt Inez
                   Hoyt Boller ca 1914 Image 2-3</div>
               </div>
-              <div class="mySlides2"> <img src="PhotoFrancesGHoyt_nDaughters_ca1900.jpg"
-                  alt="Circa 1900 Photo of Frances Goodrich Hoyt and daughters"
+              <div class="mySlides2"> <img src="PhotoFrancesGHoyt_nDaughters_ca1900.jpg"
+
+                  alt="Circa 1900 Photo of Frances Goodrich Hoyt and daughters"
+
                   style="width:100%;">
                 <div class="image img4">Elizabeth HOYT Walker, Isabelle HOYT
                   Field, Frances GOODRICH Hoyt &amp; Jessica HOYT Thompson ca
                   1900 Image 2-4</div>
               </div>
-              <div class="mySlides2"> <img src="Picn_wWalkers_nBollers.png" alt="Circa 1920 group photo of Hoyts &amp; Goodriches"
+              <div class="mySlides2"> <img src="Picn_wWalkers_nBollers.png" alt="Circa 1920 group photo of Hoyts &amp; Goodriches"
+
                   style="width:100%;">
                 <div class="image img5 w3-center">Seated: Frances GOODRICH Hoyt,
                   ?, child1, child2, Isabelle HOYT Field, Elizabeth HOYT Walker,
@@ -549,22 +588,26 @@ a[aria-describedby="Endnote-label"]::after {
                   HOYT Thompson. Standing: Henry D. Goodrich, L. Roy Walker ? ca
                   1920 Image 2-5</div>
               </div>
-              <div class="mySlides2"> <img src="HoytSisters1920s.png" alt="1920s Photo of Frances Goodrich Hoyt and daughters"
+              <div class="mySlides2"> <img src="HoytSisters1920s.png" alt="1920s Photo of Frances Goodrich Hoyt and daughters"
+
                   style="width:70%;">
                 <div class="image img6">Frances GOODRICH Hoyt, Elizabeth HOYT
                   Walker, Isabelle HOYT Field &amp; Jessica HOYT Thompson 1920s
                   Image 2-6</div>
               </div>
-              <a class="prev" onclick="plusSlides(-1, 1)">❮</a> <a class="next"
-                onclick="plusSlides(1, 1)">❯</a> </div>
+              <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
+            </div>
             <p><a name="Mom"></a>Writing about my mother always fills me with
               trepidation. I see her as complex, and don't feel I understood her
               as well as I did my father. <a href="https://www.wikitree.com/wiki/Hoyt-211">Jessica
-                (Hoyt)</a> Thompson, was born in the small town of Nelson, PA,
-              (near Corning, NY) in 1892. She was the eldest of three daughters
-              of Joseph DeForest Hoyt and Frances Viola Goodrich, but was "the
-              apple of her father's eye." And according to her mother, very
-              spoiled as a result.</p>
+                (Hoyt)</a> Thompson,<a aria-describedby="Endnote-label" href="#JessicaHoyt"
+
+                id="JessicaHoyt-ref"></a> was born in the small town of Nelson,
+              PA, (near Corning, NY) in 1892. She was the eldest of three
+              daughters of Joseph DeForest Hoyt and Frances Viola Goodrich, but
+              was "the apple of her father's eye." And according to her mother,
+              very spoiled as a result.</p>
             <p>It was a small town, big enough to have a RR station, hotel,
               livery stable, two churches, a barber shop, post office and
               several small businesses, and served as a market place for the
@@ -621,7 +664,8 @@ a[aria-describedby="Endnote-label"]::after {
               top provided the hot water to pour in washtubs for Saturday night
               baths. Each bedroom had a wash stand, with a large bowl and
               pitcher for washing up in the morning. And a commode (cabinet to
-              hold a chamber pot).<img src="Commode.png" alt="Photo of a combination washstand-commode (i.e. a cabinet to hold a chamber pot"
+              hold a chamber pot).<img src="Commode.png" alt="Photo of a combination washstand-commode (i.e. a cabinet to hold a chamber pot"
+
                 style="width:20%; float:right;"> Crawling into a cold bed in an
               unheated bedroom in winter was nothing to look forward to so
               rectangular soap stones, with a handle, were heated on top of the
@@ -643,13 +687,15 @@ a[aria-describedby="Endnote-label"]::after {
               years, but couldn't get out very often and reluctantly sold it.</p>
             <p>After graduating she went to <a href="https://en.wikipedia.org/wiki/Mansfield_University_of_Pennsylvania">Mansfield
                 Normal School</a> and lived in a dorm. At that time, two years
-              at a normal school was required for a certificate to teach primary
-              grades (1 - 6) and a third year to teach secondary grades (7 -
-              12). Mom got her primary certification, taught for a year in
-              Nelson, returned to Mansfield for her secondary school
-              certification, and in 1916 married the handsome ex-sailor who'd
-              courted her with the mandolin. (NYS recognized PA certification,
-              so she was able to teach there.)</p>
+              at a normal school <a aria-describedby="Endnote-label" href="#NormalSchool"
+
+                id="NormalSchool-ref"></a> was born in the small town of was
+              required for a certificate to teach primary grades (1 - 6) and a
+              third year to teach secondary grades (7 - 12). Mom got her primary
+              certification, taught for a year in Nelson, returned to Mansfield
+              for her secondary school certification, and in 1916 married the
+              handsome ex-sailor who'd courted her with the mandolin. (NYS
+              recognized PA certification, so she was able to teach there.)</p>
             <p>They first lived in <a href="https://en.wikipedia.org/wiki/West_Winfield,_New_York">West
                 Winfield, NY</a> and <a href="https://en.wikipedia.org/wiki/North_Brookfield,_New_York">North
                 Brookfield</a>, but soon settled in the Binghamton area, where
@@ -660,7 +706,8 @@ a[aria-describedby="Endnote-label"]::after {
             <p>Mom returned to Auntie's in Nelson for the birth of her first two
               children, "<a href="https://www.wikitree.com/wiki/Thompson-47215">Tom</a>"
               (Walter, Jr. in 1917) and <a href="https://www.wikitree.com/wiki/Thompson-47216">Anne</a>
-              in 1919. (Her mother was living and working in Elmira, NY then. <a
+              in 1919. (Her mother was living and working in Elmira, NY then. <a
+
                 href="https://www.wikitree.com/wiki/Thompson-47217">Hank</a> was
               born in Binghamton in 1922. (I was an "afterthought" much later.)</p>
             <p>Her sister <a href="https://www.wikitree.com/wiki/Hoyt-3419">Isabelle</a>
@@ -695,9 +742,11 @@ a[aria-describedby="Endnote-label"]::after {
               openly supported them. Racial stereotypes were ubiquitous: Rastus
               and Mandy jokes, black-face performers like <a href="https://en.wikipedia.org/wiki/Al_Jolson">Al
                 Jolson</a> and <a href="https://en.wikipedia.org/wiki/Minstrel_show">minstrel
-                shows</a>. A common expression was "There's a Ni**er in the
-              woodpile." Brazil nuts were called "Ni**er toes." Kids blithely
-              counted "<a href="https://en.wikipedia.org/wiki/Eeny,_meeny,_miny,_moe">Eeny
+                shows</a>.<a aria-describedby="Endnote-label" href="#MinstrelShow"
+
+                id="MinstrelShow-ref"></a> A common expression was "There's a
+              Ni**er in the woodpile." Brazil nuts were called "Ni**er toes."
+              Kids blithely counted "<a href="https://en.wikipedia.org/wiki/Eeny,_meeny,_miny,_moe">Eeny
                 meeny, miny moe</a>, catch a ni**er by the toe."</p>
             <p>So, in some ways she was very progressive for her times and
               happily supported Nelson Rockefeller. But she also believed in
@@ -723,7 +772,9 @@ a[aria-describedby="Endnote-label"]::after {
               rheumatoid arthritis (sometimes painting with brushes strapped to
               her hands) and later a series of stokes and dementia.</p>
             <p>Their marriage wasn't conflict free, they often fought and even
-              went through a trial separation in the early 1940s.</p>
+              went through a trial separation in the early 1940s.<a aria-describedby="Endnote-label"
+
+                href="#Won_theWar" id="Won_theWar-ref"></a></p>
             <p>She was a worrier. Overprotective of me. Insisted on picked out
               my clothes almost until I graduated from college. Loving but
               inhibited and not demonstrative. She'd read a popular book on
@@ -767,11 +818,12 @@ a[aria-describedby="Endnote-label"]::after {
               One supernatural incident in particular comes to mind. They both
               were certain that at the moment Tom was injured they both woke up
               from frightening dreams and "knew" that something awful had
-              happened. Of course it was weeks before they actually knew the
-              details of when he was injured. A telegram did soon come from the
-              War Department informing my parents that he had been injured and
-              was in a hospital, but the specifics of what day and hour didn't
-              come out until much later.</p>
+              happened.<a aria-describedby="Endnote-label" href="#TimeWounded" id="TimeWounded-ref"></a>
+              Of course it was weeks before they actually knew the details of
+              when he was injured. A telegram did soon come from the War
+              Department informing my parents that he had been injured and was
+              in a hospital, but the specifics of what day and hour didn't come
+              out until much later.</p>
             <p>Her sense of humor was very different from my father's and seemed
               that of the Victorian Age. She loved saying things like "I scream
               for ice cream; we all scream for ice cream." And "Railroad
@@ -779,16 +831,19 @@ a[aria-describedby="Endnote-label"]::after {
               cars?" Or "Beach, birch and maple, all begins with 'A.'"</p>
             <p>She especially liked to draw the following story, which you were
               invited to read aloud:</p>
-            <blockquote> A B C D <img src="Fish.png" alt="Goldfish sillouette"
+            <blockquote> A B C D <img src="Fish.png" alt="Goldfish sillouette"
+
                 style="width: 47px; height: 24px; float:none;"> ?<br>
               L M NO <img src="Fish.png" alt="Goldfish sillouette" style="width: 47px; height: 24px; float:none;"><br>
               S M R<br>
               C M ? </blockquote>
-            <p> See footnote for the "correct" answer. If the "solution" seems
+            <p> See footnote for the "correct" answer.<a aria-describedby="Endnote-label"
+
+                href="#Goldfish" id="Goldfish-ref"></a> If the "solution" seems
               pretty dumb, perhaps that proves that you're not a Victorian :)</p>
             <p> If you're up for one more sample of Victorian humor and their
               proclivity to <a href="https://en.wikipedia.org/wiki/Euphemism">euphemisms</a>,
-              see.</p>
+              see<a aria-describedby="Endnote-label" href="#SheKnew" id="SheKnew-ref"></a>.</p>
             <p>One of the scars that I think the Victorian mindset inflicted on
               families was the tradition that family skeletons must be hidden
               away in well locked closets. Put out of sight and out of mind.
@@ -798,7 +853,8 @@ a[aria-describedby="Endnote-label"]::after {
               one or more of them. A relative committed a crime or was raped.
               (My uncle Maurice accidentally killed a neighbor.) Or had a child
               out of wedlock. Or had mental illness. Or was addicted to alcohol,
-              drugs, gambling or whatever. My father wouldn't talk about his <a
+              drugs, gambling or whatever. My father wouldn't talk about his <a
+
                 href="https://www.wikitree.com/wiki/Bulley-28">Uncle Kearney</a>
               -- didn't even want his name spoken in the house -- I don't know
               why, nor did any of Kearney's grandchildren have a clue what that
@@ -817,7 +873,8 @@ a[aria-describedby="Endnote-label"]::after {
               seats replaced, they would usually pay to have that done. If the
               piece didn't have beautiful wood, dad would often paint it black
               and mom would <a href="https://en.wikipedia.org/wiki/Stencil">stencil</a>
-              it, often in guild. Sometimes the refinishing would remove some <a
+              it, often in guild. Sometimes the refinishing would remove some <a
+
                 href="https://en.wikipedia.org/wiki/Patina">patina</a> and
               decrease the piece' value as an antique, but the result was always
               a handsome piece of furniture. Mom collected <a href="https://en.wikipedia.org/wiki/Cranberry_glass">cranberry
@@ -826,15 +883,17 @@ a[aria-describedby="Endnote-label"]::after {
                 glass</a></p>
           </div>
           <hr>
-          <h4><a name="Tom"></a>My Role Model.</h4>
+          <h4 id="Tom">My Role Model.</h4>
           <!---       <div class="w3-content w3-display-container w3-center">
             <div class="mySlides3">              <figure><img src="WalterThompsonJrBath.jpg" style="width:100%" alt="Photo of Walter Thompson, Jr. bathing on a wash stand">                <figcaption>"Walter Thompson, Jr., 1918</figcaption></figure>            </div>            <div class="mySlids3">              <figure><img src="TomDadFishing.jpg" style="width:100%" alt="Photo of Walter Thompson, Jr. and Sr. on fishing trip to Canada">                <figcaption>Walter Thompson, Jr. and Sr. on a fishing trip to                  Canada</figcaption></figure>            </div>            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 1)">❮</button>            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 1)">❯</button> -->
           <div class="slideshow-container w3-center">
-            <div class="mySlides3"> <img src="WalterThompsonJrBath.jpg" style="width:100%"
+            <div class="mySlides3"> <img src="WalterThompsonJrBath.jpg" style="width:100%"
+
                 alt="Photo of Walter Thompson, Jr. bathing on a wash stand">
               <div class="image img1">Walter Thompson, Jr., 1918 Image 3-1</div>
             </div>
-            <div class="mySlides3"> <img src="TomDadFishing.jpg" style="width:100%"
+            <div class="mySlides3"> <img src="TomDadFishing.jpg" style="width:100%"
+
                 alt="Photo of Walter Thompson, Jr. and Sr. on fishing trip to Canada">
               <div class="image img2">Walter Thompson, Jr. and Sr. on a fishing
                 trip to Canada Image 3-2</div>
@@ -843,9 +902,10 @@ a[aria-describedby="Endnote-label"]::after {
               <!--Image here-->
               <div class="image img3">Image 3-3</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 2)">❮</a> <a class="next" onclick="plusSlides(1, 2)">❯</a>
+            <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
           </div>
-          <p><a href="https://www.wikitree.com/wiki/Thompson-47215">My elder
+          <p><a href="https://www.wikitree.com/wiki/Thompson-47215">My eldest
               brother</a> was my hero. He was kind and considerate to me. (I
             already mentioned his taking me for walks in his Adirondak
             pack-basket when I was a toddler.) I can't count all the things he
@@ -1017,20 +1077,23 @@ a[aria-describedby="Endnote-label"]::after {
             3 days before the state of emergency was lifted, so if I had turned
             around there would not have been another opportunity.</p>
           <hr>
-          <h4><a name="AnneThompson"></a>My closest sibling (and 2nd mother)</h4>
+          <h4 id="Anne">My closest sibling (and 2nd mother)</h4>
           <div class="slideshow-container w3-center">
-            <div class="mySlides4"> <img src="AnneThompsonMcCard_ca1935.jpg" style="width:100%"
+            <div class="mySlides4"> <img src="AnneThompsonMcCard_ca1935.jpg" style="width:100%"
+
                 alt="Photo of Anne THOMPSON McCard ca1935">
               <div class="image img1">Anne Thompson, McCard ca1935 [4-1] </div>
             </div>
-            <div class="mySlides4"> Image 4-2 <img src="AnneThompsonMcCard_ca1945.png"
-                style="width:100%" alt="Photo of Anne THOMPSON McCard ca1945">
+            <div class="mySlides4"><img src="AnneThompsonMcCard_ca1945.png" style="width:100%"
+
+                alt="Photo of Anne THOMPSON McCard ca1945">
               <div class="image img2">Anne Thompson, McCard ca1945 Image 4-2</div>
             </div>
             <div class="mySlides4"> Image 4-3
               <div class="image img3">Image 4-3</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 3)">❮</a> <a class="next" onclick="plusSlides(1, 3)">❯</a>
+            <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
           </div>
           <p> I've previously mentioned that my siblings often seemed more like
             uncles and aunt. But my <a href="https://www.wikitree.com/wiki/Thompson-47216">sister</a>
@@ -1059,10 +1122,14 @@ a[aria-describedby="Endnote-label"]::after {
               Business School</a>'s secretarial training where she learned
             typing, shorthand, filing, etc. It definitely was why she never got
             t drivers license. </p>
-          <p>I believe there are many different types of intelligence,<a aria-describedby="Endnote-label"
-              href="#IntelligenceTypes" id="IntelligenceTypes-ref"></a> but hers
+          <p>I believe there are many different types of intelligence,<a aria-describedby="Endnote-label"
+
+              href="#IntellegenceTypes" id="IntelligenceTypes-ref"></a> but hers
             were markedly different from the rest of the family, which sometimes
-            led to feelings of inadequacy.</p>
+            led to feelings of inadequacy. When she played chess with Hank she
+            didn't stand a chance of winning (nor did I). He would look ahead
+            several moves and planned carefully. Anne took pleasure in from time
+            to time making a random more, just to throw off his plans.</p>
           <p>She had a strong sense of fashion, and as a teenager filled
             notebooks with fashion sketches. She worked in clay, water color,
             oils, charcoal and loved pastels. Being a "Sunday painter" ("a
@@ -1098,13 +1165,15 @@ a[aria-describedby="Endnote-label"]::after {
             sign saying "Special. 2 for 25¢" and quickly sold out! </p>
           <p>She was "unlucky in love." I liked some of her suitors who my
             parents disapproved of and think some would have made better
-            husbands than she ended up with. Her first husband, George, always
-            treated me fine, I have no complaints there. But he didn't do as
-            well by his wife and son. He was a navy cook in the south Pacific
-            during the war. And he did very good impersonations of Jerry Lewis.
-            But he had issues, especially with his employers and honesty. As I
-            remember it, the only reason he wasn't prosecuted is that my parents
-            and their lawyer visited the DA and got charges dropped. </p>
+            husbands than she ended up with. Her first husband, George,<a aria-describedby="Endnote-label"
+
+              href="#Monogram" id="Monogram-ref"></a> always treated me fine, I
+            have no complaints there. But he didn't do as well by his wife and
+            son. He was a navy cook in the south Pacific during the war. And he
+            did very good impersonations of Jerry Lewis. But he had issues,
+            especially with his employers and honesty. As I remember it, the
+            only reason he wasn't prosecuted is that my parents and their lawyer
+            visited the DA and got charges dropped. </p>
           <p>But indirectly, he played a role in my getting to hear my favorite
             poet, e.e cummings, do reading. He needed a bunch of tests done at
             the VA hospital in Syracuse. And needed another driver to come
@@ -1153,13 +1222,15 @@ a[aria-describedby="Endnote-label"]::after {
           <p>But if she had had a tombstone a fitting epitaph would be "She made
             art and friends all her life."</p>
           <hr>
-          <h4><a name="HenryGThompson"></a>Complete opposites</h4>
+          <h4 id="Hank">Complete opposites</h4>
           <!---        <div class="w3-content w3-display-container w3-center">
             <div class="mySlides5"><figure><img src="AnnRogers_AnneMcCard_VirginiaHills_HenryThompson_ca1950.png" style="width:40%" alt="Photo of Henry Thompson, his sister, Anne plus two cousins"><figcaption>Ann HAZLETT Rogers, Anne THOMPSON McCard, Virginia TEEMSMA Hills &amp; Henry Thompson ca1950</figcaption></figure></div>            <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1, 0)">❮</button>            <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1, 0)">❯</button> -->
           <div class="slideshow-container">
-            <div class="mySlides5"> 5-1 <img src="AnnRogers_AnneMcCard_VirginiaHills_HenryThompson_ca1950.png"
+            <div class="mySlides5"><img src="AnnRogers_AnneMcCard_VirginiaHills_HenryThompson_ca1950.png"
+
                 style="width:40%" alt="Photo of Henry Thompson, his sister Anne, plus two cousins">
-              <div class="image img1">AnnRogers, Virginia Hills, &amp; 5-1</div>
+              <div class="image img1">AnnRogers, Anne McCard, Virginia Hills,
+                &amp; Hank 5-1</div>
             </div>
             <div class="mySlides5"> 5-2
               <div class="image img2">Image 5-2</div>
@@ -1167,7 +1238,8 @@ a[aria-describedby="Endnote-label"]::after {
             <div class="mySlides5"> 5-3
               <div class="image img3">Image 5-3</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 4)">❮</a> <a class="next" onclick="plusSlides(1, 4)">❯</a>
+            <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
           </div>
           <p>It's easy to think of Anne and <a href="https://www.wikitree.com/Wiki/Thompson-47217">Hank</a>
             as being complete opposites. He was a mathematical prodigy, but math
@@ -1201,8 +1273,9 @@ a[aria-describedby="Endnote-label"]::after {
               Gibbons Color Guide</a>, <a href="https://en.wikipedia.org/wiki/Perforation_gauge">perforation
               gauge</a>, an open bowl of <a href="https://en.wikipedia.org/wiki/Carbon_tetrachloride">carbon
               tetra-chloride</a> to detect watermarks filling the room with
-            toxic, brain killing vapors and a towel for to place the carbon-tet
-            soaked stamps on till they dried (which didn't take long).</p>
+            toxic, brain killing vapors and a towel for to place the
+            carbon-tetrochloride soaked stamps on till they dried (which didn't
+            take long).</p>
           <p>Before my time he went to a number of country schools in the
             Binghamton area. When they lived in The Town of Binghamton just
             south of the city in a neighborhood known officially as "Park
@@ -1349,48 +1422,58 @@ a[aria-describedby="Endnote-label"]::after {
             family and others.</p>
           <p>(BTW, He was an excellent uncle to my younger son, Steve.)</p>
           <hr>
-          <h4>Dribs &amp; Drabs </h4>
+          <h4 id="Bill">Dribs &amp; Drabs </h4>
           <div class="slideshow-container w3-center">
-            <div class="mySlides6"> <img src="Photo_WBT1936.jpg" style="width:100%"
+            <div class="mySlides6"> <img src="Photo_WBT1936.jpg" style="width:100%"
+
                 alt="Baby photo of Bill Thompson">
-              <div>Bill Thompson, 1936</div>
+              <div class="image img1">Bill Thompson, 1936 6-1</div>
             </div>
-            <div class="mySlides6"> <img src="Photo_WBT1937.png" style="width:100%"
+            <div class="mySlides6"> <img src="Photo_WBT1937.png" style="width:100%"
+
                 alt="Photo of Bill Thompson. 2 years">
-              <div>Bill Thompson, 1937</div>
+              <div class="image img2">Bill Thompson, 1937 6-2</div>
             </div>
-            <div class="mySlides6"> <img src="BillThompsonTeaParty1942.jpg" style="width:100%"
+            <div class="mySlides6"> <img src="BillThompsonTeaParty1942.jpg" style="width:100%"
+
                 alt="Photo of Bill Thompson, forced to attend neighbor's tea party 1942">
-              <div>Forced to attend &amp; determined not to enjoy neighbor's
-                dumb tea party - 1942. At least the refreshments weren't
-                imaginary.</div>
+              <div class="image img3">Forced to attend &amp; determined not to
+                enjoy neighbor's dumb tea party - 1942. At least the
+                refreshments weren't imaginary. 6-3</div>
             </div>
-            <div class="mySlides6"><img src="BillThompson_nMom_ca1948.jpg" style="width:100%"
+            <div class="mySlides6"><img src="BillThompson_nMom_ca1948.jpg" style="width:100%"
+
                 alt="Photo of Bill Thompson and mother, circa 1948">
-              <div>Bill Thompson and mother ca1948</div>
+              <div class="image img4">Bill Thompson and mother ca1948 6-4</div>
             </div>
-            <div class="mySlides6"><img src="BillThompsonGothics_ca1952.jpg" style="width:100%"
+            <div class="mySlides6"><img src="BillThompsonGothics_ca1952.jpg" style="width:100%"
+
                 alt="Photo of Bill Thompson on Adironcks' Gothics Trail circa 1952">
-              <div>Bill Thompson on Adirondaks' Gothic Range range ca1952. (Note
-                the 28" waist)</div>
+              <div class="image img5">Bill Thompson on Adirondaks' Gothic Range
+                range ca1952. (Note the 28" waist)6-5</div>
             </div>
-            <div class="mySlides6"><img src="Photo_WBTMtMarcy_ca1952.jpg" style="width:100%"
+            <div class="mySlides6"><img src="Photo_WBTMtMarcy_ca1952.jpg" style="width:100%"
+
                 alt="Photo of Bill Thompson on Mt. Marcy circa 1952">
-              <div>Bill Thompson on Summit of Mt. Marcy ca1952</div>
+              <div class="image img6">Bill Thompson on Summit of Mt. Marcy
+                ca1952 6-6</div>
             </div>
-            <div class="mySlides6"><img src="Photo_WBT1954.png" style="width:70%"
+            <div class="mySlides6"><img src="Photo_WBT1954.png" style="width:70%"
+
                 alt="Photo of Bill Thompson 1954">
-              <div>Bill Thompson 1954</div>
+              <div class="image img7">Bill Thompson 1954 6-7</div>
             </div>
-            <div class="mySlides6"><img src="Photo_WBT_Catskills1956.png" style="width:70%"
+            <div class="mySlides6"><img src="Photo_WBT_Catskills1956.png" style="width:70%"
+
                 alt="Photo of Bill Thompson winter mountaineering, 1956">
-              <div>Bill Thompson, Catskills 1956</div>
+              <div class="image img8">Bill Thompson, Catskills 1956 6-8</div>
             </div>
-            <a class="prev" onclick="plusSlides(-1, 4)">❮</a> <a class="next" onclick="plusSlides(1, 4)">❯</a>
+            <button class="w3-button w3-black w3-display-left" onclick="plusSlides(-1, 0)">❮</button>
+            <button class="w3-button w3-black w3-display-right" onclick="plusSlides(1, 0)">❯</button>
           </div>
           <p> If you've read the previous chapters you already have read a lot
-            about me. There's no need to duplicate any of that here. But I've
-            placed miscellaneous things here as the spirit moved.</p>
+            about me. There's no need to duplicate any of that in this section.
+            But I've placed miscellaneous thoughts here as the spirit moved me.</p>
           <h4> Civil Rights Movement </h4>
           <p> I'm sure I would have gotten involved in the Civil Rights
             movement, one way or another. But my path resulted from
@@ -1534,19 +1617,77 @@ a[aria-describedby="Endnote-label"]::after {
             one party dominance in an area leads to stagnation, cronyism, and
             party hacks being selected for office because they'll "go along."
             And that competition between parties is essential to good
-            government. Republicans dominated in that area<a aria-describedby="Endnote-label"
+            government. Republicans dominated in that area<a aria-describedby="Endnote-label"
+
               href="#BillyHill" id="BillyHill-ref"></a>, so when I wanted to
             vote in a primary and had to enroll in a party, I picked the
             underdog Democrats.</p>
-          <p>[Next: My efforts as party chairs and in election campaigns. Poll
-            watcher &amp; inspector.</p>
-          <p>Or that I don't believe in destiny, karma, fate, or the universe
-            knowing or caring about our existence. My "wisdom"]</p>
-          <hr>
+          <p>In 1959, a friend of mine got involved in the campaign or one his
+            coworkers, who was running for city council and recruited my help.
+            Our candidate lost, but I learned a lot about the mechanics of
+            grassroots campaigns. The next year, 1960, I enthusiastically worked
+            for John F. Kennedy's presidential campaign, having experienced his
+            charisma first hand.<a aria-describedby="Endnote-label" href="#JFK"
+
+              id="JFK-ref"></a> I became a member of the county Democratic
+            Committee and did "grunt work" for JFK's campaign -- knocking on
+            doors, handing out campaign literature and Get Out The Vote efforts
+            on election day. A different friend urged me to also get involved in
+            the mayoral campaign in the adjacent village of Johnson City. A
+            former Latin teacher, then HS guidance counselor he admired was
+            running and needed all the help I could get. I met Jim McCabe, was
+            impressed, and happily volunteered with his campaign too.<a aria-describedby="Endnote-label"
+
+              href="#McCabe" id="McCabe-ref"></a></p>
+          <p>You all know how JFK's campaign turned out. Jim McCabe lost by a
+            landslide, but he wasn't phased -- "I got my name out before the
+            voters. I'll do better next time." He kept running until he won, and
+            continued on to become a member of the state house and finally, the
+            state senate. He was a fine man, a friend, and someone I was proud
+            to have helped.</p>
+          <p>I was active in elections for decades, as Democratic party chair of
+            a Binghamton ward. A county committee in PA, a member of a
+            Congressional candidate's campaign committee, poll watcher, poll
+            worker, etc. And met many Congressmen and other public officials in
+            the process (including a Supreme Court Justice, Speaker of the
+            House, etc. of whom the most interesting was Sen. <a href="https://en.wikipedia.org/wiki/Robert_F._Kennedy">Robert
+              F. Kennedy</a>.<a aria-describedby="Endnote-label" href="#RFK" id="RFK-ref"></a></p>
+          <h4> What I Learned From Life </h4>
+          <p>Whatever wisdom I have, is a result of countless mistakes. I don't
+            have many pearls of wisdom to share. Perhaps the most important are:
+          </p>
+          <ul class="w3-ul" style="font-family:Oswald;">
+            <li>EVERYONE'S THE SAME. We all have the same wants and fears. Basic
+              physical needs such as food, shelter and the other necessities of
+              life. And emotional needs such as love, recognition, etc. We all
+              want better lives and opportunities for our children; &amp;</li>
+            <li>EVERYONE'S DIFFERENT. People have different motivators. For some
+              it's money. For others it may be fame, recognition or fancy job
+              titles. For others it may be a chance to pursue one's dreams, or
+              self-expression, or a cozy nest, a chance to learn --- or
+              whatever. The key is accepting that everyone doesn't respond to
+              the same set of <a href="https://dictionary.cambridge.org/us/dictionary/english/carrot-and-stick">carrots
+                and sticks</a> that you do. </li>
+            <li>I DON'T BELIEVE IN: destiny, karma, or fate, or that the
+              universe knows or cares about our existence. So no "it was meant
+              to be" or "everything happens for a reason."</li>
+            <li>I DO BELIEVE: that life is brief and precious; in the importance
+              of "the now;" in the role of chance (it's a world of
+              probabilities, not certainties); in the importance of being kind
+              to each other and that small acts of kindness may ripple out far
+              farther and longer than you imagine; in the importance of keeping
+              an open mind; in respecting knowledge and evidence; learning to
+              forgive yourself; that the perfect is the enemy of the good; in
+              the importance of not losing hope; and that most people want to do
+              the right thing most of the times.</li>
+          </ul>
+          <p>[Thanks for hanging in there and reading this far. I had fun
+            writing it and hope you had some reading it. <i>Au revoir</i>.]</p>
           <p> Continuing to end chapters in the spirit of Uncle Wiggily stories:<br>
           </p>
           <blockquote> If the whoopey cushion doesn't elope with the back
-            scratcher, I’ll next tell you about other relatives.</blockquote>
+            scratcher, I’ll next tell you (in an appendix) about other
+            relatives.</blockquote>
         </div>
       </main>
       <hr>
@@ -1555,13 +1696,16 @@ a[aria-describedby="Endnote-label"]::after {
         <div class="w3-container" style="font-family: 'Chelsea Market', cursive;">
           <ol>
             <li id="JessicaHoyt">
-              <p>She and my dad had a for-fun running argument as to whether her
-                name was originally "Jessica Phoebe Hoyt," or "Phoebe Jessica
-                Hoyt." He would interchangeably address her as 'Jess' sometimes
-                and sometimes as 'Phebe'.<a href="#JessicaHoyt-ref" aria-label="Back to content">↵</a></p>
+              <p>(Name) She and my dad had a for-fun, running argument as to
+                whether her name was originally "Jessica Phoebe Hoyt," or
+                "Phoebe Jessica Hoyt." He would interchangeably address her
+                sometimes as 'Jess' and sometimes as 'Phebe.' My impression is
+                that the name she was given at birth was Phoebe Jessica, but
+                that her father told her, "you can change it to anything you
+                want to."<a href="#JessicaHoyt-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="NormalSchool">
-              <p>(Normal School)For what Pennsylvania's normal schools were
+              <p>(Normal School) For what Pennsylvania's normal schools were
                 like, read Mark Fritz' article, <a href="https://paheritage.wpengine.com/article/state-normal-schools-teaching-teachers-others/">
                   "The State Normal Schools: Teaching Teachers and Others"</a>.
                 He was right about the rigid discipline. She told me a story
@@ -1570,13 +1714,15 @@ a[aria-describedby="Endnote-label"]::after {
                 few days before graduation, 3 girls decided to celebrate by
                 going to a drug store in Mansfield and have sodas. But they
                 stayed to long and were caught sneaking back in through a
-                window. They were immediately expelled and never graduated.<a href="#NormalSchool-ref"
+                window. They were immediately expelled and never graduated.<a href="#NormalSchool-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="MinstrelShow">
               <p>(Minstrel Shows) Here in the Lehigh Valley, minstrel shows
                 continued well into the 1960s and one of the groups that put
-                them on still includes "Minstrelaires" as part of its name.<a href="#MinstrelShow-ref"
+                them on still includes "Minstrelaires" as part of its name.<a href="#MinstrelShow-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="Won_theWar">
@@ -1592,34 +1738,36 @@ a[aria-describedby="Endnote-label"]::after {
                   shoulder</a> treatment.")<a href="#Won_theWar-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="TimeWounded">
-              <p>There's a 13 hour time difference between NYS and Luzon. So, if
-                the artillery attack happened in mid-morning (which was my
-                impression) they would not have gone to bed yet. But if it
-                happened in late afternoon, they could have been sleeping then.<a
-                  href="#TimeWounded-ref" aria-label="Back to content">↵</a></p>
+              <p>(When Wounded) There's a 13 hour time difference between NYS
+                and Luzon. So, if the artillery attack happened in mid-morning
+                (which was my impression) they would not have gone to bed yet.
+                But if it happened in late afternoon, they could have been
+                sleeping then.<a href="#TimeWounded-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="Goldfish">
-              <p>Abey, see dee goldfish?<br>
-                'ell, (th)em no goldfish<br>
-                (Ye)s (the)m are.<br>
-                See (the)m?<a href="#Goldfish-ref" aria-label="Back to content">↵</a></p>
+              <p>(Goldfish) Abey, see dee goldfish?<br>
+                'ell, [th]em no goldfish<br>
+                [Ye]s [the]m are.<br>
+                See [the]m?<a href="#Goldfish-ref" aria-label="Back to content">↵</a></p>
             </li>
-            <li id="SheKnew">
+            <li id="SheKnew">(Poem)
               <blockquote> "She knew that he knew her poppa was dead.<br>
                 And she knew that he knew the life poppa'd led.<br>
-                So she knew he'd know what she meant<br>
+                So she knew that he'd know what she meant<br>
                 When she said, 'Go and ask poppa!' "<a href="#SheKnew-ref" aria-label="Back to content">↵</a>
               </blockquote>
             </li>
             <li id="LifetimeCap">
-              <p>Before the ACA, insurance companies could place a maximum limit
-                on how much they would pay for your medical care.<a href="#LifetimeCap-ref"
-                  aria-label="Back to content">↵</a></p>
+              <p>(Ins. Cap) Before the ACA, insurance companies could place a
+                maximum limit on how much they would pay for your medical care.<a
+
+                  href="#LifetimeCap-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="Lodges">
               <p>(Lodges) Fraternal organizations (aside from my college, ex-boy
                 scout organization that did "good turns such as providing ushers
-                and campus tour guides) have never interested me. Hank joined <a
+                and campus tour guides) have never interested me. Hank joined <a
+
                   href="https://en.wikipedia.org/wiki/Freemasonry">the Masons</a>
                 just to please Tom, but his heart was never in it. My uncle, Roy
                 Walker, was active in Masons <a href="https://en.wikipedia.org/wiki/Shriners">Shriners</a>.
@@ -1629,11 +1777,12 @@ a[aria-describedby="Endnote-label"]::after {
                   of Pythias</a> (but never participated in my time). My only
                 interest in lodges was in beaver lodges -- those interested Tom
                 too. He and Gret rented a lot on a lake and he liked to watch
-                the industrious beavers come and go and add to their lodge.<a href="#Lodges-ref"
+                the industrious beavers come and go and add to their lodge.<a href="#Lodges-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="IntelligenceTypes">
-              <p>See <a href="https://www.cnbc.com/2021/03/10/harvard-psychologist-types-of-intelligence-where-do-you-score-highest-in.html">this
+              <p>(Types of Intelligence) See <a href="https://www.cnbc.com/2021/03/10/harvard-psychologist-types-of-intelligence-where-do-you-score-highest-in.html">this
                   article</a>. Garner's work had been criticized for being
                 subjective and lacking quantitative support. Similar
                 accusations, perhaps with cause, were leveled at <a href="https://en.wikipedia.org/wiki/Carl_Jung">Carl
@@ -1646,25 +1795,113 @@ a[aria-describedby="Endnote-label"]::after {
                 psychiatry. All three were medical men and "just armchair
                 scientists."<a href="#IntelligenceTypes-ref" aria-label="Back to content">↵</a></p>
             </li>
+            <li id="Monogram">
+              <p>(Gifts) One needs to be cautious when ordering monogrammed
+                gifts. One of Anne's wedding gifts was a fine set of monogrammed
+                china. Her first husband was George Amos Gibson. It wasn't till
+                I was invited to dinner that I realized the giver had made an
+                unfortunate choice. The dinner plates looked something like this
+                -- not an optimal message to dinner guests. :) <img src="MonogramedPlate.jpg"
+
+                  alt="dinner plates monogramed with
+                  'GAG' in large letters" style="width: 231px; height: 231px;"><a
+
+                  href="#Monogram-ref" aria-label="Back to content">↵</a></p>
+            </li>
             <li id="India">
-              <p>He was a somewhat tragic person. I remember in our freshman and
-                sophomore years he would talk enthusiastically about how he
-                would gain loads of knowledge in his studies and could return to
-                his rural village and help them enter the 20th century. But one
-                day (I think in his junior year) he was on the brink of tears.
-                My recollection is that he said something like "I can't go back.
-                I wanted to help them. But I just can't face it. The dirt
-                floors. The flies. The heat. I just can't."<a href="#India-ref"
+              <p>(Sit-in) He was a somewhat tragic person. I remember in our
+                freshman and sophomore years he would talk enthusiastically
+                about how he would gain loads of knowledge in his studies and
+                could return to his rural village and help them enter the 20th
+                century. But one day (I think in his junior year) he was on the
+                brink of tears. My recollection is that he said something like
+                "I can't go back. I wanted to help them. But I just can't face
+                it. The dirt floors. The flies. The heat. I just can't."<a href="#India-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="BillyHill">
-              <p>Broome County politics were dominated by former politician,
-                newspaper publisher, party boss <a href="https://en.wikipedia.org/wiki/William_Henry_Hill_%28New_York_politician%29">Billy
+              <p>(Party choice) Broome County politics were dominated by former
+                politician, newspaper publisher, party boss <a href="https://en.wikipedia.org/wiki/William_Henry_Hill_%28New_York_politician%29">Billy
                   Hill</a> (see also <a href="https://www.pressconnects.com/story/news/connections/history/2019/07/27/life-and-times-broome-political-journalism-giant-william-hill/1807356001/">article</a>).
                 To his credit, he didn't believe party organizations should take
                 sides in primaries, but they did make sure that "amenable"
                 candidates filed for office -- whom it seemed to me often had
                 minimal qualifications.<a href="#BillyHill-ref" aria-label="Back to content">↵</a></p>
+            </li>
+            <li id="JFK">
+              <p>(JFK) A year or two earlier I had visited the US Capitol
+                Building, and happened to ride on an elevator on the Senate
+                side. Our car was almost full and the doors started to close,
+                but then opened as one more passenger entered -- Sen. John F.
+                Kennedy. I don't recall him uttering a word, just smiling and
+                nodding to the other passengers. But his charisma was palpable.
+                (My mother would have said,&nbsp; "He had 'presence'.") All the
+                women swooned. And the men seemed to feel his spell too.<a href="#JFK-ref"
+
+                  aria-label="Back to content">↵</a></p>
+            </li>
+            <li id="McCabe">
+              <p>(McCabe) James Walter McCabe, Sr., (1917 - 1999) was a fine man
+                and great public servant. When he started running for mayor of
+                Johnson City, NY he seemed somewhat introverted. "<a href="https://idioms.thefreedictionary.com/work+the+room">Working
+                  the room</a>" and "<a href="https://www.google.com/search?q=glad+handing+meaning&amp;rlz=1C1CHBF_enUS912US912&amp;oq=gladhanding&amp;aqs=chrome.2.69i57j0i10i131i433i512j0i10i512l4j0i30j0i10i15i30l2j0i10i30.10809j0j9">glad-handing</a>"
+                didn't come naturally to him. But each time he ran he became
+                better at it. And his percentage of the vote increased. He never
+                pandered to an audience. Or "<a href="https://www.vocabulary.com/dictionary/soft-pedal">soft
+                  pedaled</a>" his views. It was "this is what I believe; this
+                is what I'll work for if elected. Voters appreciated his candor
+                and his integrity. He served several terms as mayor, and before
+                serving in the state house and senate. A post office is named in
+                his honor.</p>
+              <p> When I first started helping with his campaign, I encountered
+                some resistance among his campaign volunteers, some of whom
+                viewed me as a "carpetbagger" because I didn't live in the
+                village. We were expecting a child and had to move to a larger
+                apartment anyway, so we moved to Johnson City and I became a
+                County Committeeman from there and became active in the Johnson
+                City Democratic Club. And then president of the club and
+                chairman of the Johnson City Democratic Committee. I like to
+                think that I helped make it more effective and a force for
+                bettering the community. I served on several of Jim's campaign
+                committees and was treasurer of one. Some of the civil service
+                appointees anticipated having to "kickback" a percentage of
+                their salary to the party or campaigns. And some contributors
+                tried to contribute "brown bags" full of cash. I don't know what
+                kinds of corruption may or may not have gone on in previous
+                administrations. But we worked hard to make sure everything was
+                done "by the book" -- scrupulously avoiding the slightest hint
+                of impropriety.<a href="#McCabe-ref" aria-label="Back to content">↵</a></p>
+            </li>
+            <li id="RFK">
+              <p>(RFK) As I mentioned, I met many interesting politicians. One
+                that stuck in my mind was <a href="https://en.wikipedia.org/wiki/Ramsey_Clark">Ramsey
+                  Clark</a>. (I suspect that Ramsey Clark, who grew up in TX,
+                was the only candidate for US Senator for NY that came to
+                fund-raising gatherings wearing cowboy boots and a string tie.)</p>
+              <p>But by far the most memorable was Sen. Robert Kennedy. I find
+                his transformation from being a spoiled rich kid and supporter
+                of <a href="https://en.wikipedia.org/wiki/Joseph_McCarthy">Sen.
+                  Joseph McCarthy</a>, to ruthless opponent of <a href="https://en.wikipedia.org/wiki/Jimmy_Hoffa">Jimmy
+                  Hoffa</a>, to (I believe) a champion of the downtrodden. I
+                think a key moment in his transformation was his 1960 trip to
+                West Virginia as an advance-man for his brother's primary. There
+                he came face to face with Appalachia's poverty -- a completely
+                different world from the super-affluent Hyannisport world he
+                grew up in. Unlike Ebeneezer Scrooge, his transformation wasn't
+                overnight. But West Virginia's poverty opened his eyes and
+                launched his journey. I don't know if when he first became
+                senator he believed the speeches that were written for him, but
+                by the time I met him I think what he said and what he believed
+                were in sync. I met him twice. He'd fly into the local airport.
+                And meet with local political leaders for a pep talk and
+                listening session. Both times I got to chat with him (and 4 or 5
+                members of the audience) afterward. I can't remember a word of
+                those conversations or even the topics. But he listened well,
+                asked good questions, and I feel I got a much better insight
+                into him and his thinking during those face-to-face moments. If
+                he'd lived to become president, I believe his legacy would have
+                been more substantial than his brother's.<a href="#RFK-ref" aria-label="Back to content">↵</a></p>
             </li>
           </ol>
           <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
@@ -1672,8 +1909,9 @@ a[aria-describedby="Endnote-label"]::after {
           <nav class="w3-cell-row w3-sans">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
               <a class="w3-bar-item w3-border" href="documents.html">Documents
-                |Index</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This
-                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+                Index</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This
+                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+
                 href="WBTMemoirEducation.html">Previous</a> </p>
           </nav>
         </div>
@@ -1688,6 +1926,7 @@ showSlides(1, 2);
 showSlides(1, 3);
 showSlides(1, 4);
 showSlides(1, 5);
+       showDivs(2, 2);
 
 function plusSlides(n, no) {
   showSlides(slideIndex[no] += n, no);

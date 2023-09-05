@@ -16,95 +16,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Chelsea+Market&amp;display=swap"
-      rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap"
+
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
-    <link href="ssletterw3.css" rel="stylesheet">
+    <link href="ssRespWeb.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: 200%; font-family: 'Merriweather', serif;}
-       h1 {text-align: center; font-family: 'Lora', serif;}
-           h2 {text-align: center; font-family: 'Oswald', sans-serif;}
-       h2 {font-family: 'Lora'; font-size:120%;}
-    h3 {font-size: 115%; font-family: 'Oswald', san-serif;}
-       h3 {font-size: 115%; font-family: 'Cabin', san-serif;}
-       h4 {font-family: 'Lora', serif; text-align: left; text-decoration:underline; 
-         font-weight: 500; font-size:105%; font-style: oblique;}
-        h5 {font-family: 'Lora', serif; text-align: left;  
-         font-weight: 500; font-size:105%; font-style: oblique;}
-       hr {border-top:3px solid;}
-         blockquote {font-family: 'Chelsea Market', cursive;}
-       table, th, td {border:none;}
-       table {border-collapse: collapse;}
-       td {font-size:140%;}
-       img {
-        float: left;
-         margin: 5px;}
-      figure {font-style: oblique;}
-      .FromAddr p + p {padding: 0px; margin: 0px;}
-      .Medium {font-size: medium;}
-      .Red {color:red;}
-      .strikethru {text-decoration: line-through;}
-/* Initialiazing a `footnotes` counter on the wrapper */
-      article {
-  counter-reset: Endnotes;
-}
-/**
- * Inline footnotes references
- * 1. Increment the counter at each new reference
- * 2. Reset link styles to make it appear like regular text
- */
-      a[aria-describedby="Endnote-label"] {
-  counter-increment: Endnotes; /* 1 */
-  text-decoration: none; /* 2 */
-  color: inherit; /* 2 */
-  cursor: default; /* 2 */
-  outline: none; /* 2 */
-}
- /**
- * Actual numbered references
- * 1. Display the current state of the counter (e.g. `[1]`)
- * 2. Align text as superscript
- * 3. Make the number smaller (since it's superscript)
- * 4. Slightly offset the number from the text
- * 5. Reset link styles on the number to show it's usable
- */
-a[aria-describedby="Endnote-label"]::after {
-  content: '[' counter(Endnotes) ']'; /* 1 */
-  vertical-align: super; /* 2 */
-  font-size: 0.9em; /* 3 */
-  font-weight:500;
-  margin-left: 2px; /* 4 */
-  color: blue; /* 5 */
-  text-decoration: underline; /* 5 */
-  cursor: pointer; /* 5 */
-}
- /**
- * Resetting the default focused styles on the number
- */
-      a[aria-describedby="Endnote-label"]:focus::after {
-  outline: thin dotted;
-  outline-offset: 2px;
-}
-      footer :target {
-  background: yellow;
-}
-      .alert {
-  padding: 20px;
-  background-color: #90EE90; /* Sad */
-  color: black;
-  margin-bottom: 15px;
-}
     </style>
   </head>
-  <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+  <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+
 style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container">
@@ -165,7 +95,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               former <a aria-describedby="Endnote-label" href="#Laborer" id="Laborer-ref"></a>,
               because my mind was free to wander and contemplate and it was body
               building.</p>
-            <p>My summer job as a cutter<a aria-describedby="Endnote-label" href="#Cutter"
+            <p>My summer job as a cutter<a aria-describedby="Endnote-label" href="#Cutter"
+
                 id="Cutter-ref"></a> at the tent and awning company taught me a
               lot. I was raised by a Victorian mother and grandmother who had
               aspirations of gentility. My workstation was next to a production
@@ -244,7 +175,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               floor of a building and electronic calculators hadn't been
               invented, so engineers used slide rules, paper and pencils, or
               electro-mechanical calculators to solve equations. I was hired as
-              a "statistical clerk"<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+              a "statistical clerk"<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+
                 href="#StatisticalClerk" id="StatisticalClerk-ref"></a> and
               given a desk with 1959's state of the art equipment, a <a href="https://en.wikipedia.org/wiki/Marchant_Calculating_Machine_Company">Marchant
                 Figurematic.</a> </p>
@@ -254,7 +186,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               fall semester and asked if I was planning to take any courses the
               next semester. Hearing that I wasn't, he said, "Good, we're going
               to start a data processing department, we'd like to hire you
-              full-time to set it up and manage it."<a aria-describedby="Endnote-label"
+              full-time to set it up and manage it."<a aria-describedby="Endnote-label"
+
                 href="#DPManager" id="DPManager-ref"></a> </p>
             <p>It was a family owned company. I'd be working for his wife, the
               company's treasurer, who was the daughter of its president and
@@ -264,13 +197,15 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               found a job teaching at a junior high school a couple of blocks
               from my employment and we found a tiny apartment a block away. We
               didn't even need a car. My professional career was launched.</p>
-            <p><img src="ApertureCard.png" alt="Photo of a punched card containing a microfilm image"
+            <p><img src="ApertureCard.png" alt="Photo of a punched card containing a microfilm image"
+
                 style="width:20%; float:right;">We implemented and ran all the
               usual accounting applications, such as Accounts Payable, Accounts
               Receivable, General Ledger, etc. (Payroll continued to be done by
               an outside service.) But the data centers main function was
               information retrieval. <a href="https://en.wikipedia.org/wiki/Aperture_card">Aperture
-                cards</a> were the key.<a aria-describedby="Endnote-label" href="#ApertureCard"
+                cards</a> were the key.<a aria-describedby="Endnote-label" href="#ApertureCard"
+
                 id="ApertureCard-ref"></a></p>
             <p>After a couple of years there, I learned that I was going to be a
               father, which prompted reviewing my situation. My tiny department
@@ -281,7 +216,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               family. It was time to move on. </p>
             <p>Remembering the fellow who'd told me he'd hire me if I took a
               course in statistics (which I hadn't used yet). I reapplied to
-              General Aniline and Film Corp.'s Photographic Division<a aria-describedby="Endnote-label"
+              General Aniline and Film Corp.'s Photographic Division<a aria-describedby="Endnote-label"
+
                 href="#AgfaAnsco" id="AgfaAnsco-ref"></a> in Binghamton (the
               company I had cheerily dug ditches for) and and was interviewed.
               They were looking for an "<a href="https://careerfoundry.com/en/blog/data-analytics/operations-analyst/">operations
@@ -309,7 +245,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               did that for several days before confessing our plight. </p>
             <h4>Temp to the Rescue</h4>
             <p> Needing a job, I answered an ad from a temp agency. They "rented
-              me out" to IBM's Federal Systems Division in Owego, NY -- as a <a
+              me out" to IBM's Federal Systems Division in Owego, NY -- as a <a
+
                 href="https://en.wikipedia.org/wiki/Technical_writer">technical
                 writer</a>. (In spite of the fact that I had no experience as a
               technical writer.) That division did work for NASA on the Mercury,
@@ -317,7 +254,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               for the capsules. I was given some manuals that I was to make some
               revisions to, and told to familiarize myself with the manuals'
               organization and writing style. But, before receiving any actual
-              assignment, I was transferred to a different job. <img src="IBM650.png"
+              assignment, I was transferred to a different job. <img src="IBM650.png"
+
                 alt="Photo of the IBM 650, a mainframe of the 1950s" style="width:20%; float:right;">Their
               data center called my temp agency requesting someone, ASAP, to
               work in their data center. My employer told them you've already
@@ -339,14 +277,16 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               The department was reorganized and the statistical section was
               spun off as a new department. While I was with GAF I went through
               countless reorganizations and job titles. If you haven't heard the
-              classic joke, "Three Envelopes," read it in this footnote.<a aria-describedby="Endnote-label"
+              classic joke, "Three Envelopes," read it in this footnote.<a aria-describedby="Endnote-label"
+
                 href="#ThreeEnvelopes" id="ThreeEnvelopes-ref"></a></p>
             <h4>Marvelous Mentors</h4>
             <p>I had the good fortune to have had my career shaped by two
               extraordinary mentors: <a href="https://www.legacy.com/us/obituaries/pressconnects/name/stanley-rogge-obituary?id=28629467">Stan
                 Rogge</a><a aria-describedby="Endnote-label" href="#StanRogge" id="StanRogge-ref"></a>
               and <a href="https://www.findagrave.com/memorial/178527982/calvin-herbert-besore">Cal
-                Besore</a><a aria-describedby="Endnote-label" href="#CalBesore"
+                Besore</a><a aria-describedby="Endnote-label" href="#CalBesore"
+
                 id="CalBesore-ref"></a> (both now deceased). I doubt that anyone
               ever had better managerial role models than Stan and Cal provided.
               I worked with and for them at two different companies. Out of
@@ -370,9 +310,11 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 610</a>), and had ordered one IBM's first inexpensive scientific
               computer, the <a href="https://en.wikipedia.org/wiki/IBM_1620">IBM
                 1620</a>. I was to continue doing mathematical work, but also be
-              "in charge of" the 1620.<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+              "in charge of" the 1620.<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+
                 href="#IBM1620" id="IBM1620-ref"></a>
-              <figure><img src="IBM1620.png" alt="Photo of the IBM 1620, a scientific minicomputer of the 1960s"
+              <figure><img src="IBM1620.png" alt="Photo of the IBM 1620, a scientific minicomputer of the 1960s"
+
                   style="width:35%; float:right;"><figcaption>IBM 1620 computer</figcaption></figure>
               <p> They got it so that the company's engineers and scientists
                 could have access to the computer. They could sign up for 1 hour
@@ -388,10 +330,12 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 diplomatically.) BTW, battery technology was not advanced back
                 then and computers consumed a lot of electricity.</p>
               <p> I had lots of job title changes, some relating to Quality
-                Control, some statistics,<a aria-describedby="Endnote-label" href="#Statistics"
+                Control, some statistics,<a aria-describedby="Endnote-label" href="#Statistics"
+
                   id="Statistics-ref"></a> some to computing, but that phase of
                 my career culminated with my being "Manager of Scientific
-                Computing," with a talented staff.<sup><b>{Nerd Alert}</b></sup><a
+                Computing," with a talented staff.<sup><b>{Nerd Alert}</b></sup><a
+
                   aria-describedby="Endnote-label" href="#ScientificComputing" id="ScientificComputing-ref"></a></p>
               <p>My interest in information retrieval, whetted by my venture
                 with retrieving transformer designs, didn't disappear when I
@@ -419,7 +363,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 a leave of absence from GAF Binghamton, transfer to GAF Easton,
                 work half-time for Dr. Starke, at half pay, but with all benefit
                 rights preserved. I spent two fascinating years there, working
-                on their GADSAR project.<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+                on their GADSAR project.<sup><b>{Nerd Alert}</b></sup><a aria-describedby="Endnote-label"
+
                   href="#GADSAR" id="GADSAR-ref"></a></p>
               <p>My half time work schedule and limited finances only allowed
                 taking two courses per semester, so I hadn't quite finished when
@@ -431,10 +376,12 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 tempted to stay, officially be hired by that division and
                 complete my degree. Al would have hired me full time, but there
                 was a problem. The lab was being moved to Woodbridge, NJ, an
-                hour further from Lehigh.<a aria-describedby="Endnote-label" href="#Woodbridge"
+                hour further from Lehigh.<a aria-describedby="Endnote-label" href="#Woodbridge"
+
                   id="Woodbridge-ref"></a> </p>
               <h4>"You can't go home again."</h4>
-              <p> <img src="IBM360M40.png" alt="Photo of the IBM 360 Model 40 computer"
+              <p> <img src="IBM360M40.png" alt="Photo of the IBM 360 Model 40 computer"
+
                   style="width:35%; float:right;">GAF Binghamton retrieved me,
                 not only because of their ambitious, pioneering, automated
                 warehouse project, but also because they were replacing the
@@ -517,7 +464,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 had great products, a large base of happy customers, good
                 management and good engineering. They seemed to be within reach
                 of bypassing IBM. Few expected that they were approaching their
-                <a href="https://www.collinsdictionary.com/us/dictionary/english/zenith">zenith</a>.<a
+                <a href="https://www.collinsdictionary.com/us/dictionary/english/zenith">zenith</a>.<a
+
                   aria-describedby="Endnote-label" href="#DEC" id="DEC-ref"></a></p>
               <p>I worked three years for DEC, detailed in the footnote above.
                 One project deserves special mention.</p>
@@ -614,7 +562,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 got an offer, brought the family down for a quick look see --
                 they approved and I accepted. </p>
               <h4>The Real Mayberry</h4>
-              <p> <img src="MtAiryHouse.png" alt="My home in Mt. Airy" style="width:25%; float:right;"><a
+              <p> <img src="MtAiryHouse.png" alt="My home in Mt. Airy" style="width:25%; float:right;"><a
+
                   href="https://en.wikipedia.org/wiki/Mount_Airy,_North_Carolina">Mt.
                   Airy, NC</a> is in a beautiful location. At the base of the
                 Blue Ridge, 5 miles south of the Virginia state line, on the
@@ -629,7 +578,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               <p> I was concerned that I might be perceived as a "Damn Yankee"
                 or as a "<a href="https://en.wikipedia.org/wiki/Carpetbagger">carpetbagger</a>,"
                 but that didn't seem to be the case. The important distinction
-                seemed to be between "hill folks" (i.e. those from the <a href="https://en.wikipedia.org/wiki/Piedmont_%28United_States">Piedmont</a>,
+                seemed to be between "hill folks" (i.e. those from the <a href="https://en.wikipedia.org/wiki/Piedmont_(United_States)">Piedmont</a>,
                 but preferably born on, or in sight of, the Blue Ridge) and
                 "flat-landers." People from Charlotte, Durham or Raleigh
                 apparently were just as much outsiders as I was. Most of the
@@ -820,7 +769,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 that I didn't dare let go and slide to who knows where. After
                 what seemed like and eternity, the driver saw me in his rear
                 view mirror and slowed to a gentle stop. I escaped with only
-                minor brush burns. But relived it in nightmares long after.<a href="#TruckBoy-ref"
+                minor brush burns. But relived it in nightmares long after.<a href="#TruckBoy-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="Laborer">
@@ -875,7 +825,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 the cutting table depositing layers of cloth. (The more skilled
                 the cutter the more "lays" of fabric they could successfully cut
                 at a time.)</p>
-              <figure><img src="FabricSpreadingMachine.png" alt="Photo of a 'spreading machine' used to deposit folds of cloth on a cutting table."
+              <figure><img src="FabricSpreadingMachine.png" alt="Photo of a 'spreading machine' used to deposit folds of cloth on a cutting table."
+
                   style="width: 30%;; float: right;"><figcaption>Fabric
                   spreading machine. It ran on tracks on top of the cutting
                   table. The skewer on top was inserted into the hollow core of
@@ -888,7 +839,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 press-board or plastic, that you laid on top of the fabric. A
                 pattern had long slots which tailors' chalk fit into so that you
                 could mark the fabric. Then you used an electric knife. </p>
-              <figure><img src="ElectricCuttingKnife.png" alt="Photo of an electic fabric cuttine 'knife' used to cutt folds of cloth on a cutting table."
+              <figure><img src="ElectricCuttingKnife.png" alt="Photo of an electic fabric cuttine 'knife' used to cutt folds of cloth on a cutting table."
+
                   style="width: 20%;; float: leftt;"><figcaption>Fabric cutting
                   knife. It had a fast moving, sharp, reciprocal blade and could
                   easily remove a finger. As you turned corners to follow the
@@ -903,7 +855,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 leftover scraps of cut cloth were disposed of, the remainder of
                 the roll returned to the stock room, and you were ready for the
                 next work order.</p>
-              <p>Fortunately I wasn't the only cutter.<img src="BlanchardDrawTightTent.png"
+              <p>Fortunately I wasn't the only cutter.<img src="BlanchardDrawTightTent.png"
+
                   alt="Photo of the popular 'Blanchard DrawTight Tent'." style="width: 40%;; float: right;">
                 There was an experienced guy who could advise me when I needed
                 assistance. My boss was the talented, patient and forgiving
@@ -943,16 +896,20 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 duck to water. The technical courses, such as how to wire the
                 various machines' plug-board control panels were in the nearby
                 IBM Education Center. But some on management were held in the
-                IBM Homestead,<img src="IBM_Homestead.png" alt="Photo of the &lt;i&gt;IMB Homestead&lt;/i&gt; mansion used to house celebreties and corporate executives"
+                IBM Homestead,<img src="IBM_Homestead.png" alt="Photo of the &lt;i&gt;IMB Homestead&lt;/i&gt; mansion used to house celebreties and corporate executives"
+
                   style="width: 40%;; float: right;"> a plush mansion they
                 acquired for hosting executives of major corporations -- and
                 celebrities such as Bing Crosby (presumably to play at their
                 adjacent golf course) and a fellow golfer, then&nbsp; Columbia
                 U. president, Dwight Eisenhower, as well as Eleanor Roosevelt</p>
               .
-              <p><img src="IBM402.png" alt="Photo of the IMB 402 Accounting Machine"
-                  style="width: 25%;; float: left;"> <img src="IBM402Panel.png"
-                  alt="Photo of a control panel for the IBM 402 Accounting Machine"
+              <p><img src="IBM402.png" alt="Photo of the IMB 402 Accounting Machine"
+
+                  style="width: 25%;; float: left;"> <img src="IBM402Panel.png"
+
+                  alt="Photo of a control panel for the IBM 402 Accounting Machine"
+
                   style="width: 20%;; float:center;">The heart of my new
                 department's computing power was this overgrown adding machine,
                 the IBM 402 Accounting Machine, which relied on punched cards
@@ -1002,7 +959,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               more elected the directors. Not very wisely, IMHO, because shortly
               thereafter, a majority of the board were allies (some would say
               'cronies') of the chairman, and GAF went downhill fast. It's many
-              divisions were sold off or went out of business.<a href="#AgfaAnsco-ref"
+              divisions were sold off or went out of business.<a href="#AgfaAnsco-ref"
+
                 aria-label="Back to content">↵</a></li>
             <li id="IBM650">
               <p>(Nerd Alert - IBM650) That computer, which targeted both the
@@ -1052,7 +1010,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               <p> That worked beautifully and there was smooth sailing again --
                 for a while.</p>
               <p> Finally it was time to open envelope #3. It's message was
-                slightly longer -- "Make out three envelopes."<a href="#ThreeEnvelopes-ref"
+                slightly longer -- "Make out three envelopes."<a href="#ThreeEnvelopes-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="StanRogge">
@@ -1229,7 +1188,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               <p> It was usually programed in <a href="https://en.wikipedia.org/wiki/Fortran">FORTRAN</a>,
                 but there were assemblers and a wide variety of compilers and
                 interpreters for most any of the programming languages of the
-                day: <a href="https://en.wikipedia.org/wiki/ALGOL">ALGOL</a>, <a
+                day: <a href="https://en.wikipedia.org/wiki/ALGOL">ALGOL</a>, <a
+
                   href="https://en.wikipedia.org/wiki/SNOBOL">SNOBOL</a>, <a href="https://en.wikipedia.org/wiki/Lisp_%28programming_language%29">LISP</a>,
                 <a href="https://en.wikipedia.org/wiki/COBOL">COBOL</a>, <a href="https://en.wikipedia.org/wiki/PL/I">PL/I</a>,
                 etc. Usually you would load a compiler by reading a large deck
@@ -1351,7 +1311,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                   chemists</a>" had not mastered them. An indexing system would
                 do no good if its users didn't know what name what they were
                 looking for.</p>
-              <p><img src="ChemStructure.png" alt="A chemical structure diagram"
+              <p><img src="ChemStructure.png" alt="A chemical structure diagram"
+
                   style="width: 20%;; float: right;">A preferable method would
                 have been using <a href="https://en.wikipedia.org/wiki/Structural_formula#:%7E:text=The%20structural%20formula%20of%20a,shown%2C%20either%20explicitly%20or%20implicitly.">chemical
                   structure diagrams</a>. All chemists used and understood them
@@ -1363,7 +1324,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               <p>WLN was fine for entering a description of what a chemist was
                 searching for, but it was not very good for computer programs to
                 use when trying to match a segment of a molecule. A more
-                suitable approach for the computer to use internally was an "<a
+                suitable approach for the computer to use internally was an "<a
+
                   href="https://pubs.acs.org/doi/10.1021/ja00896a022">atom to
                   atom connectivity matrix</a>." (They are a simple table
                 containing one row for each atom in the molecule and one column
@@ -1408,7 +1370,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 and they would grant the degree. In effect, they would sell it
                 to me for $30,000. Except for a college teaching position, I
                 didn't need the degree and would get no return on the
-                investment, so I said "Thanks, but no thanks."] <a href="#Woodbridge-ref"
+                investment, so I said "Thanks, but no thanks."] <a href="#Woodbridge-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="DEC">
@@ -1467,7 +1430,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 I've never enjoyed -- and a weekly trip to Nashua, NH, crossing
                 both the Green and White Mountains, 3.5 hours in good weather.
                 In the winter it could get hairy in a rear wheel drive
-                car.&nbsp; And sometimes the roads would close.<a href="#DEC-ref"
+                car.&nbsp; And sometimes the roads would close.<a href="#DEC-ref"
+
                   aria-label="Back to content">↵</a></p>
             </li>
             <li id="MtAiry">
@@ -1517,7 +1481,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 rain on it for days. The river rose 26' in just a few hours.
                 Many of the textile and apparel mill workers who were working
                 that night barely escaped with their lives. And many of the
-                factories and/or their contents were destroyed.<a href="#MtAiry-ref"
+                factories and/or their contents were destroyed.<a href="#MtAiry-ref"
+
                   aria-label="Back to content">↵</a> </p>
             </li>
             <li id="Quakertown">
@@ -1540,18 +1505,22 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 who had done a lot of work for the corporate data center to do
                 contract programming from us which enabled us to learn a lot
                 about what their software did and how. But through no fault of
-                his own, he contributed to my early departure.<a href="#Quakertown-ref"
+                his own, he contributed to my early departure.<a href="#Quakertown-ref"
+
                   aria-label="Back to content">↵</a> </p>
             </li>
           </ol>
           <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
             William B. Thompson. Commercial use prohibited. </div>
-          <nav class="w3-cell-row w3-sans">
+          <nav class="w3-cell-row w3-serif w3-mobile">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
               <a class="w3-bar-item w3-border" href="documents.html">Documents
                 Table of Contents</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This
-                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-                href="WBTMemoirEducation.html">Previous</a> </p>
+                memoir's Table of Contents</a> <a class="w3-bar-item w3-border"
+
+                href="WBTMemoirEducation.html">Previous chapter</a> <a class="w3-bar-item w3-border"
+
+                href="WBTMemoirFamily_Dad.html">Next chapter</a> </p>
           </nav>
         </div>
       </footer>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="William B. Thompson's memoir -- an index." name="description">
+    <title>Bill Thompson's Memoir - Who is Who</title>
+    <style>
+      p {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      /* based on https://code-boxx.com/simple-responsive-accordion-pure-css/ */
+/* (A) TABS CONTAINER */
+.tab, .tab * {
+  font-family: arial, sans-serif;
+  box-sizing: border-box;
+}
+.tab { max-width: 600px; }
+
+/* (B) HIDE CHECKBOX */
+.tab input { display: none; }
+
+/* (C) TAB LABEL */
+.tab label {
+  /* (C1) DIMENSIONS */
+  position: relative; /* required for (f2) position:absolute */
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 10px;
+ 
+  /* (C2) COSMETICS */
+  font-weight: 700;
+  color: #fff;
+  background: #2d5faf;
+  cursor: pointer;
+}
+
+/* (D) TAB CONTENT - HIDDEN BY DEFAULT */
+/* css animation will not work with auto height */
+/* this is why we use max-height instead */
+.tab .content {
+  background: #ccdef9;
+  overflow: hidden;
+  transition: max-height 0.3s;
+  max-height: 0;
+}
+.tab .content p { padding: 10px; }
+
+/* (E) OPEN TAB ON CHECKED */
+.tab input:checked ~ .content { max-height: 100vh; }
+
+/* (F) EXTRA - ADD ARROW INDICATOR */
+.tab label::after {
+  /* (F1) RIGHT ARROW */
+  display: block;  
+  content: "\25b6";
+ 
+  /* (F2) PLACE AT RIGHT SIDE */
+  position: absolute;
+  right: 10px; top: 10px;
+ 
+  /* (F3) ANIMATED ARROW */
+  transition: all 0.4s;
+}
+ 
+/* (F4) ROTATE ARROW ON CHECKED */
+.tab input:checked ~ label::after { transform: rotate(90deg); }
+    </style>
+  </head>
+  <body>
+    <section>
+      <div class="tab"> <input id="tab-1" type="checkbox"> <label for="tab-1">
+          Boller, Inez <i>Hoyt</i> (the aunt who raised my mother) </label>
+        <div class="content">
+          <p> <b><i>See her <a href="https://www.campbellluggblackwell.com/HoytInez1871.html">mini-bio</a></i></b>.
+            Also see photos and comments at <a href="WBTMemoirFamily_Mom.html">Mom's
+              chapter</a>. Inez was the same age as her sister-in-law (my
+            grandmother) Frances GOODRICH Hoyt. She loved all three of her
+            nieces, but had special bond with my mother, whom she had raised
+            after Joe Hoyt's death. </p>
+        </div>
+      </div>
+      <div class="tab"> <input id="tab-2" type="checkbox"> <label for="tab-2">
+          Boller, William (my namesake "grandfather")</label>
+        <div class="content">
+          <p> See his <a href="https://www.wikitree.com/wiki/Boller-100"> WikiTree
+              profile </a> and also see photos and comments at <a href="WBTMemoirFamily_Mom.html"> Mom's
+              chapter </a>, and <a href="WBTMemoirFamily_Dad.html"> Dad's chapter</a>
+            and at <a href="WBTMemoirFamily_Bill.html"> Bill's chapter</a>. He
+            was my great-uncle, but an honorary grandfather ("Grampa Bill") to
+            me and my siblings. He loved his nieces and their children and was
+            kind to all of us. I'm pleased that I can keep his memory alive. </p>
+        </div>
+      </div>
+    </section>
+    
+  </body>
+</html>

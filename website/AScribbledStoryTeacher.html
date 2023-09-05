@@ -25,15 +25,14 @@ by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnot
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&amp;display=swap"
 
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Jacques+Francois+Shadow&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
 
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
     <link href="ssletterw3.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: x-large; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-            h1, h2 {text-align: center; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-       h1 {font-family:Montserrat; font-size:130%; font-weight:600; text-align: center;}
+      body {font-size: x-large; font-family: Monserrat;}
+       h1 {font-family:Lora; font-size:130%; font-weight:600; text-align: center;}
        h2 {font-family: 'Jacques Francois Shadow', cursive; font-style:italic; font-size:120%;}
        hr {border-top:3px solid;}
        table, th, td {border:none;}
@@ -96,6 +95,17 @@ a[aria-describedby="Endnote-label"]::after {
   color: black;
   margin-bottom: 15px;
 }
+:root {
+  --orange:			#ffa500; /* w3-orange Head */
+  --dodgerblue:		#1e90ff; /* w3-blue   Nav */
+  --limegreen:		#32cd32; /* w3-green  Foot */
+  --palegreen: #98fb98;
+  --lighteslategrey: #778899;
+  --honeydew:		#f0fff0;
+  --lavender:		#e6e6fa;
+  --cyan:	#00ffff;}
+  nav {background-color: var(--dodgerblue);}
+/*  footer {background-color: var(--limegreen);} */
     </style>
   </head>
   <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
@@ -105,7 +115,6 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <article class="w3-container">
       <header>
         <div class="w3-container">
-          <h3>[Under Construction]</h3>
           <h1> CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA </h1>
           <h3><u>Section 5 - Public School Teaching Days Portion of</u></h3>
           <h2>A SCRIBBLED STORY OF MY LIFE</h2>
@@ -154,7 +163,9 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               things -- one was the usual Christmas vacation and the other was
               that many schools were being closed because of the influenza.<a aria-describedby="Endnote-label"
 
-                href="#SpanishFlu"></a> Well, God was good to me. I was healed
+                href="#SpanishFlu"
+
+                id="SpanishFlu-ref"></a> Well, God was good to me. I was healed
               and back at my job of teaching after a few weeks. </p>
             <p>The next school year (1920) I taught <span class="Annotation">[at]</span>
               my old home school, where I had gone to school myself for all
@@ -221,7 +232,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               depended on Harry.</p>
             <p>That year I stayed home was a busy one for me. I organized the
               girl and the young women of our neighborhood into a club we named
-              "The Daughters of the Soil ."<a aria-describedby="Endnote-label" href="#DaughtersSoil"></a>
+              "The Daughters of the Soil ."<a aria-describedby="Endnote-label" href="#DaughtersSoil"
+              id="DaughtersSoil-ref"></a>
               We tried to promote a varied program. Some of it was an attempt to
               learn more about things a farm wife should know, such as canning
               or preserving farm products. We learned about producing a good
@@ -243,26 +255,30 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             <li id="SpanishFlu">It's unusual for a letter from this time period
               to mention Spanish Flu. Apparently that pandemic and all its
               deaths were so traumatic that most survivors didn't want to talk
-              about it or relive those memories. </li>
+              about it or relive those memories.<a href="#SpanishFlu-ref"
+
+              aria-label="Back to content">↵</a> </li>
             <li id="DaughtersSoil">You can read more about this club in her <a
 
                 href="http://www.campbellluggblackwell.com/CCCV4p058MaryHughey.html">Campbell
-                Cousins Correspondents Club letter of 1926</a>. </li>
+                Cousins Correspondents Club letter of 1926</a><a href="#DaughtersSoil-ref"
+
+                aria-label="Back to content">↵</a>. </li>
           </ol>
-          <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
+          <div class="w3-cell-row w3-green" style="font-style:italic;"> Copyright © 2022, 2023
             William B. Thompson. Commercial use prohibited. </div>
+          </div>
+          </footer>    
           <nav class="w3-cell-row w3-sans">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
-              <a class="w3-bar-item w3-border" href="documents.html">Documents
-                Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-
+              <a class="w3-bar-item w3-border" href="documents.html">Index of Documents</a> 
+              <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
                 href="AScribbledStoryHighSchool.html">Previous</a> 
               <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-
                 href="AScribbledStoryMissionary.html">Next</a> </p>
           </nav>
-        </div>
-      </footer>
+
+
     </article>
   </body>
 </html>

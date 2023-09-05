@@ -18,32 +18,41 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3s.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap"
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&amp;display=swap"
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Jacques+Francois+Shadow&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
     <link href="ssletterw3.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: x-large; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-            h1, h2 {text-align: center; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-       h1 {font-family:Montserrat; font-size:130%; font-weight:600; text-align: center;}
-       h2 {font-family: 'Jacques Francois Shadow', cursive; font-style:italic; font-size:240%;}
+      body {
+  font-size: 2vw;
+  font-family: Merriweather;
+}
+       body {
+          display: flex;
+        flex-wrap: wrap;
+      }
+      h1 {font-family:Lora; font-size:130%; font-weight:600; text-align: center;}
+       h2 {font-family: 'Jacques Francois Shadow'; font-style:oblique; font-size:240%;}
        h3 {font-size:135%;}
        hr {border-top:3px solid;}
       img {
       float: left;
       margin: 10px;
     }
-       table, th, td {border:none;}
+    table, th, td {border:none;}
        table {border-collapse: collapse;}
-       td {font-size:140%;}
+       td {font-size:2rem; vertical-align:top;}
       .FromAddr p + p {padding: 0px; margin: 0px;}
       .Medium {font-size: medium;}
       .Red {color:red;}
       .strikethru {text-decoration: line-through;}
+      .FromAddr p + p {padding: 0px; margin: 0px;}
+      .Medium {font-size: medium;}
+      .Red {color:red;}
 /* Initialiazing a `footnotes` counter on the wrapper */
       article {
   counter-reset: Endnotes;
@@ -92,13 +101,24 @@ a[aria-describedby="Endnote-label"]::after {
   padding: 20px;
   background-color: #90EE90; /* Sad */
   color: black;
-  margin-bottom: 15px;
+  margin-bottom: 1.5em;
 }
+:root {
+  --orange:			#ffa500; /* w3-orange Head */
+  --dodgerblue:		#1e90ff; /* w3-blue   Nav */
+  --limegreen:		#32cd32; /* w3-green  Foot */
+  --palegreen: #98fb98;
+  --lighteslategrey: #778899;
+  --honeydew:		#f0fff0;
+  --lavender:		#e6e6fa;
+  --cyan:	#00ffff;}
+  nav {background-color: var(--dodgerblue);}
+/*  footer {background-color: var(--limegreen);} */
     </style>
   </head>
   <body>
     <article class="w3-container">
-      <header>
+      <header role="contentinfo">
         <div class="w3-container">
           <h1> CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA </h1>
           <h3><u>Section 2 - Early Memories</u></h3>
@@ -110,8 +130,8 @@ a[aria-describedby="Endnote-label"]::after {
           <h2> AUGUST 9, 1992</h2>
           <hr> </div>
       </header>
-      <main class="w3-container">
-        <div class="w3-serif">
+      <main role="Main" class="w3-container">
+        <div>
           <h2 style="font-size:120%;">A SCRIBBLED STORY OF MY LIFE</h2>
           <h2 style="font-size:120%;"><a href="https://www.wikitree.com/wiki/Hughey-1589">MARY
               HUGHEY</a> PRESCOTT</h2>
@@ -278,7 +298,7 @@ a[aria-describedby="Endnote-label"]::after {
             the name, sometimes iced with a boiled white icing, made by beating
             hot syrup into the beaten whites of eggs. </p>
           <p>Mother's recipe for the cookies called for:</p>
-          <table class="w3-table">
+          <table>
             <tbody>
               <tr class="tr">
                 <td style="padding-left:3%;"> 1 C. sugar</td>
@@ -444,7 +464,7 @@ a[aria-describedby="Endnote-label"]::after {
             her to <a aria-describedby="Endnote-label" href="#DonnaMae" id="DonnaMae-ref">Donna
               Mae</a>. Later, I got her back again to keep. At present, Julia is
             with the Museum in Port Townsend.</p>
-          <p><a href="CampbellEliabeth1830.html">Grandmother Hughey</a> died
+          <p><a href="CampbellElizabeth1830.html">Grandmother Hughey</a> died
             Jan. 29, 1904. I remember the night. Mother held me in her arms and
             looked down at poor Grandma as her breathing became more difficult.
             Someone from time to time would moisten her lips. Grandma had been
@@ -469,11 +489,11 @@ a[aria-describedby="Endnote-label"]::after {
               Porter</a>, <a href="https://en.wikipedia.org/wiki/Gene_Stratton-Porter">Gene
               Stratton Porter</a> and <a href="https://en.wikipedia.org/wiki/Harold_Bell_Wright">Harold
               Bell Wright</a> were popular novelists of those days and we
-            enjoyed any of their production that we could get. "<a href="The_Call_of_the_Wild">The
-              Call of the Wild</a>," "<a href="The_Sea-Wolf">The Sea Wolf</a>"
-            and "<a href="The_Winning_of_Barbara_Worth"> The Winning of Barbara
-              Worth</a>" were Dad's favorites. The last named book fired Dad's
-            enthusiasm for California--the land where he longed to live.</p>
+            enjoyed any of their production that we could get. "<a href="https://en.wikipedia.org/wiki/The_Call_of_the_Wild">The
+              Call of the Wild</a>," "<a href="https://en.wikipedia.org/wiki/The_Sea_Wolf">The
+              Sea Wolf</a>" and "The Winning of Barbara Worth" were Dad's
+            favorites. The last named book fired Dad's enthusiasm for
+            California--the land where he longed to live.</p>
           <p>After the great San Francisco earthquake <i><span class="Annotation">[1906]</span>,</i>
             Dad went to California and worked on R.R. Bixby's carpenter crew.
             R.R. Bixby (Russell Rock Bixby)<a aria-describedby="Endnote-label" href="#RussellRBixby"
@@ -567,22 +587,22 @@ a[aria-describedby="Endnote-label"]::after {
             chill with a big crock of home baked beans and her famous "steamed
             Boston Brown Bread" - recipe she loved to chant and she remembered
             when other memories failed. It went like this: </p>
-          <table class="w3-table">
+          <table style="margin-left:35%;">
             <tbody>
               <tr>
-                <td style="padding-left:3%;"> 3 C cornmeal</td>
-                <td> 2/3 C molasses</td>
+                <td> 3 C cornmeal</td>
+                <td style="padding-left:3%;"> 2/3 C molasses</td>
               </tr>
               <tr>
-                <td style="padding-left:3%;">1 C flour</td>
-                <td>1 tsp. salt</td>
+                <td>1 C flour</td>
+                <td style="padding-left:3%;">1 tsp. salt</td>
               </tr>
               <tr>
-                <td style="padding-left:3%;">1 C sweet milk</td>
-                <td>1 tsp. soda</td>
+                <td>1 C sweet milk</td>
+                <td style="padding-left:3%;">1 tsp. soda</td>
               </tr>
               <tr>
-                <td style="padding-left:3%;">1 sour</td>
+                <td>1 sour</td>
               </tr>
               <tr>
                 <td colspan="2" style="text-align:center;">Steam for 3 hours</td>
@@ -595,7 +615,7 @@ a[aria-describedby="Endnote-label"]::after {
             boiling water. The other with sour milk and that was the one she
             used most of the time.<br>
             Recipe No. 1 called for: </p>
-          <table class="w3-table" style="margin-left:20%;">
+          <table style="margin-left:35%;">
             <tbody>
               <tr>
                 <td>2 C corn meal</td>
@@ -622,23 +642,23 @@ a[aria-describedby="Endnote-label"]::after {
             then sprinkle on the baking powder and mix it in well. Put in a
             greased pan and bake 3/4 hour. </p>
           <p>Johnny Cake Recipe No. 2 called for:</p>
-          <table class="w3-table" style="margin-left:20%;">
+          <table style="margin-left:35%;">
             <tbody>
               <tr>
                 <td>2 C sour milk</td>
-                <td>2 eggs</td>
+                <td style="padding-left:3%;">2 eggs</td>
               </tr>
               <tr>
                 <td>1 C flour</td>
-                <td>1 tsp. salt</td>
+                <td style="padding-left:3%;">1 tsp. salt</td>
               </tr>
               <tr>
                 <td>2 C cornmeal</td>
-                <td>1 rounding tsp. soda</td>
+                <td style="padding-left:3%;">1 rounding tsp. soda</td>
               </tr>
               <tr>
                 <td>1/2 C sugar</td>
-                <td>2 tsp. lard</td>
+                <td style="padding-left:3%;">2 tsp. lard</td>
               </tr>
             </tbody>
           </table>
@@ -649,23 +669,23 @@ a[aria-describedby="Endnote-label"]::after {
             or Johnny Cake on a Crisco label that suited me, so I used it with
             some variations. It never fails to produce light, tender corn bread.
           </p>
-          <table class="w3-table" style="margin-left:20%;">
+          <table style="margin-left:35%;">
             <tbody>
               <tr>
                 <td>1/4 C Crisco</td>
-                <td>1 C thick sour milk</td>
+                <td style="padding-left:3%;">1 C thick sour milk</td>
               </tr>
               <tr>
                 <td>1/4 C sugar</td>
-                <td>1/2 tsp. soda</td>
+                <td style="padding-left:3%;">1/2 tsp. soda</td>
               </tr>
               <tr>
                 <td>1/2 tsp. salt</td>
-                <td>1 C bread flour</td>
+                <td style="padding-left:3%;">1 C bread flour</td>
               </tr>
               <tr>
                 <td>1 egg beaten</td>
-                <td>1/12 C cornmeal</td>
+                <td style="padding-left:3%;">1/12 C cornmeal</td>
               </tr>
               <tr>
                 <td colspan="2">4 tsp. baking powder</td>
@@ -786,7 +806,7 @@ a[aria-describedby="Endnote-label"]::after {
         </div>
       </main>
       <hr>
-      <footer>
+      <footer role="contentinfo">
         <h3 id="Endnote-label" style="font-size:180%;">Endnotes</h3>
         <div class="w3-container w3-cursive">
           <ol>
@@ -796,14 +816,17 @@ a[aria-describedby="Endnote-label"]::after {
                   href="#RogerSergel-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="PlateCamera">
-              <p><img src="OldCamera.jpg" alt="photo of large, old-fasioned
-                camera on tripod with hood" style="width: 384px; height: 227px;">
-                Roll film. It had been invented, but many photographers still
-                used glass plates in large cameras with bellows. The cameras
-                were mounted on tripods. A large black hood covered photographer
-                and camera. The plates would have either been 4" x 5" or 8" x
-                10", depending on the size of the camera. Minnie's camera may
-                have looked something like this:<a href="#PlateCamera-ref" aria-label="Back to content">↵</a></p>
+              <p></p>
+              <figure><img src="OldCamera.jpg" alt="photo of large, old-fasioned
+                camera on tripod with hood" style="width: 25%; float:right;"><figcaption>
+                  Roll film had been invented, but many photographers still used
+                  glass plates and large cameras with bellows. The cameras were
+                  mounted on tripods. A large black hood covered photographer
+                  and camera. The plates would have either been 4" x 5" or 8" x
+                  10", depending on the size of the camera. Minnie's camera may
+                  have looked something like this:<a href="#PlateCamera-ref" aria-label="Back to content">↵</a>
+                </figcaption> </figure>
+              <p></p>
             </li>
             <li id="TeacherRoomBoard">
               <p> It was customary for country teachers of that era to receive
@@ -816,8 +839,7 @@ a[aria-describedby="Endnote-label"]::after {
                 four rooms, including a living room and the kitchen/dining room.
                 So, in addition to the teacher, it would have housed Mary, her
                 older brother and sister, plus her parents. It's easy to see why
-                they added a "west bedroom."<a href="#Plate%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20Camera-ref"
-                  aria-label="Back to content">↵</a></p>
+                they added a "west bedroom."<a href="#TeacherRoomBoard-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="Lydia">
               <p>Based on a death certificate I found, her name was Lydia
@@ -825,8 +847,8 @@ a[aria-describedby="Endnote-label"]::after {
             </li>
             <li id="HugheyGroupPhoto">
               <figure><img src="HCHugheyFamily1903ca.jpg" alt="photo of Herbert C. Hughey family circa 1903"
-                  style="width: 246px; height: 346px;"> <figcaption> The family
-                  photo she wrote about. L-R: <a href="https://www.wikitree.com/wiki/Hughey-1582">Carrie</a>,
+                  style="width: 30%;"> <figcaption> The family photo she wrote
+                  about. L-R: <a href="https://www.wikitree.com/wiki/Hughey-1582">Carrie</a>,
                   <a href="HugheyHerbert1857.html">Herb</a>, <a href="https://www.wikitree.com/wiki/Hughey-1587">Harry</a>,
                   <a href="https://www.wikitree.com/wiki/Hughey-1589">Mary</a>,
                   <a href="BixbyHannah1863.html">Hannah</a> &amp; <a href="https://www.wikitree.com/wiki/Hughey-1584">Edd</a>.
@@ -841,11 +863,11 @@ a[aria-describedby="Endnote-label"]::after {
             </li>
             <li id="Floradora" style="float:left;">
               <figure> <img src="FloradoraDolls.jpg" alt="Photo of some Floradora dolls"
-                  style="width: 227px; height: 318px;"><figcaption>Picture of a
-                  couple of Floradora dolls. They were made in Germany and had
-                  heads made of bisque. Note that they resemble Mary in the
-                  photo above.<a href="#Floradora-ref" aria-label="Back to content">↵</a>
-                </figcaption> </figure>
+                  style="width: 25%;"><figcaption>Picture of a couple of
+                  Floradora dolls. They were made in Germany and had heads made
+                  of bisque. Note that they resemble Mary in the photo above.<a
+                    href="#Floradora-ref" aria-label="Back to content">↵</a> </figcaption>
+              </figure>
             </li>
             <li id="MaryJuliaWilson" style="clear:left;">
               <p>If you're curious about the real Julia, Mary Julia Wilson (1895
@@ -864,7 +886,7 @@ a[aria-describedby="Endnote-label"]::after {
               <p> "An additional hairpiece you can add to your existing hair
                 temporarily for an updo look that you could not achieve with
                 your existing hair." Whereas "falls" were hairpieces to add for
-                hair that will hang down.<a href="#Gafflecarb-ref" aria-label="Back to content">↵</a></p>
+                hair that will hang down.<a href="#HairExtension-ref" aria-label="Back to content">↵</a></p>
             </li>
             <li id="DonnaMae">
               <p> Donna Mae (Hughey) Lovrak, living as of 2022, is a daughter of
@@ -872,7 +894,7 @@ a[aria-describedby="Endnote-label"]::after {
             </li>
             <li id="RoyalOakHeater" style="float: left;">
               <figure> <img src="RoyalOakHeater.jpg" alt="photo of a small, blue and white enamel coated, wood or coal burning heater made by the Royal Oak Company"
-                  style="height: 318px;"> <figcaption>Most homes didn't have
+                  style="width:25%;"> <figcaption>Most homes didn't have
                   central heating yet. Royal Oak was a foundry that produced
                   coal or wood burning cook stoves and smaller heaters, many of
                   them enamel coated.<a href="#RoyalOakHeater-ref" aria-label="Back to content">↵</a></figcaption></figure>
@@ -880,24 +902,23 @@ a[aria-describedby="Endnote-label"]::after {
             <li id="RussellRBixby" style="clear:left;">
               <p><a href="https://www.wikitree.com/wiki/Bixby-1163">Russell
                   "Rock" Bixby</a> was more than just a house builder, he
-                designed several of the Berkeley area's historic buildings.<a href="#RussellRBixby-ref"
-                  aria-label="Back to content">↵</a></p>
+                designed several of the Berkeley, CA area's historic buildings.<a
+                  href="#RussellRBixby-ref" aria-label="Back to content">↵</a></p>
             </li>
           </ol>
         </div>
-        <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
-          William B. Thompson. Commercial use prohibited. </div>
-        <nav class="w3-cell-row w3-sans">
-          <p><a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-              href="index.html">Return Home</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-              href="documents.html">Documents Table of Contents</a> <a class="w3-bar-itemw3-topbar w3-bottombar w3-leftbar w3-rightbar"
-              href="AScribbledStoryTOC.html">Memoir's Table of Contents</a> <a
-              class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-              href="AScribbledStoryAdaptersNotes.html">Previous</a>
-            <!-- <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-              href="AScribbledStoryElementary.html"> -->Next </p>
-        </nav>
+        <div class="w3-cell-row w3-green" style="font-style:italic;">Copyright ©
+          2022, 2023 William B. Thompson. Commercial use prohibited. </div>
       </footer>
+      <nav role="Navigation" class="w3-cell-row w3-sans">
+        <p><a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+            href="index.html">Return Home</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+            href="documents.html">Documents Table of Contents</a> <a class="w3-bar-itemw3-topbar w3-bottombar w3-leftbar w3-rightbar"
+            href="AScribbledStoryTOC.html">Memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+            href="AScribbledStoryAdaptersNotes.html">Previous</a>
+          <!-- <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+              href="AScribbledStoryElementary.html"> -->Next </p>
+      </nav>
     </article>
   </body>
 </html>

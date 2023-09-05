@@ -18,26 +18,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+
+    rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&amp;display=swap"
 
       rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Jacques+Francois+Shadow&amp;display=swap"
 
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&amp;family=Jacques+Francois+Shadow&amp;display=swap"
-
-      rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
     <link href="ssletterw3.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: x-large; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-            h1, h2 {text-align: center; font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;}
-       h1 {font-family:Montserrat; font-size:130%; font-weight:600; text-align: center;}
-       h2 {font-family: 'Jacques Francois Shadow', cursive; font-style:italic; font-size:120%;}
+      body {font-size: x-large; font-family: Merriweather;}
+       h1 {font-family:Lora; font-size:130%; font-weight:600; text-align: center;}
+       h2 {font-family: 'Jacques Francois Shadow', cursive; font-style:oblique; font-size:120%;}
        hr {border-top:3px solid;}
-       table, th, td {border:none;}
-       table {border-collapse: collapse;}
-       td {font-size:140%;}
        img {
         float: left;
          margin: 5px;}
@@ -95,17 +91,27 @@ a[aria-describedby="Endnote-label"]::after {
   color: black;
   margin-bottom: 15px;
 }
+:root {
+  --orange:			#ffa500; /* w3-orange Head */
+  --dodgerblue:		#1e90ff; /* w3-blue   Nav */
+  --limegreen:		#32cd32; /* w3-green  Foot */
+  --palegreen: #98fb98;
+  --lighteslategrey: #778899;
+  --honeydew:		#f0fff0;
+  --lavender:		#e6e6fa;
+  --cyan:	#00ffff;}
+  nav {background-color: var(--dodgerblue);} 
+  /* footer {background-color: var(--limegreen);} */
     </style>
   </head>
-  <body>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <body>
     <!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
 
 style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container">
-      <header>
+      <header role="contentinfo">
         <div class="w3-container">
-          <h3>[Under Construction]</h3>
           <h1> CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA </h1>
           <h3><u>Section 7 - Retirement Days Portion of</u></h3>
           <h2>A SCRIBBLED STORY OF MY LIFE</h2>
@@ -117,7 +123,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
         </div>
       </header>
       <hr>
-      <main class="w3-container">
+      <main role="main" class="w3-container">
         <div class="w3-serif">
           <div class="w3-container w3-serif">
             <p><img src="PassengerTrain.svg" alt="Drawing of diesel engine pulling passenger train"
@@ -147,7 +153,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               traveled with us from Smithers, then to Prince Rupert and by ferry
               boat back to Sitka. George was an invalid for several weeks, but
               out relatives in Tacoma thought we should make every effort to
-              come down there.<a aria-describedby="Endnote-label" href="#TacomaRelatives"></a>
+              come down there.<a aria-describedby="Endnote-label" href="#TacomaRelatives" id="TacomaRelatives-ref"></a>
               So, we sold our home in Jamestown Bay, went to Tacoma and bought a
               nice little brick house in Tacoma. </p>
             <p>We were not city people and when we found we could buy a
@@ -201,7 +207,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               for promotional work and I was sent all over the United States,
               usually in the spring of the year when Presbyterial Societies met.<a
 
-                aria-describedby="Endnote-label" href="#Presbyteries"></a> So, I
+                aria-describedby="Endnote-label" href="#Presbyteries" id="Presbyteries-ref"></a> So, I
               was used as a speaker in South Dakota, North Dakota, Michigan,
               Kentucky, Nebraska, Ohio, Kansas, Tennessee, California, Illinois,
               Minnesota and even Washington. I remember I spoke to Washington. I
@@ -225,7 +231,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
         </div>
       </main>
       <hr>
-      <footer>
+      <footer role="contentinfo">
         <h3 id="Endnote-label" style="font-size:180%;">Endnotes</h3>
         <div class="w3-container w3-cursive">
           <ol>
@@ -233,7 +239,9 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               area -- descendants of her brother Harry and descendants of Herb's
               1st cousin, Thomas Edgar "Ed" Congdon. The Congdons moved from
               Nelson, PA to Brainerd, and then to Tacoma. Ed Congdon's daughter,
-              Georgia, was a business partner of Mary's brother, Edd Hughey. </li>
+              Georgia, was a business partner of Mary's brother, Edd Hughey. <a href="#TacomaRelatives-ref"
+
+              aria-label="Back to content">↵</a> </li>
             <li id="Presbyteries">Since Presbyterianism came to the America in
               the 1630s there have been a number of schisms and mergers. There
               are now several denominations calling themselves 'Presbyterian'
@@ -243,11 +251,14 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               elected elders plus the minister. A bunch of congregations in a
               geographical area are grouped together in a "Presbytery" in which
               representatives of the member congregations meet annually to
-              conduct business and to ordain ministers. </li>
+              conduct business and to ordain ministers. <a href="#Presbyteries-ref"
+
+              aria-label="Back to content">↵</a> </li>
           </ol>
-          <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
+          <div class="w3-cell-row w3-green" style="font-style:oblique;"> Copyright © 2022, 2023
             William B. Thompson. Commercial use prohibited. </div>
-          <nav class="w3-cell-row w3-sans">
+        </footer>
+        <nav role="Navigation" class="w3-cell-row w3-sans">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
               <a class="w3-bar-item w3-border" href="documents.html">Documents
                 Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
@@ -258,7 +269,6 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             </p>
           </nav>
         </div>
-      </footer>
     </article>
   </body>
 </html>

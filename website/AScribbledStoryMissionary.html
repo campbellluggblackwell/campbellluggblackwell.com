@@ -95,6 +95,17 @@ a[aria-describedby="Endnote-label"]::after {
   color: black;
   margin-bottom: 15px;
 }
+:root {
+  --orange:			#ffa500; /* w3-orange Head */
+  --dodgerblue:		#1e90ff; /* w3-blue   Nav */
+  --limegreen:		#32cd32; /* w3-green  Foot */
+  --palegreen: #98fb98;
+  --lighteslategrey: #778899;
+  --honeydew:		#f0fff0;
+  --lavender:		#e6e6fa;
+  --cyan:	#00ffff;}
+  nav {background-color: var(--dodgerblue);}
+/*  footer {background-color: var(--limegreen);} */
     </style>
   </head>
   <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
@@ -104,7 +115,6 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <article class="w3-container">
       <header>
         <div class="w3-container">
-          <h3>[Under Construction]</h3>
           <h1> CAMPBELLs, LUGGs, &amp; BLACKWELLs of Nelson, PA </h1>
           <h3><u>Section 6 - Missionary Portion of</u></h3>
           <h2>A SCRIBBLED STORY OF MY LIFE</h2>
@@ -158,7 +168,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               beginning on the western horizon. </p>
             <p>I had studied Latin in Brainerd High School and I found that the
               Spanish language, which our school boys used, had many Latin
-              derivatives.<a aria-describedby="Endnote-label" href="#RomanceLanguages"></a>
+              derivatives.<a aria-describedby="Endnote-label" href="#RomanceLanguages"  
+              id="RomanceLanguages-ref"></a>
               I began to "pick up" a few words. Of course, only English was used
               in our school. </p>
             <p>I was given a room in "Teachers Hall" where the single teachers
@@ -173,7 +184,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               the new workers was a man from California who had been employed to
               be the new "shop teacher." He was to teach the boys in carpentry,
               learning how to handle all the tools of that trade. Other trades,
-              also, were added.<a aria-describedby="Endnote-label" href="#Asimilation">
+              also, were added.<a aria-describedby="Endnote-label" href="#Assimilation"
+              id="Assimilation-ref">
               </a></p>
             <p>One thing that really developed was the study and care of
               automobiles. Friends of the school began to leave their cars for
@@ -219,7 +231,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
         </div>
       </main>
       <hr>
-      <footer>
+      <footer style="width:100%;">
         <h3 id="Endnote-label" style="font-size:180%;">Endnotes</h3>
         <div class="w3-container w3-cursive">
           <ol>
@@ -227,7 +239,9 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               Western Roman Empire prior to the fall of Rome. After the fall,
               regional dialects gradually evolved into distinct languages. Which
               is why Catalan, French, Portuguese, Romanian, Spanish, etc. are
-              called "romance languages," i.e. evolved from Rome's Latin.&nbsp;
+              called "romance languages," i.e. evolved from Rome's Latin.<a href="#RomanceLanguages-ref"
+
+              aria-label="Back to content">↵</a>
             </li>
             <li id="Assimilation">Presbyterian minister Rev. James Menaul opened
               the "Albuquerque Indian School" in 1881, operating under a
@@ -238,14 +252,16 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               own Indian school on a 200 acre site on what is now Manaul Blvd.
               It closed in 1890, but in 1895 Rev. Manaul reopened the campus as
               a school for Spanish speaking boys, the first class recruited from
-              Las Vegas, NM. </li>
+              Las Vegas, NM.<a href="#Assimilation-ref"
+
+              aria-label="Back to content">↵</a></li>
           </ol>
-          <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
+          <div class="w3-cell-row w3-green" style="font-style:italic;"> Copyright © 2022, 2023
             William B. Thompson. Commercial use prohibited. </div>
+        </footer>
           <nav class="w3-cell-row w3-sans">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
-              <a class="w3-bar-item w3-border" href="documents.html">Documents
-                Table of Contents</a> 
+              <a class="w3-bar-item w3-border" href="documents.html">Index for Documents</a> 
               <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
 
                 href="AScribbledStoryTeacher.html">Previous</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
@@ -253,7 +269,6 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
                 href="AScribbledStoryRetirement.html">Next</a> </p>
           </nav>
         </div>
-      </footer>
     </article>
   </body>
 </html>

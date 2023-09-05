@@ -1,10 +1,10 @@
 #!/usr/bin/expect
-puts "hello: [pwd]"
+puts "pwd: [pwd]"
 set src "[lindex $argv 0]@CampbellLuggBlackwell.com:/home4/[lindex $argv 0]/public_html"
 puts "src: ${src}"
 set dst "/home/runner/work/campbellluggblackwell.com/campbellluggblackwell.com/incoming/website"
 puts "dst: ${dst}"
-spawn rsync -ahvz -e "ssh -oHostKeyAlgorithms=+ssh-dss" --dry-run --delete --exclude="public_html/blog"  ${src} ${dst}
+spawn rsync -ahvz -e "ssh -oHostKeyAlgorithms=+ssh-dss" --dry-run --delete --exclude 'blog/'  ${src} ${dst}
 expect { 
     "Are you sure" { 
         send "yes\r"

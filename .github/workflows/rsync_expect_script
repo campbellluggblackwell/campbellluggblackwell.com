@@ -7,7 +7,6 @@ puts "dst: ${dst}"
 spawn rsync \
     -ahvz \
     -e "ssh -oHostKeyAlgorithms=+ssh-dss" \
-    --dry-run \
     --delete \
     --exclude '*.bak' \
     --exclude blog/ \

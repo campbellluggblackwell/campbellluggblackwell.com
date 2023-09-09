@@ -16,91 +16,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
     <link href="ssletterw3.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: 200%; font-family: 'Merriweather', serif;}
-       h1 {text-align: center; font-family: 'Lora', serif;}
-           h2 {text-align: center; font-family: 'Oswald', sans-serif;}
-       h2 {font-family: 'Lora'; font-size:120%;}
-    h3 {font-size: 115%; font-family: 'Oswald', san-serif;}
-       h3 {font-size: 115%; font-family: 'Cabin', san-serif;}
-       h4 {font-family: 'Lora', serif; text-align: left; text-decoration:underline; 
-         font-weight: 500; font-size:105%; font-style: oblique;}
-        h5 {font-family: 'Lora', serif; text-align: left;  
-         font-weight: 500; font-size:105%; font-style: oblique;}
-       hr {border-top:3px solid;}
-         blockquote {font-family: 'Chelsea Market', cursive;}
-       table, th, td {border:none;}
-       table {border-collapse: collapse;}
-       td {font-size:140%;}
-       img {
-        float: left;
-         margin: 5px;}
-      figure {font-style: oblique;}
-      .FromAddr p + p {padding: 0px; margin: 0px;}
-      .Medium {font-size: medium;}
-      .Red {color:red;}
-      .strikethru {text-decoration: line-through;}
-/* Initialiazing a `footnotes` counter on the wrapper */
-      article {
-  counter-reset: Endnotes;
-}
-/**
- * Inline footnotes references
- * 1. Increment the counter at each new reference
- * 2. Reset link styles to make it appear like regular text
- */
-      a[aria-describedby="Endnote-label"] {
-  counter-increment: Endnotes; /* 1 */
-  text-decoration: none; /* 2 */
-  color: inherit; /* 2 */
-  cursor: default; /* 2 */
-  outline: none; /* 2 */
-}
- /**
- * Actual numbered references
- * 1. Display the current state of the counter (e.g. `[1]`)
- * 2. Align text as superscript
- * 3. Make the number smaller (since it's superscript)
- * 4. Slightly offset the number from the text
- * 5. Reset link styles on the number to show it's usable
- */
-a[aria-describedby="Endnote-label"]::after {
-  content: '[' counter(Endnotes) ']'; /* 1 */
-  vertical-align: super; /* 2 */
-  font-size: 0.9em; /* 3 */
-  font-weight:500;
-  margin-left: 2px; /* 4 */
-  color: blue; /* 5 */
-  text-decoration: underline; /* 5 */
-  cursor: pointer; /* 5 */
-}
- /**
- * Resetting the default focused styles on the number
- */
-      a[aria-describedby="Endnote-label"]:focus::after {
-  outline: thin dotted;
-  outline-offset: 2px;
-}
-      footer :target {
-  background: yellow;
-}
-      .alert {
-  padding: 20px;
-  background-color: #90EE90; /* Sad */
-  color: black;
-  margin-bottom: 15px;
-}
+            .copyr {font-family:w3-serif;}
     </style>
   </head>
-  <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+  <body>F.<!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+
 style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container">
@@ -130,15 +62,17 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               not to show any favoritism. But the big differences were in its
               country setting -- and in having multiple grades sharing the same
               room, same teacher, and the different grades activities occurring
-              simultaneously. Which worked out much better than you might think.<a
+              simultaneously. Which worked out much better than you might think.<a
+
                 aria-describedby="Endnote-label" href="#Planning"></a></p>
             <p> The site faced the busy road [NY 7], but was set well back and
               had no fencing that I recall. It probably had been abandoned
               farmland. In front was a large, lawn, but to the sides and behind,
               farm fields had turned to meadows which were now acquiring patches
-              of shrubs, such as staghorn sumac.<img src="StaghornSumac.png" alt="Photo of staghorn sumac shrub"
-                style="width:20%;"> Sometimes pairs or small groups of
-              kindergartners utilized those thickets to conduct their own
+              of shrubs, such as staghorn sumac.<img src="StaghornSumac.jpg" alt="Photo of staghorn sumac shrub"
+
+                style="width:20%; float:right;"> Sometimes pairs or small groups
+              of kindergartners utilized those thickets to conduct their own
               independent studies of comparative anatomy. Behind the school, the
               land gently sloped down to a creek, which was on the other side of
               a high embankment, topped by raised railroad tracks -- the maim
@@ -150,7 +84,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               (And the fields and a hedgerow had red-winged blackbirds.) Who
               today can imagine letting little kids wander around like that
               unsupervised? My mother had a large handbell that she would ring
-              loudly to let us know recess was ending.<img src="HandBell.png" alt="Drawing of a hand bell"
+              loudly to let us know recess was ending.<img src="HandBell.png" alt="Drawing of a hand bell"
+
                 style="width:20%; float:right;"> If you were still down by the
               creek when it rang, you had to run fast to get back in time. Or
               else. Or-elses were serious. The principal had a paddle -- and
@@ -184,7 +119,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               my siblings into pointing to each word as they read it aloud as a
               way of circumventing my mother's forbidding them from teaching me
               to read. It didn't "spoil" first grade for me, I still had a lot
-              to learn, such as how to “sound out" words,<a aria-describedby="Endnote-label"
+              to learn, such as how to “sound out" words,<a aria-describedby="Endnote-label"
+
                 href="#SoundingOut"></a> but I was reading pretty well. </p>
             <p>This brings us to the title of this segment. By now you know that
               I loved books -- and still do.</p>
@@ -204,7 +140,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               books around.” They were able to decipher my desire and find a
               sturdy, kid-sized, cardboard briefcase. It was perfect! I could
               put half a dozen books in it, carry them out under a shade tree,
-              and read to my heart’s content!<a aria-describedby="Endnote-label"
+              and read to my heart’s content!<a aria-describedby="Endnote-label"
+
                 href="#Bookcase"></a></p>
             <h4>2nd Grade: "Orphans' Patches.”</h4>
             <p>Before starting second grade we moved back to Binghamton's south
@@ -213,7 +150,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               I attended a large elementary school, several blocks away, this
               time with two separate room for each grade (one for those starting
               a grade in Sept. and one for those starting it in Jan.) I believe
-              it was Benjamin Franklin,<img src="BenFranklin.png" alt="Photo of Benjamin Franklin school, Binghamton, NY"
+              it was Benjamin Franklin,<img src="BenFranklin.png" alt="Photo of Benjamin Franklin school, Binghamton, NY"
+
                 style="width:35%; float:right;"> remember that it was near an
               orphanage, and that the orphans attended our school. They usually
               came to school in clothes that were clean, but had been mended or
@@ -232,9 +170,12 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               started the next fall, fortunately with a different teacher (most
               of my teachers were excellent or at least adequate). But I only
               attended for 3 weeks. Then I started having fever, fatigue, and
-              intense pain in my ankles and knees. Dr. Weiss made a house call<img
-                src="DoctorsBlackBag.png" alt="Photo of a doctor's 'little black bag' for making house calls"
-                style="width:20%;"> and diagnosed me as having rheumatic fever.<a
+              intense pain in my ankles and knees. Dr. Weiss made a house call<img
+
+                src="DoctorsBlackBag.png" alt="Photo of a doctor's 'little black bag' for making house calls"
+
+                style="width:20%;"> and diagnosed me as having rheumatic fever.<a
+
                 aria-describedby="Endnote-label" href="#Rheumatic"></a> The main
               treatment in those days was to rub methyl salicylate (synthetic
               oil of wintergreen) on the inflamed joints for temporary relief.
@@ -315,7 +256,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               Fortunately my three years of high school made up for that.</p>
             <h4>Junior High: "Nightmare.”</h4>
             <p>I literally had nightmares about it for years. For one thing, the
-              junior high school seemed humongous.<img src="WestJr.png" alt="Photo of West Junior High, Binghamton, NY"
+              junior high school seemed humongous.<img src="WestJr.png" alt="Photo of West Junior High, Binghamton, NY"
+
                 style="width:20%;"> And very institutionalized. The decor was
               drab and felt more like what I imagined a prison was like than a
               school. The long, drab hallways were crowded when we changed
@@ -408,7 +350,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               gone and instead I had a rubber pad to practice on with my
               drumsticks. Much less noise. </p>
             <p>I thrived in high school. [Here's a 1920 photo of BCHS. The
-              school was old, but somehow cozy.<img src="BCHS.png" alt="Photo of Binghamton Central High School, Binghamton, NY"
+              school was old, but somehow cozy.<img src="BCHS.png" alt="Photo of Binghamton Central High School, Binghamton, NY"
+
                 style="width:20%;">] There was much more freedom and less
               regimentation. I still ran into the first day "You must be a
               Thompson" bit at the beginning of semesters, but by now it didn't
@@ -511,7 +454,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               again, to receive the DAR award for best history student, which
               included a book on the American Revolution. And, of course, I was
               called up once more to receive my diploma.</p>
-            <h4>College: "Let each become all that he is capable of being.”<a aria-describedby="Endnote-label"
+            <h4>College: "Let each become all that he is capable of being.”<a aria-describedby="Endnote-label"
+
                 href="#Meritocracy"></a></h4>
             <p>I had always assumed that I would go to college. As I suspect,
               did most of my teachers. But where and what to study?</p>
@@ -578,25 +522,30 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               College, renamed it Harpur, and moved it to a temporary campus in
               Endicott, NY while searching for a permanent site. One lovely old
               home was purchased and became "Colonial Hall" </p>
-            <figure><img src="Harpur_ColonialHall.jpg" alt="Photo Harpur College's Colonial Hall, the admin building."
+            <figure><img src="Harpur_ColonialHall.jpg" alt="Photo Harpur College's Colonial Hall, the admin building."
+
                 style="width:20%; float: left;"><figcaption>Colonial Hall</figcaption></figure>
             the college's administration building. Plus across from Colonial
             Hall was a triangular block that was a village park. SUNY bought
             most of the homes facing the park. One, "Park House"
-            <figure><img src="Harpur_ParkHouse.jpg" alt="Photo of 'Park House, the nice classroom building on the Harpur College campus."
+            <figure><img src="Harpur_ParkHouse.jpg" alt="Photo of 'Park House, the nice classroom building on the Harpur College campus."
+
                 style="width:20%; float: center;"><figcaption>Park House</figcaption></figure>
             was for classrooms and the others became dorms. The rest of the
             classrooms were plywood pre-fabs, built on a corner of Endicott's
             landfill.
-            <figure><img src="Harpur_WestHall.jpg" alt="Photo of 'West Hall, one of pre-fab classrom buildings."
+            <figure><img src="Harpur_WestHall.jpg" alt="Photo of 'West Hall, one of pre-fab classrom buildings."
+
                 style="width:20%; float: right;"><figcaption>West Hall</figcaption></figure>
             I well remember the prefabs. The windows didn't fit well, and in dry
             weather, dust from the landfill would filter through and get on your
             books and papers. Worse, when it was snowing, snowflakes came
-            through the window frames and if you were taking a test using a "<a
+            through the window frames and if you were taking a test using a "<a
+
               href="">bluebook</a>," some of the snowflakes would land on your
             essay answers, causing the ink from your fountain pens to run and
-            make your answer hard to read. <a aria-describedby="Endnote-label"
+            make your answer hard to read. <a aria-describedby="Endnote-label"
+
               href="#CollegeDesign"></a>
             <p>Liberal Arts were ideal for me. The intent was to produce
               well-rounded<a aria-describedby="Endnote-label" href="#WellRounded"></a>
@@ -719,7 +668,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               expected that my career prep would come in grad school, but I had
               no savings, little prospect of getting a large enough scholarship,
               and my father was almost retirement age. The best job offer I got
-              was for $20/week, which even back then was a pittance.<a aria-describedby="Endnote-label"
+              was for $20/week, which even back then was a pittance.<a aria-describedby="Endnote-label"
+
                 href="#Providence"></a> When I interviewed with a company I'd
               had a summer job with, the interviewer said "You've got a lot of
               math courses, and, if you take a course in statistics, I think
@@ -737,15 +687,19 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             <p>Meanwhile, Harpur College had morphed into SUNY Binghamton (later
               Binghamton U.), and had opened some grad schools, one of them
               being the <a href="https://en.wikipedia.org/wiki/Thomas_J._Watson">Thomas
-                J. Watson</a> College of Engineering and Applied Science.)<a aria-describedby="Endnote-label"
-                href="#WatsonIrony"></a><img src="WatsonSchool.png" alt="Photo of Binhamton U's Watson School of Engineering."
+                J. Watson</a> College of Engineering and Applied Science.)<a aria-describedby="Endnote-label"
+
+                href="#WatsonIrony"></a><img src="WatsonSchool.png" alt="Photo of Binhamton U's Watson School of Engineering."
+
                 style="width:20%; float: left;"> I took a couple of math courses
               and a computer science class there at night. After a few years, I
               decided I was ready for more grad school, and applied to <a href="https://en.wikipedia.org/wiki/Lehigh_University">Lehigh
-                U.</a>'s<img src="LehighU.png" alt="Photo of Lehigh U's College Union Building."
+                U.</a>'s<img src="LehighU.png" alt="Photo of Lehigh U's College Union Building."
+
                 style="width: 30%;; float: right;"> <a href="https://en.wikipedia.org/wiki/Information_science">Information
                 Science</a> program (an interdisciplinary program, which
-              happened to be under the wing of their philosophy department.)<a aria-describedby="Endnote-label"
+              happened to be under the wing of their philosophy department.)<a aria-describedby="Endnote-label"
+
                 href="#LehighU"></a> My employer had a division near Lehigh U.,
               so I took a leave of absence from my Binghamton job and took a
               temporary transfer to that division. I attended Lehigh for two
@@ -844,7 +798,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               Hank was the only driver in the household. and gasoline rationing
               had started. Getting on a bus route would have been a good reason
               for the move.</li>
-            <li id="Ink"> <img src="Nib_nHolder.png" alt="Photo of pen point and holder."
+            <li id="Ink"> <img src="Nib_nHolder.png" alt="Photo of pen point and holder."
+
                 style="width:20%; float: right;">Third grade marked a major
               milestone -- writing with ink instead of pencil. That was a big
               deal, with lots of components and ritual. First were the inkwells.
@@ -877,7 +832,7 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               achieve their full potential? But there is a downside.
               "Meritocracy" sounds very fair. And efficient. Before Pres. Chi,
               China aspired to be a technocratic meritocracy. But there's a
-              downside. See Michael J. Sandel's <i><a href="https://jmp.princeton.edu/events/tyranny-merit-whats-become-common-good">The
+              downside. See Michael J. Sandel's <i><a href="https://us.macmillan.com/books/9780374289980/thetyrannyofmerit">The
                   Tyranny of Merit: What's Become of the Common Good?</a></i></li>
             <li id="TripleCities">The three adjacent communities, Binghamton,
               Johnson City and Endicott, were collectively known as "The Triple
@@ -930,7 +885,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               Presbyterian father had a strong belief in divine providence --
               "The Lord will provide." I didn't share his confidence about that,
               but was nevertheless confident that with "Where there's a will
-              there's a way" -- combined with flexibility and a willingness to "<a
+              there's a way" -- combined with flexibility and a willingness to "<a
+
                 href="https://en.wikipedia.org/wiki/Carpe_diem">carpe diem</a>,"
               things would work out.</li>
             <li id="WatsonIrony"> Computers played a significant role in my
@@ -961,20 +917,20 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               had a research facility near Bethlehem and I became friends with
               one of the scientists there and discussed my grad school hopes
               with him. He tried to talk me into going to his alma mater,
-              Villanova, but I wanted to just take a temporary transfer to his
-              location. That worked out, I applied to Lehigh and was accepted.
-              My employer agreed to a temporary leave of absence from my current
-              position, a transfer to the PA location at half time &amp;
-              half-pay, retention of all my seniority etc., and they had a
-              tuition reimbursement policy, and would pay for the moves, so I
-              moved to PA. Unfortunately, they had a reimbursement policy, which
-              only covered one course per semester. I took two courses a
-              semester. So, with a family to support, rent for an apartment,
-              etc. Lehigh's high tuition made for few frills. I like pretzels,
-              which S.E. PA has many great producers thereof and was delighted
-              to discover that a nearby bakery made large, stick pretzels. And
-              that their outlet store would fill a large grocery bag with broken
-              pretzels for 5¢.</li>
+              Villanova, but I needed to work to support my family, and wanted
+              to just take a temporary transfer to his location. That worked
+              out. I applied to Lehigh and was accepted. My employer agreed to a
+              temporary leave of absence from my current position, a transfer to
+              the PA location at half time &amp; half-pay, retention of all my
+              seniority etc., and they had a tuition reimbursement policy, and
+              would pay for the moves, so I moved to PA. Unfortunately, they had
+              a reimbursement policy, which only covered one course per
+              semester. I took two courses a semester. So, with a family to
+              support, rent for an apartment, etc. Lehigh's high tuition made
+              for few frills. I like pretzels, which S.E. PA has many great
+              producers thereof and was delighted to discover that a nearby
+              bakery made large, stick pretzels. And that their outlet store
+              would fill a large grocery bag with broken pretzels for 5¢.</li>
             <li id="AfterLehigh">Once back, I continued attending events like
               the <a href="https://www.acm.org/">ACM</a>'s annual conference,
               weekend seminars, and both taking short courses at work taught by
@@ -1007,14 +963,16 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               and insights -- e.g. that every computer program is a mathematical
               function (at lest for procedural programming languages.)</li>
           </ol>
-          <div class="w3-cell-row" style="font-style:italic;"> Copyright © 2022
-            William B. Thompson. Commercial use prohibited. </div>
+          <div class="w3-cell-row copyr" style="font-style:italic;"> Copyright ©
+            2022 William B. Thompson. Commercial use prohibited. </div>
           <nav class="w3-cell-row w3-sans">
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
               <a class="w3-bar-item w3-border" href="documents.html">Documents
                 Table of Contents</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This
-                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-                href="WBTMemoirPreSchool.html">Previous</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+
+                href="WBTMemoirPreschool.html">Previous</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
+
                 href="WBTMemoirRomance.html">Next</a> </p>
           </nav>
         </div>

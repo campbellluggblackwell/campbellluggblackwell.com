@@ -16,91 +16,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 by Kitty Giraudel, June 17, 2015 at https://www.sitepoint.com/accessible-footnotes-css/ -->
     <link href="https://www.w3schools.com/w3css/4/w3.css" rel="stylesheet">
     <link href="https://fonts.gstatic.com" rel="preconnect">
-    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Lora&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&amp;display=swap"
+
       rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&amp;display=swap"
+
+      rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&amp;display=swap"
+
       rel="stylesheet">
     <link href="ssgeneral.css" rel="stylesheet">
-    <link href="ssletterw3.css" rel="stylesheet">
+    <link href="ssRespWeb.css" rel="stylesheet">
     <style type="text/css">
-      body {font-size: 200%; font-family: 'Merriweather', serif;}
-       h1 {text-align: center; font-family: 'Lora', serif;}
-           h2 {text-align: center; font-family: 'Oswald', sans-serif;}
-       h2 {font-family: 'Lora'; font-size:120%;}
-    h3 {font-size: 115%; font-family: 'Oswald', san-serif;}
-       h3 {font-size: 115%; font-family: 'Cabin', san-serif;}
-       h4 {font-family: 'Lora', serif; text-align: left; text-decoration:underline; 
-         font-weight: 500; font-size:105%; font-style: oblique;}
-        h5 {font-family: 'Lora', serif; text-align: left;  
-         font-weight: 500; font-size:105%; font-style: oblique;}
-       hr {border-top:3px solid;}
-         blockquote {font-family: 'Chelsea Market', cursive;}
-       table, th, td {border:none;}
-       table {border-collapse: collapse;}
-       td {font-size:140%;}
-       img {
-        float: left;
-         margin: 5px;}
-      figure {font-style: oblique;}
-      .FromAddr p + p {padding: 0px; margin: 0px;}
-      .Medium {font-size: medium;}
-      .Red {color:red;}
-      .strikethru {text-decoration: line-through;}
-/* Initialiazing a `footnotes` counter on the wrapper */
-      article {
-  counter-reset: Endnotes;
-}
-/**
- * Inline footnotes references
- * 1. Increment the counter at each new reference
- * 2. Reset link styles to make it appear like regular text
- */
-      a[aria-describedby="Endnote-label"] {
-  counter-increment: Endnotes; /* 1 */
-  text-decoration: none; /* 2 */
-  color: inherit; /* 2 */
-  cursor: default; /* 2 */
-  outline: none; /* 2 */
-}
- /**
- * Actual numbered references
- * 1. Display the current state of the counter (e.g. `[1]`)
- * 2. Align text as superscript
- * 3. Make the number smaller (since it's superscript)
- * 4. Slightly offset the number from the text
- * 5. Reset link styles on the number to show it's usable
- */
-a[aria-describedby="Endnote-label"]::after {
-  content: '[' counter(Endnotes) ']'; /* 1 */
-  vertical-align: super; /* 2 */
-  font-size: 0.9em; /* 3 */
-  font-weight:500;
-  margin-left: 2px; /* 4 */
-  color: blue; /* 5 */
-  text-decoration: underline; /* 5 */
-  cursor: pointer; /* 5 */
-}
- /**
- * Resetting the default focused styles on the number
- */
-      a[aria-describedby="Endnote-label"]:focus::after {
-  outline: thin dotted;
-  outline-offset: 2px;
-}
-      footer :target {
-  background: yellow;
-}
-      .alert {
-  padding: 20px;
-  background-color: #90EE90; /* Sad */
-  color: black;
-  margin-bottom: 15px;
-}
     </style>
   </head>
-  <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+  <body><!-- Google Tag Manager (noscript) --> <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TK7PFP8"
+
 style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <article class="w3-container">
@@ -177,8 +111,10 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               sunset -- a good story ruined by "mush." We still thought of girls
               in relation to "dumb stuff" such as playing with dolls, pretend
               tea parties, etc. and not knowing how to throw a baseball. My best
-              friend at the time, who I'll call 'Rachel,'<a aria-describedby="Endnote-label"
-                href="#Fictitious"></a> was "the girl next door."<a aria-describedby="Endnote-label"
+              friend at the time, who I'll call 'Rachel,'<a aria-describedby="Endnote-label"
+
+                href="#Fictitious"></a> was "the girl next door."<a aria-describedby="Endnote-label"
+
                 href="#NextDoor"></a> It was OK having her as a friend because
               she was a "tomboy" and could do all the things the rest of "the
               guys" did. We were close friends for years, spent a lot of time
@@ -237,7 +173,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               that was a "nonce," a one time thing. For one thing, I didn't want
               to risk losing her as a friend.</p>
             <p>It took two and a half years after taking Carol to the movie
-              before I got up the nerve to ask another girl out.<a aria-describedby="Endnote-label"
+              before I got up the nerve to ask another girl out.<a aria-describedby="Endnote-label"
+
                 href="#SocialSkills"></a> I felt I should go to the Junior Prom.
               Besides, I had already had dance lessons and never used them.
               There was a girl in the band that I had "liked" from afar for some
@@ -275,7 +212,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               had a wonderful time just being together doing simple things,
               playing miniature golf, going to an occasional movie, or just
               going for a walk.</p>
-            <p>I didn't have much money for dates or presents.<a aria-describedby="Endnote-label"
+            <p>I didn't have much money for dates or presents.<a aria-describedby="Endnote-label"
+
                 href="#Finances"></a> But Dottie never gave any indication of
               minding and made the most of enjoying the simple pleasures of
               spending time together. </p>
@@ -309,7 +247,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               impressed by the car, but I liked sharing the tiny, very cozy back
               seat. :)</p>
             <p>We did double date with Renny for our Sr. Prom. He borrowed his
-              father's Olds Rocket<img src="Olds88Rocket.png" alt="2015 photo of Bill and Mary"
+              father's Olds Rocket<img src="Olds88Rocket.png" alt="2015 photo of Bill and Mary"
+
                 style="width:30%; float:right;"> we all went to his parents and
               my parents for pictures before the prom. We went somewhere for
               food afterward, then he dropped Dottie and me off at 208 where we
@@ -413,7 +352,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               an apartment in Binghamton. Soon after when I visited, my sister
               said "I want you to meet my neighbor and new friend" and
               introduced me to -- Nedra. We remained friends over the years, but
-              lost touch when I moved from NYS and now she's gone.<a aria-describedby="Endnote-label"
+              lost touch when I moved from NYS and now she's gone.<a aria-describedby="Endnote-label"
+
                 href="#NedraH"></a></p>
             <h4>Barbara</h4>
             <p>Out of respect for her privacy I don't intend to say much about
@@ -476,8 +416,10 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               and hear blues singer <a href="https://en.wikipedia.org/wiki/Rory_Block">Rory
                 Block</a>. By the end of that performance she was comfortable
               with my arm around her and my massaging her shoulders. And I knew
-              I would be comfortable spending the rest of my life with her.<img
-                src="Bill%20and%20Mary%20outdoor%20photo%202015.jpg" alt="2015 photo of Bill and Mary"
+              I would be comfortable spending the rest of my life with her.<img
+
+                src="Bill%20and%20Mary%20outdoor%20photo%202015.jpg" alt="2015 photo of Bill and Mary"
+
                 style="width:35%;"> </p>
             <p>I invited her to "meet the family" by having dinner at my home,
               then shared with my sister and my younger son who was away in
@@ -508,7 +450,8 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
               ever dreamed was possible.</p>
             <p>And if you want to get to know Mary better her memoir is
               available in bookstores or via Amazon. To order or read about it,
-              click on the photo of her book cover<a href="https://www.marystarshine.us/"><img
+              click on the photo of her book cover<a href="https://www.marystarshine.us/"><img
+
                   src="MarysBookCover.png" alt="Photo of Mary's book cover" style="width:40%; float:right"></a>.</p>
             <p> Ending this chapter. as usual, in the spirit of Uncle Wiggily
               stories:<br>
@@ -625,9 +568,11 @@ style="display:none;visibility:hidden" height="0" width="0"></iframe></noscript>
             <p><a class="w3-bar-item w3-border" href="index.html">Return Home</a>
               <a class="w3-bar-item w3-border" href="documents.html">Documents
                 Table of Contents</a> <a class="w3-bar-item w3-border" href="WBTMemoirTOC.html">This
-                memoir's Table of Contents</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-                href="WBTMemoirEducation.html">Previous</a> <a class="w3-bar-item w3-topbar w3-bottombar w3-leftbar w3-rightbar"
-                href="WBTMemoirCareer.html">Next</a> </p>
+                memoir's Table of Contents</a> <a class="w3-bar-item w3-border"
+
+                href="WBTMemoirEducation.html">Previous chapter</a> <a class="w3-bar-item w3-border"
+
+                href="WBTMemoirCareer.html">Next chapter</a> </p>
           </nav>
         </div>
       </footer>

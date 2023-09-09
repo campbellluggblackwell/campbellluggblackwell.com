@@ -1,0 +1,216 @@
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=windows-1252">
+    <link rel="alternate stylesheet" type="text/css" href="resource://gre-resources/plaintext.css"
+      title="Wrap Long Lines">
+  </head>
+  <body>
+    <pre>
+CCC_body {
+  font-size: 2vw;
+  font-family: Courier, "Courier New", monospace;}
+
+hr.thik {
+  border-top: 2px solid
+}
+a {text-decoration-color: blue;}
+h1 {font-size:6vw; text-align: center; font-family: 'Lora', serif;}
+h2 {font-size:5vw; text-align: center; font-family: 'Oswald', sans-serif;}
+h3 {font-size:4vw; text-align: center; font-family: 'Cabin', sans-serif;}
+h4 {font-size:4vw; text-align: center; font-family: 'Lora', serif; text-align: left; text-decoration:underline; 
+  font-weight: 500; font-style: oblique;}
+h5 {font-size:3vw; font-family: 'Lora', serif; text-align: left;  
+  font-weight: 500; font-style: oblique;}
+body {font-size:2vw; font-family: 'Merriweather', serif; margin:0}
+figcaption {font-family:Cabin; float:none;}
+blockquote {padding:5%;}
+hr {border-top:2vw solid;}
+table, th, td {border:none;}
+table {border-collapse: collapse;}
+td {}
+* {
+	box-sizing: border-box
+}
+figure {font-style: oblique;}
+img {object-fit:contain; vertical-align:middle;}
+.HUC {font-size:6vw}
+.HLC {font-size:5vw%}
+.FirstP {
+  margin-bottom: 0px;
+}       .image {font-size:3vw; font-family:Cabin; max-height:200px;}
+       .vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);}
+.SecndP {
+  margin-top: 0px;
+  margin-right: 0px;
+  margin-bottom: 0px;
+  margin-left: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+}
+.Message {
+  text-indent: 5%;
+}
+.Closing {
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  text-indent: 235px;
+}
+.Signature {
+  text-indent: 285px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-top: 0px;
+}
+.CloseAddr {
+  text-indent: 305px;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  margin-bottom: 0px;
+}
+.FromAddr {
+  text-align: right; p + p {padding: 0px; margin: 0px;
+}
+.Salutation {
+  text-align: left;
+}
+.LetterFooter 
+  {text-align: center;
+}
+.Annotation {
+  font-style: oblique;
+  font-family: helvetica, arial;
+  font-size: vw1;}
+
+.Footnote {
+   font-family:"Times New Roman", serif; font-size:medium;
+}
+
+#parafoot {
+  font-size: vw2;
+  font-style: oblique;
+}
+.navigation {font-size: 3vw;}
+#RJ {text-align: right;}
+
+
+.FromAddr p + p {padding: 0px; margin: 0px;}
+.Medium {font-size: medium;}
+.Red {color:red;}
+.strikethru {text-decoration: line-through;}
+.mySlides {display:none;}  
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 50%;
+	width: auto;
+	padding: 16px;
+	margin-top: -22px;
+	color: white;
+	font-weight: bold;
+	font-size: 3vw;
+	border-radius: 0 3px 3px 0;
+}
+.next {
+	right: 0;
+   border-radius: 3px 0 0 3px;}
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+	background-color: #f1f1f1;
+	color: black;
+}
+.image {
+max-height:100px; font-family:Cabin;
+}
+.img1 {
+	background:red
+}
+.img2 {
+	background:yellow
+}
+.img3 {
+	background:green
+}
+.img4 {
+	background:LightBlue
+}
+.img5 {
+	background:brown
+}
+.img6 {
+	background:pink
+}
+.img7 {
+	background:sand
+}        
+.copyr {font-size:2vw; font-family: serif;  
+  font-weight: 400; font-style: oblique;}
+/* Initialiazing a `footnotes` counter on the wrapper */
+article {
+    counter-reset: Endnotes;
+  }
+  /**
+   * Inline footnotes references
+   * 1. Increment the counter at each new reference
+   * 2. Reset link styles to make it appear like regular text
+   */
+   a[aria-describedby="Endnote-label"] {
+    counter-increment: Endnotes; /* 1 */
+    text-decoration: none; /* 2 */
+    color: inherit; /* 2 */
+    cursor: default; /* 2 */
+    outline: none; /* 2 */
+  }
+   /**
+   * Actual numbered references
+   * 1. Display the current state of the counter (e.g. `[1]`)
+   * 2. Align text as superscript
+   * 3. Make the number smaller (since it's superscript)
+   * 4. Slightly offset the number from the text
+   * 5. Reset link styles on the number to show it's usable
+   */   
+   a[aria-describedby="Endnote-label"]::after {
+    content: '[' counter(Endnotes) ']'; /* 1 */
+    vertical-align: super; /* 2 */
+    font-size: 0.9em; /* 3 */
+    font-weight:500;
+    margin-left: 1vw; /* 4 */
+    color: blue; /* 5 */
+    text-decoration: underline; /* 5 */
+    cursor: pointer; /* 5 */
+  }
+  footer :target {
+    background: yellow;
+  }
+        .alert {
+    padding: 20px;
+    background-color: #90EE90; /* Sad */
+    color: black;
+    margin-bottom: 15px;
+  }
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+.prev, .next, .text, .image {
+    font-size: 2vw;
+}
+}
+
+
+</pre>
+  </body>
+</html>

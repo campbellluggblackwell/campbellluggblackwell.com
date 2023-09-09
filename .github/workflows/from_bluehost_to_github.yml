@@ -56,7 +56,7 @@ jobs:
             cd ./incoming/website/
             git status
             git add --all
-            git commit -am "Automatic upload from action from_bluehost_to_github.yml"
+            git commit -am "Automatic upload from action from_bluehost_to_github.yml" || true
             git push || true
             
 

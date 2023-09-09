@@ -1,0 +1,32 @@
+#!/usr/bin/expect
+set timeout [expr 5*60]
+puts "pwd: [pwd]"
+set src "[lindex $argv 0]@CampbellLuggBlackwell.com:/home4/[lindex $argv 0]/public_html/"
+puts "src: ${src}"
+set dst "/home/runner/work/campbellluggblackwell.com/campbellluggblackwell.com/incoming/website/"
+puts "dst: ${dst}"
+spawn rsync \
+    -ahvz \
+    -e "ssh -oHostKeyAlgorithms=+ssh-dss" \
+    --exclude blog/ \
+    --exclude main/ \
+    --exclude ssl/ \
+    --exclude sandbox/ \
+    --exclude campbellluggblackwell.com/ \
+    --exclude python/ \
+    --exclude cgi-bin/ \
+    ${src} ${dst}
+expect { 
+    "Are you sure" { 
+        send "yes\r"
+        expect "ssword:"
+        send "[lindex $argv 1]\r"
+    }
+    "ssword:" {
+        send "[lindex $argv 1]\r"
+    }
+}
+expect "speedup is"
+sleep 1
+puts "complete"
+

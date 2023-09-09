@@ -1,3 +1,7 @@
+
+I am not using this script, but it should still work.
+
+
 #!/usr/bin/expect
 spawn sftp -oHostKeyAlgorithms=+ssh-dss [lindex $argv 0]@ftp.campbellluggblackwell.com
 # The first call, need to confirm its ok to connect
